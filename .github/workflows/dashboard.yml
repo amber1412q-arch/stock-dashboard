@@ -1,0 +1,104 @@
+name: 仪表盘数据更新
+
+on:
+  schedule:
+    # 交易日每 10 分钟更新 (北京时间 9:00-15:50 / UTC 1:00-7:50)
+    - cron: '*/10 1-7 * * 1-5'
+    # 盘后更新一次确保收盘数据 (北京时间 16:00 / UTC 8:00)
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:  # 手动触发
+
+permissions:
+  contents: write   # 允许 peaceiris/actions-gh-pages 推送 gh-pages 分支
+
+concurrency:
+  group: dashboard-update
+  cancel-in-progress: false
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v5
+
+      - name: 设置 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 安装依赖
+        run: pip install requests mootdx
+
+      - name: 下载现有数据与缓存（持久化）
+        run: |
+          echo "📥 从 gh-pages 下载上次部署的数据与缓存..."
+          BASE_URL="https://amber1412q-arch.github.io/daily_stock_analysis"
+
+          # 1) data.json → 用作历史对比 & MA5 计算
+          curl -sL -o dashboard/data_previous.json "$BASE_URL/data.json" 2>/dev/null || true
+          if [ -f dashboard/data_previous.json ] && [ -s dashboard/data_previous.json ]; then
+            echo "✅ data_previous.json 下载成功"
+            python3 -c "import json; d=json.load(open('dashboard/data_previous.json')); print(f'   上次更新: {d.get(\"updated_at\",\"?\")}')" 2>/dev/null || echo "   (解析跳过)"
+          else
+            echo "⚠️ 暂无回退数据（首次运行）"
+            echo '{}' > dashboard/data_previous.json
+          fi
+
+          # 2) ETF 市值缓存 → 计算市值变化
+          mkdir -p dashboard/.cache
+          curl -sL -o dashboard/.cache/etf_mktcap.json "$BASE_URL/.cache/etf_mktcap.json" 2>/dev/null || true
+          if [ -f dashboard/.cache/etf_mktcap.json ] && [ -s dashboard/.cache/etf_mktcap.json ]; then
+            echo "✅ etf_mktcap.json 下载成功"
+          else
+            echo "⚠️ ETF 缓存不存在（首次运行，市值变化需要2次运行后才能显示）"
+            echo '{}' > dashboard/.cache/etf_mktcap.json
+          fi
+
+          # 3) 历史数据目录 → MA5 计算 & 前日对比
+          mkdir -p dashboard/history
+          # 从 data_previous 提取日期，下载最近7天历史文件
+          PREV_DATE=$(python3 -c "import json; d=json.load(open('dashboard/data_previous.json')); print(d.get('data_date',''))" 2>/dev/null)
+          if [ -n "$PREV_DATE" ]; then
+            for i in 0 1 2 3 4 5 6; do
+              D=$(date -d "$PREV_DATE -$i days" +%Y-%m-%d 2>/dev/null) || true
+              [ -n "$D" ] && curl -sL -o "dashboard/history/${D}.json" "$BASE_URL/history/${D}.json" 2>/dev/null || true
+            done
+          fi
+          echo "history files: $(ls dashboard/history/ 2>/dev/null | wc -l)"
+        continue-on-error: true
+
+      - name: 抓取仪表盘数据
+        run: python scripts/fetch_dashboard_data.py
+        env:
+          FUYAO_KEY: ${{ secrets.FUYAO_KEY }}
+        timeout-minutes: 15
+
+      - name: 检查输出文件
+        run: |
+          echo "=== dashboard/ 目录内容 ==="
+          ls -la dashboard/
+          ls -la dashboard/.cache/ 2>/dev/null || echo "  (无 .cache)"
+          ls -la dashboard/history/ 2>/dev/null || echo "  (无 history)"
+          if [ -f dashboard/data.json ]; then
+            echo "data.json generated OK"
+            python3 -c "import sys,json; d=json.load(sys.stdin); print(f'updated: {d.get(\"updated_at\",\"?\")}'); print(f'northbound: {len(d.get(\"northbound\",[]))}'); print(f'breakout: {len(d.get(\"breakout_stocks\",[]))}'); print(f'ETF: {len(d.get(\"etfs\",[]))}'); print(f'10d_gainers: {len(d.get(\"top_10day_gainers\",[]))}'); print(f'chip_conc: {len(d.get(\"chip_concentration\",[]))}'); m=d.get('market_overview',{}); print(f'turnover: {m.get(\"total_turnover\",\"?\")}yi prev={m.get(\"prev_turnover\",\"?\")} MA5={m.get(\"ma5_turnover\",\"?\")}'); o=d.get('omo',{}); print(f'OMO: matured={o.get(\"matured\",\"?\")} new={o.get(\"new_issue\",\"?\")}')" < dashboard/data.json
+          else
+            echo "⚠️ data.json 未生成，使用占位数据"
+            mkdir -p dashboard
+            echo '{"updated_at":"","northbound":[],"near_high_stocks":[],"etfs":[],"crude_oil":{"sc":null,"brent":null},"repo":{},"delivery_countdown":{}}' > dashboard/data.json
+          fi
+
+      - name: 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dashboard
+          publish_branch: gh-pages
+          keep_files: true   # 保留 K 线文件等旧数据
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: '📊 更新仪表盘数据 [${{ github.run_number }}]'
