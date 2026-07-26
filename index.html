@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>股市仪表盘</title>
+<style>
+:root {
+  --bg: #0f0f0f; --card-bg: #1a1a1a; --border: #2a2a2a;
+  --text: #e0e0e0; --text2: #888; --radius: 10px;
+  --red: #f85149; --green: #3fb950; --blue: #58a6ff; --gold: #d2991d;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:16px; max-width:1400px; margin:0 auto; }
+h2 { font-size:1rem; font-weight:600; }
+h3 { font-size:0.85rem; color:var(--text2); margin-bottom:8px; }
+
+.header { display:flex; justify-content:space-between; align-items:center; padding:8px 0; margin-bottom:12px; border-bottom:1px solid var(--border); }
+.header h1 { font-size:1.3rem; }
+.header .info { font-size:0.8rem; color:var(--text2); }
+.tag-nontrading { background:#f8514933; color:var(--red); padding:2px 8px; border-radius:4px; font-size:0.7rem; margin-left:8px; }
+
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
+.grid-3 { display:grid; grid-template-columns:1fr 1.2fr 0.9fr; gap:16px; margin-bottom:16px; }
+.grid-1-2 { display:grid; grid-template-columns:1fr 1.5fr; gap:16px; margin-bottom:16px; }
+.grid-c3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:16px; }
+
+.card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); padding:14px; }
+.card-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.badge { font-size:0.7rem; color:var(--text2); background:#ffffff10; padding:2px 8px; border-radius:10px; }
+
+/* Tables */
+.stock-table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+.stock-table th { color:var(--text2); font-weight:500; text-align:left; padding:4px 6px; border-bottom:1px solid var(--border); font-size:0.72rem; }
+.stock-table td { padding:4px 6px; border-bottom:1px solid #ffffff06; cursor:pointer; }
+.stock-table tr:hover td { background:#ffffff08; }
+.stock-table .code { color:var(--text2); font-size:0.75rem; }
+
+/* Colors */
+.up { color:var(--red); } .down { color:var(--green); }
+.price { font-weight:600; }
+
+/* Market overview */
+.market-stats { display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+.stat-item { text-align:center; flex:1; min-width:80px; }
+.stat-item .val { font-size:1.3rem; font-weight:700; }
+.stat-item .lbl { font-size:0.7rem; color:var(--text2); }
+.stat-item .sub { font-size:0.68rem; color:var(--text2); margin-top:2px; }
+
+/* Commodity cards */
+.comm-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.comm-card { background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:10px; text-align:center; }
+.comm-card .label { font-size:0.7rem; color:var(--text2); }
+.comm-card .price { font-size:1.1rem; font-weight:700; margin:2px 0; }
+.comm-card .change { font-size:0.8rem; }
+
+/* Countdown (small) */
+.countdown-sm { text-align:center; padding:10px 0 4px; }
+.countdown-sm .days { font-size:1.6rem; font-weight:700; }
+.countdown-sm .days.warn { color:var(--red); }
+.countdown-sm .label { font-size:0.7rem; color:var(--text2); }
+.cal-btn { font-size:0.65rem; color:var(--blue); cursor:pointer; margin-top:4px; }
+.cal-btn:hover { text-decoration:underline; }
+
+/* OMO & Margin */
+.fund-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
+.fund-item { text-align:center; background:var(--bg); border-radius:6px; padding:10px; }
+.fund-item .val { font-size:1.2rem; font-weight:700; }
+.fund-item .lbl { font-size:0.7rem; color:var(--text2); }
+
+/* Limit-up height */
+.limit-cards { display:flex; gap:12px; }
+.limit-card { flex:1; text-align:center; background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:12px; }
+.limit-card .n { font-size:2.2rem; font-weight:800; }
+.limit-card .u { font-size:0.7rem; color:var(--text2); margin-top:2px; }
+.limit-card .stock { font-size:0.8rem; margin-top:4px; }
+.limit-card .stock .code { font-size:0.68rem; color:var(--text2); }
+
+/* Sector flow split */
+.flow-split { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.flow-split h3 { font-size:0.75rem; text-align:center; margin-bottom:6px; }
+.flow-split .in h3 { color:var(--red); }
+.flow-split .out h3 { color:var(--green); }
+
+/* Calendar Modal */
+.modal { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center; }
+.modal.show { display:flex; }
+.modal-inner { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); padding:20px; max-width:380px; width:90%; }
+.modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.modal-header h2 { font-size:1rem; }
+.modal-close { background:none; border:none; color:var(--text); font-size:1.4rem; cursor:pointer; padding:0 4px; line-height:1; }
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; text-align:center; }
+.cal-grid .day-hdr { font-size:0.65rem; color:var(--text2); padding:4px 0; }
+.cal-grid .day { font-size:0.78rem; padding:6px 0; border-radius:50%; cursor:default; position:relative; }
+.cal-grid .day.delivery { background:var(--blue); color:#fff; border-radius:50%; font-weight:700; }
+.cal-grid .day.today { border:2px solid var(--red); border-radius:50%; }
+.cal-grid .day.empty { visibility:hidden; }
+.cal-nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.cal-nav button { background:var(--border); border:none; color:var(--text); padding:4px 12px; border-radius:4px; cursor:pointer; font-size:0.8rem; }
+.cal-nav button:hover { background:var(--text2); }
+.cal-nav .cur { font-size:0.9rem; font-weight:600; }
+
+/* ETF bar */
+.etf-row { display:flex; align-items:center; gap:8px; margin-bottom:6px; font-size:0.82rem; }
+.etf-row .name { width:100px; text-align:right; flex-shrink:0; }
+.etf-row .bar-wrap { flex:1; height:20px; background:#ffffff08; border-radius:4px; overflow:hidden; position:relative; }
+.etf-row .bar { height:100%; border-radius:4px; display:flex; align-items:center; padding:0 6px; font-size:0.7rem; font-weight:600; white-space:nowrap; }
+.bar-in { background:var(--red); } .bar-out { background:var(--green); }
+.etf-row .val { width:75px; text-align:right; font-size:0.75rem; flex-shrink:0; }
+
+/* Misc */
+.empty { text-align:center; color:var(--text2); padding:20px; font-size:0.85rem; }
+.loading { text-align:center; color:var(--text2); padding:20px; animation:pulse 1.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
+.tip { font-size:0.68rem; color:var(--text2); margin-top:4px; font-style:italic; }
+.clickable { cursor:pointer; }
+.clickable:hover { opacity:0.8; }
+
+@media (max-width:900px) {
+  .grid-3, .grid-2, .grid-1-2, .grid-c3 { grid-template-columns:1fr; }
+  .limit-cards, .flow-split { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>📊 股市仪表盘
+      <span id="dataDateTag" class="tag-nontrading" style="display:none;">非交易日</span>
+    </h1>
+  </div>
+  <div class="info" id="updateTime">加载中...</div>
+</div>
+
+<!-- Row 0: Market Overview -->
+<div class="card" style="margin-bottom:16px;">
+  <div class="card-header"><h2>📈 市场总览</h2><span class="badge">A股实时汇总</span></div>
+  <div id="marketOverview"><div class="loading">加载中...</div></div>
+</div>
+
+<!-- Row 1: Commodities (左) | ETF (中) | Northbound (右) -->
+<div class="grid-3">
+  <!-- Left: Commodities + Countdown -->
+  <div>
+    <div class="card">
+      <div class="card-header"><h2>🛢️ 大宗商品</h2><span class="badge">主力期货</span></div>
+      <div id="commoditiesContent"><div class="loading">加载中...</div></div>
+      <div class="tip">数据源：新浪财经 · 延迟10-15秒</div>
+    </div>
+    <!-- 交割日倒计时（小小的） -->
+    <div class="card" style="margin-top:10px;">
+      <div class="countdown-sm">
+        <div class="days" id="countdownDays">...</div>
+        <div class="label">距下次交割 <span id="nextDeliveryDate"></span></div>
+        <div class="cal-btn" onclick="openCalendar()">📅 查看日历</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Center: ETF Primary Market -->
+  <div class="card">
+    <div class="card-header"><h2>💰 ETF 一级市场</h2><span class="badge">总市值变化(亿) · 红入绿出</span></div>
+    <div id="etfContent"><div class="loading">加载中...</div></div>
+    <div class="tip">正=总市值增加(申购) · 负=总市值减少(赎回)</div>
+  </div>
+
+  <!-- Right: 主力资金净买入 -->
+  <div class="card">
+    <div class="card-header"><h2>🔥 主力资金净买入 Top 5</h2><span class="badge">市值>800亿</span></div>
+    <div id="northboundContent"><div class="loading">加载中...</div></div>
+    <div class="tip">北向实时净买入2024年8月起官方已停发，此为主力资金(大单)口径</div>
+  </div>
+</div>
+
+<!-- Row 2: OMO + Margin -->
+<div class="grid-2">
+  <div class="card">
+    <div class="card-header"><h2>🏦 央行公开市场操作</h2><span class="badge" id="omoDateBadge">逆回购</span></div>
+    <div id="omoContent"><div class="loading">加载中...</div></div>
+    <div class="tip">正数=净投放(放水) · 负数=净回笼(收水)</div>
+  </div>
+  <div class="card">
+    <div class="card-header"><h2>📊 两融余额</h2><span class="badge">融资融券</span></div>
+    <div id="marginContent"><div class="loading">加载中...</div></div>
+  </div>
+</div>
+
+<!-- Row 3: Sector Flow (左) | Breakout (右) — 互换位置 -->
+<div class="grid-1-2">
+  <!-- Left: Sector Flow -->
+  <div class="card">
+    <div class="card-header"><h2>🔥 板块表现</h2><span class="badge" id="sectorFlowBadge">申万一级行业 · 领涨/领跌 Top5</span></div>
+    <div id="sectorFlowContent"><div class="loading">加载中...</div></div>
+  </div>
+
+  <!-- Right: Breakout Stocks -->
+  <div class="card">
+    <div class="card-header">
+      <h2>📈 突破压力区 Top 20</h2>
+      <span class="badge">距250日高 ±5%</span>
+    </div>
+    <div id="breakoutContent"><div class="loading">加载中...</div></div>
+  </div>
+</div>
+
+<!-- Row 4: Limit-up Height | 10-day Gainers | Chip Concentration -->
+<div class="grid-c3">
+  <div class="card">
+    <div class="card-header"><h2>🎯 连板高度</h2></div>
+    <div id="limitUpContent"><div class="loading">加载中...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><h2>🚀 十日涨幅 Top 10</h2><span class="badge">今日涨跌</span></div>
+    <div id="topGainersContent"><div class="loading">加载中...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><h2>🎯 底部筹码集中</h2><span class="badge">90%筹码≤5%区间 · >200亿</span></div>
+    <div id="chipConcContent"><div class="loading">加载中...</div></div>
+  </div>
+</div>
+
+<!-- Row 5: Hotmoney (游资龙虎榜) -->
+<div class="card" style="margin-bottom:16px;">
+  <div class="card-header"><h2>🐉 游资龙虎榜</h2><span class="badge">hhxg.top 盘后数据</span></div>
+  <div id="hotmoneyContent"><div class="loading">加载中...</div></div>
+  <div class="tip">数据盘后约20:00更新 · 展示最近上榜个股</div>
+</div>
+
+<!-- Calendar Modal -->
+<div class="modal" id="calendarModal">
+  <div class="modal-inner">
+    <div class="modal-header">
+      <h2>📅 股指期货交割日</h2>
+      <button class="modal-close" onclick="closeCalendar()">✕</button>
+    </div>
+    <div class="cal-nav">
+      <button onclick="navCal(-1)">◀</button>
+      <span class="cur" id="calTitle"></span>
+      <button onclick="navCal(1)">▶</button>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="tip" style="text-align:center;margin-top:8px;">
+      <span style="color:var(--blue);">●</span> 交割日
+      <span style="color:var(--red);margin-left:8px;">◯</span> 今天
+    </div>
+  </div>
+</div>
+
+<script>
+// ============= DATA LOADING =============
+let DASHBOARD_DATA = {};
+
+async function loadData() {
+  try {
+    const resp = await fetch('data.json?t=' + Date.now());
+    DASHBOARD_DATA = await resp.json();
+  } catch(e) {
+    console.error('Failed to load data:', e);
+  }
+  renderAll();
+}
+
+function renderAll() {
+  renderHeader();
+  renderMarketOverview();
+  renderCommodities();
+  renderETFs();
+  renderNorthbound();
+  renderOMO();
+  renderMargin();
+  renderSectorFlow();
+  renderBreakout();
+  renderLimitUp();
+  renderTopGainers();
+  renderChipConc();
+  renderHotmoney();
+  renderCountdown();
+}
+
+// ============= HEADER =============
+function renderHeader() {
+  const dd = DASHBOARD_DATA.data_date || '';
+  const up = formatTime(DASHBOARD_DATA.updated_at || '');
+  let wd = '';
+  if (dd) {
+    try { wd = '周' + '日一二三四五六'[new Date(dd + 'T00:00:00').getDay()]; } catch(e) {}
+  }
+  if (DASHBOARD_DATA.is_trading_day === false) {
+    const tag = document.getElementById('dataDateTag');
+    tag.style.display = 'inline';
+    tag.textContent = '非交易日 · 沿用最近交易日数据';
+    document.getElementById('updateTime').textContent =
+      '📅 数据日期 ' + dd + (wd ? ' ' + wd : '') + ' 收盘 · 页面更新于 ' + up;
+  } else {
+    document.getElementById('updateTime').textContent =
+      '📅 数据日期 ' + dd + (wd ? ' ' + wd : '') + ' · 更新于 ' + up;
+  }
+}
+
+function formatTime(iso) {
+  if (!iso) return '--';
+  return iso.replace('T', ' ').substring(0, 16);
+}
+
+// ============= MARKET OVERVIEW =============
+function renderMarketOverview() {
+  const m = DASHBOARD_DATA.market_overview || {};
+  const ct = document.getElementById('marketOverview');
+  const turnover = m.total_turnover ? (m.total_turnover / 10000).toFixed(2) + '万亿' : '--';
+
+  // 前一日对比
+  let prevHtml = '';
+  if (m.prev_turnover != null) {
+    const diff = m.total_turnover - m.prev_turnover;
+    const sign = diff >= 0 ? '+' : '';
+    const cls = diff >= 0 ? 'up' : 'down';
+    prevHtml = '<div class="sub ' + cls + '">较前日 ' + sign + (diff).toFixed(0) + '亿</div>';
+  } else {
+    prevHtml = '<div class="sub" style="color:var(--text2);">前日数据积累中</div>';
+  }
+  // MA5对比（需要4个历史交易日才可靠，未就绪时不展示）
+  let ma5Html = '';
+  if (m.ma5_ready && m.ma5_turnover != null) {
+    const diff = m.total_turnover - m.ma5_turnover;
+    const sign = diff >= 0 ? '+' : '';
+    const cls = diff >= 0 ? 'up' : 'down';
+    ma5Html = '<div class="sub ' + cls + '">较MA5 ' + sign + (diff).toFixed(0) + '亿</div>';
+  } else {
+    ma5Html = '<div class="sub" style="color:var(--text2);">MA5积累中（需5个交易日）</div>';
+  }
+
+  ct.innerHTML = '<div class="market-stats">' +
+    '<div class="stat-item"><div class="val">' + turnover + '</div><div class="lbl">两市成交额</div>' + prevHtml + ma5Html + '</div>' +
+    '<div class="stat-item"><div class="val up">' + (m.advancing ?? '--') + '</div><div class="lbl">上涨家数</div></div>' +
+    '<div class="stat-item"><div class="val down">' + (m.declining ?? '--') + '</div><div class="lbl">下跌家数</div></div>' +
+    '<div class="stat-item"><div class="val up">' + (m.limit_up ?? '--') + '</div><div class="lbl">涨停</div></div>' +
+    '<div class="stat-item"><div class="val down">' + (m.limit_down ?? '--') + '</div><div class="lbl">跌停</div></div>' +
+    '</div>';
+}
+
+// ============= COMMODITIES =============
+function renderCommodities() {
+  const ct = document.getElementById('commoditiesContent');
+  const c = DASHBOARD_DATA.commodities || {};
+  // 按顺序：布油、上海原油、纽约金、纽约银
+  const order = ['brent', 'sc', 'gold_comex', 'silver_comex'];
+  const items = order.map(k => c[k]).filter(Boolean);
+  if (!items.length) { ct.innerHTML = '<div class="empty">暂无商品数据</div>'; return; }
+  let html = '<div class="comm-grid">';
+  items.forEach(v => {
+    const cls = (v.change_pct||0) >= 0 ? 'up' : 'down';
+    const sign = (v.change_pct||0) >= 0 ? '+' : '';
+    html += '<div class="comm-card">' +
+      '<div class="label">' + esc(v.name) + '</div>' +
+      '<div class="price">' + fmtN(v.price) + '</div>' +
+      '<div class="change ' + cls + '">' + sign + fmtP(v.change_pct) + '%</div>' +
+      '<div style="font-size:0.65rem;color:var(--text2)">高' + fmtN(v.high) + ' 低' + fmtN(v.low) + '</div>' +
+      '</div>';
+  });
+  ct.innerHTML = html + '</div>';
+}
+
+// ============= ETF (一级市场申赎 — 总市值变化) =============
+function renderETFs() {
+  const ct = document.getElementById('etfContent');
+  const etfs = DASHBOARD_DATA.etfs || [];
+  if (!etfs.length) { ct.innerHTML = '<div class="empty">暂无ETF数据</div>'; return; }
+
+  const hasFlow = etfs.some(e => e.mkt_cap_change_1d != null && Math.abs(e.mkt_cap_change_1d) > 0.01);
+  const maxAbs = hasFlow
+    ? Math.max(...etfs.map(e => Math.abs(e.mkt_cap_change_1d || 0)), 0.1)
+    : 1;
+
+  let html = '';
+  if (!hasFlow) {
+    html += '<div class="tip" style="margin-bottom:8px;">⏳ 市值变化数据积累中（需2次运行）</div>';
+  }
+
+  etfs.forEach(e => {
+    const chg1d = e.mkt_cap_change_1d;    // 1日总市值变化(亿)
+    const chg5d = e.mkt_cap_change_5d;    // 5日总市值变化(亿)
+    const mktcap = e.mkt_cap_yi || 0;     // 当前总市值(亿)
+    const chg = e.change_pct || 0;        // 涨跌幅%
+
+    if (hasFlow && chg1d != null) {
+      const isIn = chg1d >= 0;
+      const width = Math.max(Math.abs(chg1d) / maxAbs * 100, 3);
+      const label = (Math.abs(chg1d) > 0.01) ? (chg1d > 0 ? '+' : '') + chg1d.toFixed(1) + '亿' : '';
+      html += '<div class="etf-row">' +
+        '<span class="name" title="' + e.code + '">' + esc(e.name) + '</span>' +
+        '<div class="bar-wrap">' +
+          '<div class="bar ' + (isIn ? 'bar-in' : 'bar-out') + '" style="width:' + width.toFixed(1) + '%">' +
+            (label || '') +
+          '</div>' +
+        '</div>' +
+        '<span class="val ' + (chg >= 0 ? 'up' : 'down') + '">' + (chg >= 0 ? '+' : '') + fmtP(chg) + '%</span>' +
+        '</div>';
+    } else {
+      html += '<div class="etf-row">' +
+        '<span class="name" title="' + e.code + '">' + esc(e.name) + '</span>' +
+        '<div class="bar-wrap">' +
+          '<div class="bar ' + (chg >= 0 ? 'bar-in' : 'bar-out') + '" style="width:' + Math.max(Math.abs(chg) * 5, 3).toFixed(1) + '%">' +
+            (mktcap > 0 ? mktcap.toFixed(0) + '亿' : '--') +
+          '</div>' +
+        '</div>' +
+        '<span class="val ' + (chg >= 0 ? 'up' : 'down') + '">' + (chg >= 0 ? '+' : '') + fmtP(chg) + '%</span>' +
+        '</div>';
+    }
+
+    // 5日市值变化
+    if (chg5d != null) {
+      const s = chg5d >= 0 ? '+' : '';
+      const c = chg5d >= 0 ? 'up' : 'down';
+      html += '<div class="etf-row" style="font-size:0.7rem;margin-bottom:4px;">' +
+        '<span class="name" style="color:var(--text2);">└ 5日市值变化</span>' +
+        '<span class="' + c + '" style="font-size:0.7rem;">' + s + chg5d.toFixed(1) + '亿</span>' +
+        '</div>';
+    }
+  });
+  ct.innerHTML = html;
+}
+
+// ============= NORTHBOUND =============
+function renderNorthbound() {
+  const ct = document.getElementById('northboundContent');
+  const data = DASHBOARD_DATA.northbound || [];
+  if (!data.length) { ct.innerHTML = '<div class="empty">暂无符合条件的主力资金数据<br><small>（市值>800亿且主力净买入为正）</small></div>'; return; }
+  let html = '<table class="stock-table"><thead><tr><th>#</th><th>代码</th><th>名称</th><th>价</th><th>涨跌</th><th>买入</th></tr></thead><tbody>';
+  data.forEach((s, i) => {
+    const cls = (s.change_pct||0) >= 0 ? 'up' : 'down';
+    const sign = (s.change_pct||0) >= 0 ? '+' : '';
+    html += '<tr onclick="window.open(\'https://quote.eastmoney.com/' + (s.code.startsWith('6')?'sh':'sz') + s.code + '.html\',\'_blank\')">';
+    html += '<td>' + (i+1) + '</td><td class="code">' + s.code + '</td><td>' + esc(s.name) + '</td>';
+    html += '<td class="price">' + fmtN(s.price) + '</td>';
+    html += '<td class="' + cls + '">' + sign + fmtP(s.change_pct) + '%</td>';
+    html += '<td class="up">' + (s.net_buy != null ? '+' + s.net_buy.toFixed(1) + '亿' : '--') + '</td></tr>';
+  });
+  ct.innerHTML = html + '</tbody></table>';
+}
+
+// ============= OMO =============
+function renderOMO() {
+  const ct = document.getElementById('omoContent');
+  const o = DASHBOARD_DATA.omo || {};
+  // 金额自适应单位：≥1000亿显示千亿，否则显示亿
+  const fmtAmt = (v) => {
+    if (v == null) return '--';
+    return Math.abs(v) >= 1000 ? (v / 1000).toFixed(2) + '千亿' : v.toFixed(0) + '亿';
+  };
+  const matured = fmtAmt(o.matured);
+  const newIssue = fmtAmt(o.new_issue);
+  const net = o.net != null ? o.net : 0;
+  const netCls = net >= 0 ? 'up' : 'down';
+  const netSign = net >= 0 ? '+' : '';
+
+  // 更新badge显示日期
+  const badge = document.getElementById('omoDateBadge');
+  if (o.trade_date) {
+    badge.textContent = '最近操作: ' + o.trade_date;
+  } else {
+    badge.textContent = '逆回购';
+  }
+
+  let html = '<div class="fund-grid">' +
+    '<div class="fund-item"><div class="val" style="color:var(--green);">' + matured + '</div><div class="lbl">到期（回笼）</div></div>' +
+    '<div class="fund-item"><div class="val" style="color:var(--red);">' + newIssue + '</div><div class="lbl">新投放</div></div>' +
+    '<div class="fund-item"><div class="val ' + netCls + '">' + netSign + fmtAmt(net) + '</div><div class="lbl">净投放</div></div>' +
+    '</div>';
+
+  if (o.matured == null && o.new_issue == null) {
+    html += '<div class="tip" style="margin-top:6px;">⚠️ 数据源暂不可用，将在下次更新时重试</div>';
+  }
+  ct.innerHTML = html;
+}
+
+// ============= MARGIN =============
+function renderMargin() {
+  const ct = document.getElementById('marginContent');
+  const m = DASHBOARD_DATA.margin || {};
+  if (m.balance == null && m.long_balance == null) {
+    ct.innerHTML = '<div class="empty">暂无两融数据</div>'; return;
+  }
+  const balCls = (m.balance_change||0) >= 0 ? 'up' : 'down';
+  const balSign = (m.balance_change||0) >= 0 ? '+' : '';
+
+  let html = '<div class="fund-grid">' +
+    '<div class="fund-item"><div class="val">' + (m.balance != null ? (m.balance / 10000).toFixed(2) + '万亿' : '--') + '</div><div class="lbl">两融余额</div><div class="sub ' + balCls + '" style="font-size:0.7rem;">' + balSign + (m.balance_change||0) + '亿</div></div>' +
+    '<div class="fund-item"><div class="val up">' + (m.long_balance != null ? (m.long_balance / 10000).toFixed(2) + '万亿' : '--') + '</div><div class="lbl">融资余额</div></div>' +
+    '<div class="fund-item"><div class="val down">' + (m.short_balance != null ? (m.short_balance / 10000).toFixed(2) + '万亿' : '--') + '</div><div class="lbl">融券余额</div></div>' +
+    '</div>';
+  if (m.trade_date) html += '<div class="tip">数据日期：' + m.trade_date + '</div>';
+  ct.innerHTML = html;
+}
+
+// ============= SECTOR FLOW / 申万行业 =============
+function renderSectorFlow() {
+  const ct = document.getElementById('sectorFlowContent');
+  const sf = DASHBOARD_DATA.sector_flow || {};
+  const inflow = sf.inflow_top5 || [];
+  const outflow = sf.outflow_top5 || [];
+  // 兼容旧数据：无source字段时按是否有net_flow推断
+  const isSw = sf.source ? sf.source === 'sw' : !inflow.some(s => s.net_flow != null);
+
+  // 更新badge
+  const badge = document.getElementById('sectorFlowBadge');
+  if (badge) badge.textContent = isSw ? '申万一级行业 · 领涨/领跌 Top5' : '行业资金流 · 净流入/流出 Top5（降级源）';
+
+  if (!inflow.length && !outflow.length) {
+    ct.innerHTML = '<div class="empty">暂无板块数据</div>'; return;
+  }
+
+  // 申万源：第四列显示指数点位；资金流源：显示净流入/流出
+  const lastHdr = isSw ? '指数' : '净额';
+  const fmtLast = (s, positive) => {
+    if (isSw) return '<td>' + (s.index_val != null ? s.index_val : '--') + '</td>';
+    const v = s.net_flow || 0;
+    return '<td class="' + (v >= 0 ? 'up' : 'down') + '">' + (v >= 0 ? '+' : '') + v.toFixed(1) + '亿</td>';
+  };
+
+  let html = '<div class="flow-split">';
+
+  // 领涨 / 净流入 Top5
+  html += '<div class="in"><h3>🔴 ' + (isSw ? '领涨' : '净流入') + ' Top 5</h3>';
+  if (inflow.length) {
+    html += '<table class="stock-table"><thead><tr><th>#</th><th>板块</th><th>涨跌</th><th>' + lastHdr + '</th></tr></thead><tbody>';
+    inflow.forEach((s, i) => {
+      const cls = (s.change_pct||0) >= 0 ? 'up' : 'down';
+      const sign = (s.change_pct||0) >= 0 ? '+' : '';
+      html += '<tr>';
+      html += '<td>' + (i+1) + '</td><td>' + esc(s.name) + '</td>';
+      html += '<td class="' + cls + '">' + sign + fmtP(s.change_pct) + '%</td>';
+      html += fmtLast(s, true) + '</tr>';
+    });
+    html += '</tbody></table>';
+  } else { html += '<div class="empty">无' + (isSw ? '上涨' : '净流入') + '板块</div>'; }
+  html += '</div>';
+
+  // 领跌 / 净流出 Top5
+  html += '<div class="out"><h3>🟢 ' + (isSw ? '领跌' : '净流出') + ' Top 5</h3>';
+  if (outflow.length) {
+    html += '<table class="stock-table"><thead><tr><th>#</th><th>板块</th><th>涨跌</th><th>' + lastHdr + '</th></tr></thead><tbody>';
+    outflow.forEach((s, i) => {
+      const cls = (s.change_pct||0) >= 0 ? 'up' : 'down';
+      const sign = (s.change_pct||0) >= 0 ? '+' : '';
+      html += '<tr>';
+      html += '<td>' + (i+1) + '</td><td>' + esc(s.name) + '</td>';
+      html += '<td class="' + cls + '">' + sign + fmtP(s.change_pct) + '%</td>';
+      html += fmtLast(s, false) + '</tr>';
+    });
+    html += '</tbody></table>';
+  } else { html += '<div class="empty">无' + (isSw ? '下跌' : '净流出') + '板块</div>'; }
+  html += '</div></div>';
+
+  ct.innerHTML = html;
+}
+
+// ============= BREAKOUT STOCKS (250日) =============
+function renderBreakout() {
+  const ct = document.getElementById('breakoutContent');
+  const data = DASHBOARD_DATA.breakout_stocks || [];
+  if (!data.length) { ct.innerHTML = '<div class="empty">暂无符合条件的个股<br><small>（距250日高±5%范围内）</small></div>'; return; }
+  let html = '<table class="stock-table"><thead><tr><th>#</th><th>代码</th><th>名称</th><th>现价</th><th>涨跌</th><th>距高</th><th>成交额</th></tr></thead><tbody>';
+  data.forEach(s => {
+    const chgCls = (s.change_pct||0) >= 0 ? 'up' : 'down';
+    const pctCls = (s.pct_from_high||0) >= 0 ? 'up' : 'down';
+    const chgSign = (s.change_pct||0) >= 0 ? '+' : '';
+    const pctSign = (s.pct_from_high||0) >= 0 ? '+' : '';
+    const turnoverYi = (s.turnover || 0) / 1e8;
+    html += '<tr onclick="window.open(\'https://quote.eastmoney.com/' + (s.code.startsWith('6')?'sh':'sz') + s.code + '.html\',\'_blank\')">';
+    html += '<td>' + s.rank + '</td><td class="code">' + s.code + '</td><td>' + esc(s.name) + '</td>';
+    html += '<td class="price">' + fmtN(s.price) + '</td>';
+    html += '<td class="' + chgCls + '">' + chgSign + fmtP(s.change_pct) + '%</td>';
+    html += '<td class="' + pctCls + '">' + pctSign + fmtP(s.pct_from_high) + '%</td>';
+    html += '<td>' + turnoverYi.toFixed(1) + '亿</td></tr>';
+  });
+  ct.innerHTML = html + '</tbody></table>';
+}
+
+// ============= LIMIT-UP HEIGHT =============
+function renderLimitUp() {
+  const ct = document.getElementById('limitUpContent');
+  const lu = DASHBOARD_DATA.limit_up_height || {};
+  const mb = lu.main_board || {};
+  const cs = lu.chinext_star || {};
+
+  let html = '<div class="limit-cards">';
+  // 主板
+  const mbClick = mb.code ? ' onclick="window.open(\'https://quote.eastmoney.com/' + (mb.code.startsWith('6')?'sh':'sz') + mb.code + '.html\',\'_blank\')"' : '';
+  html += '<div class="limit-card' + (mb.code ? ' clickable' : '') + '"' + mbClick + '>' +
+    '<div class="u">主板最高</div>' +
+    '<div class="n up">' + (mb.days || 0) + '<span style="font-size:1rem;">板</span></div>' +
+    (mb.name ? '<div class="stock">' + esc(mb.name) + '<br><span class="code">' + (mb.code||'') + '</span></div>' : '<div class="stock" style="color:var(--text2)">--</div>') +
+    '</div>';
+  // 创业板+科创板
+  const csClick = cs.code ? ' onclick="window.open(\'https://quote.eastmoney.com/' + (cs.code.startsWith('6')?'sh':'sz') + cs.code + '.html\',\'_blank\')"' : '';
+  html += '<div class="limit-card' + (cs.code ? ' clickable' : '') + '"' + csClick + '>' +
+    '<div class="u">创业板+科创板</div>' +
+    '<div class="n up">' + (cs.days || 0) + '<span style="font-size:1rem;">板</span></div>' +
+    (cs.name ? '<div class="stock">' + esc(cs.name) + '<br><span class="code">' + (cs.code||'') + '</span></div>' : '<div class="stock" style="color:var(--text2)">--</div>') +
+    '</div>';
+  html += '</div>';
+
+  ct.innerHTML = html;
+}
+
+// ============= TOP 10-DAY GAINERS =============
+function renderTopGainers() {
+  const ct = document.getElementById('topGainersContent');
+  const data = DASHBOARD_DATA.top_10day_gainers || [];
+  if (!data.length) { ct.innerHTML = '<div class="empty">暂无数据<br><small>（非交易日或无涨幅数据）</small></div>'; return; }
+  let html = '<table class="stock-table"><thead><tr><th>#</th><th>代码</th><th>10日涨幅</th><th>今日</th></tr></thead><tbody>';
+  data.forEach((s, i) => {
+    const cls10 = (s.ret_10d||0) >= 0 ? 'up' : 'down';
+    const clsT = (s.today_chg||0) >= 0 ? 'up' : 'down';
+    html += '<tr onclick="window.open(\'https://quote.eastmoney.com/' + (s.code.startsWith('6')?'sh':'sz') + s.code + '.html\',\'_blank\')">';
+    html += '<td>' + (i+1) + '</td><td class="code">' + s.code + ' <span style="color:var(--text);">' + esc(s.name) + '</span></td>';
+    html += '<td class="' + cls10 + '">' + (s.ret_10d>=0?'+':'') + fmtP(s.ret_10d) + '%</td>';
+    html += '<td class="' + clsT + '">' + (s.today_chg>=0?'+':'') + fmtP(s.today_chg) + '%</td></tr>';
+  });
+  ct.innerHTML = html + '</tbody></table>';
+}
+
+// ============= CHIP CONCENTRATION =============
+function renderChipConc() {
+  const ct = document.getElementById('chipConcContent');
+  const data = DASHBOARD_DATA.chip_concentration || [];
+  if (!data.length) { ct.innerHTML = '<div class="empty">暂无符合条件个股<br><small>（90%筹码≤5%区间 + 市值>200亿）</small></div>'; return; }
+  let html = '<table class="stock-table"><thead><tr><th>代码</th><th>名称</th><th>市值</th><th>集中度</th><th>今日</th></tr></thead><tbody>';
+  data.forEach(s => {
+    const cls = (s.change_pct||0) >= 0 ? 'up' : 'down';
+    html += '<tr onclick="window.open(\'https://quote.eastmoney.com/' + (s.code.startsWith('6')?'sh':'sz') + s.code + '.html\',\'_blank\')">';
+    html += '<td class="code">' + s.code + '</td><td>' + esc(s.name) + '</td>';
+    html += '<td>' + (s.market_cap||0) + '亿</td>';
+    html += '<td>' + (s.concentration_90 != null ? s.concentration_90 + '%' : '--') + '</td>';
+    html += '<td class="' + cls + '">' + (s.change_pct>=0?'+':'') + fmtP(s.change_pct) + '%</td></tr>';
+  });
+  ct.innerHTML = html + '</tbody></table>';
+}
+
+// ============= HOTMONEY (游资龙虎榜) =============
+function renderHotmoney() {
+  const ct = document.getElementById('hotmoneyContent');
+  const hm = DASHBOARD_DATA.hotmoney || {};
+  const entries = hm.entries || [];
+  const seats = hm.seats || [];
+  const totalNet = hm.total_net_yi || 0;
+
+  if (!entries.length && !seats.length) {
+    ct.innerHTML = '<div class="empty">暂无龙虎榜数据<br><small>（盘后约20:00更新）</small></div>'; return;
+  }
+
+  let html = '';
+  // 净买入排行
+  if (entries.length) {
+    html += '<div style="margin-bottom:8px;"><span style="font-size:0.75rem;color:var(--text2);">总净买 <b style="color:var(--red);">' + totalNet.toFixed(1) + '亿</b></span></div>';
+    html += '<table class="stock-table"><thead><tr><th>#</th><th>名称</th><th>净买(亿)</th><th>占比</th><th>席位</th></tr></thead><tbody>';
+    entries.forEach((s, i) => {
+      html += '<tr><td>' + (i+1) + '</td><td>' + esc(s.name) + '</td>';
+      html += '<td class="' + (s.net_buy > 0 ? 'up' : 'down') + '">' + (s.net_buy > 0 ? '+' : '') + (s.net_buy||0).toFixed(2) + '</td>';
+      html += '<td>' + (s.ratio_pct||0).toFixed(1) + '%</td>';
+      html += '<td style="font-size:0.68rem;color:var(--text2);">' + (s.seats||[]).join(', ') + '</td></tr>';
+    });
+    html += '</tbody></table>';
+  }
+
+  // 席位动向
+  if (seats.length) {
+    html += '<div style="margin:8px 0;"><span style="font-size:0.72rem;color:var(--text2);">知名席位动向</span></div>';
+    html += '<div style="display:flex;flex-wrap:wrap;gap:6px;">';
+    seats.forEach(seat => {
+      const buys = (seat.stocks||[]).filter(s => s.net_yi > 0);
+      const sells = (seat.stocks||[]).filter(s => s.net_yi < 0);
+      html += '<div style="background:var(--bg);border-radius:6px;padding:6px 8px;font-size:0.7rem;min-width:100px;">' +
+        '<div style="font-weight:600;">' + esc(seat.name) + '</div>' +
+        (buys.length ? '<div style="color:var(--red);">买: ' + buys.map(s => s.name).join(' ') + '</div>' : '') +
+        (sells.length ? '<div style="color:var(--green);">卖: ' + sells.map(s => s.name).join(' ') + '</div>' : '') +
+        '</div>';
+    });
+    html += '</div>';
+  }
+
+  ct.innerHTML = html;
+}
+
+// ============= COUNTDOWN + CALENDAR =============
+function renderCountdown() {
+  const cd = DASHBOARD_DATA.delivery_countdown || {};
+  const el = document.getElementById('countdownDays');
+  if (cd.days_left == null) { el.textContent = '--'; return; }
+  el.textContent = cd.days_left + ' 天';
+  if (cd.days_left <= 3) el.classList.add('warn');
+  document.getElementById('nextDeliveryDate').textContent = cd.next_date || '';
+}
+
+// ============= CALENDAR MODAL =============
+let calYear, calMonth;
+
+function openCalendar() {
+  const cd = DASHBOARD_DATA.delivery_countdown || {};
+  const nextDate = cd.next_date || '';
+  // 默认打开下次交割日所在月份
+  if (nextDate) {
+    calYear = parseInt(nextDate.slice(0,4));
+    calMonth = parseInt(nextDate.slice(5,7)) - 1;  // 0-based
+  } else {
+    const now = new Date();
+    calYear = now.getFullYear();
+    calMonth = now.getMonth();
+  }
+  renderCalendar();
+  document.getElementById('calendarModal').classList.add('show');
+}
+
+function closeCalendar() {
+  document.getElementById('calendarModal').classList.remove('show');
+}
+
+function navCal(dir) {
+  calMonth += dir;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  renderCalendar();
+}
+
+function renderCalendar() {
+  const cd = DASHBOARD_DATA.delivery_countdown || {};
+  const deliverySet = new Set(cd.all_dates || []);
+  const today = cd.today || '';
+
+  document.getElementById('calTitle').textContent = calYear + '年 ' + (calMonth + 1) + '月';
+
+  // 生成日历网格
+  const firstDay = new Date(calYear, calMonth, 1).getDay(); // 0=Sun
+  const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+
+  let html = '';
+  // 星期头
+  const dayNames = ['日','一','二','三','四','五','六'];
+  dayNames.forEach(d => { html += '<div class="day-hdr">' + d + '</div>'; });
+
+  // 空白填充
+  for (let i = 0; i < firstDay; i++) {
+    html += '<div class="day empty"></div>';
+  }
+
+  // 日期
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dateStr = calYear + '-' + String(calMonth + 1).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+    let cls = 'day';
+    if (deliverySet.has(dateStr)) cls += ' delivery';
+    if (dateStr === today) cls += ' today';
+    html += '<div class="' + cls + '">' + d + '</div>';
+  }
+
+  document.getElementById('calGrid').innerHTML = html;
+}
+
+// Close modal on background click
+document.addEventListener('click', function(e) {
+  if (e.target.id === 'calendarModal') closeCalendar();
+});
+
+// ============= HELPERS =============
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function fmtN(v) { if (v == null) return '--'; return Number(v).toFixed(Number(v) < 10 ? 2 : Number(v) < 1000 ? 1 : 0); }
+function fmtP(v) { if (v == null) return '--'; return Number(v).toFixed(2); }
+
+// ============= INIT =============
+loadData();
+</script>
+</body>
+</html>
