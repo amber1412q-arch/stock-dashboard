@@ -1,680 +1,79 @@
-{
-  "updated_at": "2026-07-26T14:43:17+08:00",
-  "data_date": "2026-07-24",
-  "is_trading_day": false,
-  "market_overview": {
-    "total_turnover": 19444.73,
-    "prev_turnover": null,
-    "ma5_turnover": 19444.73,
-    "ma5_ready": false,
-    "advancing": 555,
-    "declining": 4940,
-    "limit_up": 53,
-    "limit_down": 52
-  },
-  "turnover_history": [
-    [
-      "2026-07-24",
-      19444.73
-    ]
-  ],
-  "commodities": {
-    "brent": {
-      "name": "布伦特原油",
-      "price": 92.95,
-      "pre_close": 92.78,
-      "change_pct": 0.19,
-      "high": 94.49,
-      "low": 90.32
-    },
-    "sc": {
-      "name": "上海原油SC",
-      "price": 585.6,
-      "pre_close": 580.0,
-      "change_pct": 0.97,
-      "high": 606.2,
-      "low": 580.5
-    },
-    "gold_comex": {
-      "name": "纽约金(COMEX)",
-      "price": 4058.95,
-      "pre_close": 4055.2,
-      "change_pct": 0.09,
-      "high": 4085.2,
-      "low": 4024.0
-    },
-    "silver_comex": {
-      "name": "纽约银(COMEX)",
-      "price": 58.57,
-      "pre_close": 58.49,
-      "change_pct": 0.14,
-      "high": 59.29,
-      "low": 57.36
-    }
-  },
-  "etfs": [
-    {
-      "code": "510300",
-      "name": "沪深300ETF",
-      "price": 4.701,
-      "change_pct": -1.8,
-      "mkt_cap_yi": 1146.13,
-      "mkt_cap_change_1d": null,
-      "mkt_cap_change_5d": null
-    },
-    {
-      "code": "510500",
-      "name": "中证500ETF",
-      "price": 7.545,
-      "change_pct": -2.48,
-      "mkt_cap_yi": 428.6,
-      "mkt_cap_change_1d": null,
-      "mkt_cap_change_5d": null
-    },
-    {
-      "code": "159915",
-      "name": "创业板ETF",
-      "price": 3.508,
-      "change_pct": -2.47,
-      "mkt_cap_yi": 583.01,
-      "mkt_cap_change_1d": null,
-      "mkt_cap_change_5d": null
-    },
-    {
-      "code": "588000",
-      "name": "科创50ETF",
-      "price": 1.885,
-      "change_pct": -0.16,
-      "mkt_cap_yi": 858.82,
-      "mkt_cap_change_1d": null,
-      "mkt_cap_change_5d": null
-    },
-    {
-      "code": "515080",
-      "name": "中证红利ETF",
-      "price": 1.531,
-      "change_pct": -1.54,
-      "mkt_cap_yi": 122.67,
-      "mkt_cap_change_1d": null,
-      "mkt_cap_change_5d": null
-    },
-    {
-      "code": "512000",
-      "name": "券商ETF",
-      "price": 0.526,
-      "change_pct": -2.41,
-      "mkt_cap_yi": 399.75,
-      "mkt_cap_change_1d": null,
-      "mkt_cap_change_5d": null
-    },
-    {
-      "code": "513180",
-      "name": "恒生科技ETF",
-      "price": 0.585,
-      "change_pct": -1.68,
-      "mkt_cap_yi": 408.49,
-      "mkt_cap_change_1d": null,
-      "mkt_cap_change_5d": null
-    }
-  ],
-  "northbound": [
-    {
-      "code": "002156",
-      "name": "通富微电",
-      "price": 76.64,
-      "change_pct": 9.77,
-      "market_cap": 1163.0,
-      "net_buy": 66.96
-    },
-    {
-      "code": "002371",
-      "name": "北方华创",
-      "price": 757.0,
-      "change_pct": 2.3,
-      "market_cap": 5489.1,
-      "net_buy": 11.19
-    },
-    {
-      "code": "300604",
-      "name": "长川科技",
-      "price": 303.5,
-      "change_pct": 4.21,
-      "market_cap": 1485.5,
-      "net_buy": 11.16
-    },
-    {
-      "code": "688012",
-      "name": "中微公司",
-      "price": 388.5,
-      "change_pct": 3.54,
-      "market_cap": 3660.4,
-      "net_buy": 10.61
-    },
-    {
-      "code": "600584",
-      "name": "长电科技",
-      "price": 82.9,
-      "change_pct": 2.59,
-      "market_cap": 1483.4,
-      "net_buy": 10.59
-    }
-  ],
-  "omo": {
-    "matured": 0,
-    "new_issue": 890.0,
-    "net": 890.0,
-    "trade_date": "2026-07-24"
-  },
-  "margin": {
-    "balance": 26911.5237,
-    "balance_change": -1766.02,
-    "long_balance": 26701.7943,
-    "short_balance": 214.4565,
-    "trade_date": "2026-07-23"
-  },
-  "sector_flow": {
-    "source": "sw",
-    "inflow_top5": [
-      {
-        "code": "801780",
-        "name": "银行",
-        "change_pct": 0.31,
-        "index_val": 3983.96
-      },
-      {
-        "code": "801080",
-        "name": "电子",
-        "change_pct": -0.76,
-        "index_val": 8737.16
-      },
-      {
-        "code": "801120",
-        "name": "食品饮料",
-        "change_pct": -1.01,
-        "index_val": 13757.19
-      },
-      {
-        "code": "801110",
-        "name": "家用电器",
-        "change_pct": -1.4,
-        "index_val": 8365.49
-      },
-      {
-        "code": "801130",
-        "name": "纺织服饰",
-        "change_pct": -1.41,
-        "index_val": 1390.54
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+    <title>Site not found &middot; GitHub Pages</title>
+    <style type="text/css" media="screen">
+      body {
+        background-color: #f1f1f1;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
-    ],
-    "outflow_top5": [
-      {
-        "code": "801050",
-        "name": "有色金属",
-        "change_pct": -4.71,
-        "index_val": 7620.54
-      },
-      {
-        "code": "801230",
-        "name": "综合",
-        "change_pct": -4.49,
-        "index_val": 3745.15
-      },
-      {
-        "code": "801980",
-        "name": "美容护理",
-        "change_pct": -3.83,
-        "index_val": 3295.73
-      },
-      {
-        "code": "801750",
-        "name": "计算机",
-        "change_pct": -3.66,
-        "index_val": 4189.82
-      },
-      {
-        "code": "801760",
-        "name": "传媒",
-        "change_pct": -3.55,
-        "index_val": 608.6
+
+      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+
+      a { color: #4183c4; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+
+      ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { display: table-cell; font-weight: bold; width: 1%; }
+
+      .logo { display: inline-block; margin-top: 35px; }
+      .logo-img-2x { display: none; }
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) {
+        .logo-img-1x { display: none; }
+        .logo-img-2x { display: inline-block; }
       }
-    ]
-  },
-  "breakout_stocks": [
-    {
-      "code": "603296",
-      "name": "华勤技术",
-      "price": 88.19,
-      "change_pct": -0.776328,
-      "turnover": 3776330700,
-      "high_d": 91.88,
-      "pct_from_high": -4.02,
-      "rank": 1
-    },
-    {
-      "code": "600900",
-      "name": "长江电力",
-      "price": 28.9,
-      "change_pct": -0.138217,
-      "turnover": 2952607900,
-      "high_d": 29.54,
-      "pct_from_high": -2.17,
-      "rank": 2
-    },
-    {
-      "code": "601398",
-      "name": "工商银行",
-      "price": 7.75,
-      "change_pct": 0.911458,
-      "turnover": 2849308900,
-      "high_d": 8.09,
-      "pct_from_high": -4.2,
-      "rank": 3
-    },
-    {
-      "code": "002415",
-      "name": "海康威视",
-      "price": 35.49,
-      "change_pct": -0.782779,
-      "turnover": 2760348500,
-      "high_d": 36.34,
-      "pct_from_high": -2.34,
-      "rank": 4
-    },
-    {
-      "code": "001258",
-      "name": "立新能源",
-      "price": 13.03,
-      "change_pct": 7.597027,
-      "turnover": 2713108800,
-      "high_d": 13.32,
-      "pct_from_high": -2.18,
-      "rank": 5
-    },
-    {
-      "code": "000333",
-      "name": "美的集团",
-      "price": 84.5,
-      "change_pct": -0.318509,
-      "turnover": 2014365100,
-      "high_d": 85.75,
-      "pct_from_high": -1.46,
-      "rank": 6
-    },
-    {
-      "code": "601988",
-      "name": "中国银行",
-      "price": 6.01,
-      "change_pct": 0.670017,
-      "turnover": 1539131100,
-      "high_d": 6.17,
-      "pct_from_high": -2.64,
-      "rank": 7
-    },
-    {
-      "code": "002142",
-      "name": "宁波银行",
-      "price": 32.01,
-      "change_pct": 0.502355,
-      "turnover": 1168088240,
-      "high_d": 32.98,
-      "pct_from_high": -2.94,
-      "rank": 8
-    },
-    {
-      "code": "601939",
-      "name": "建设银行",
-      "price": 10.26,
-      "change_pct": 0.195313,
-      "turnover": 813280420,
-      "high_d": 10.52,
-      "pct_from_high": -2.44,
-      "rank": 9
-    }
-  ],
-  "delivery_countdown": {
-    "next_date": "2026-08-21",
-    "days_left": 26,
-    "all_dates": [
-      "2026-01-16",
-      "2026-02-20",
-      "2026-03-20",
-      "2026-04-17",
-      "2026-05-15",
-      "2026-06-19",
-      "2026-07-17",
-      "2026-08-21",
-      "2026-09-18",
-      "2026-10-16",
-      "2026-11-20",
-      "2026-12-18"
-    ],
-    "today": "2026-07-26"
-  },
-  "limit_up_height": {
-    "main_board": {
-      "days": 4,
-      "code": "002879",
-      "name": "长缆科技",
-      "change_pct": 9.99
-    },
-    "chinext_star": {
-      "days": 3,
-      "code": "301234",
-      "name": "五洲医疗",
-      "change_pct": 20.0
-    }
-  },
-  "top_10day_gainers": [
-    {
-      "code": "001258",
-      "name": "立新能源",
-      "price": 13.03,
-      "today_chg": 7.6,
-      "ret_10d": 95.06
-    },
-    {
-      "code": "301234",
-      "name": "五洲医疗",
-      "price": 58.75,
-      "today_chg": 20.0,
-      "ret_10d": 75.43
-    },
-    {
-      "code": "600664",
-      "name": "哈药股份",
-      "price": 5.4,
-      "today_chg": -10.0,
-      "ret_10d": 60.24
-    },
-    {
-      "code": "603580",
-      "name": "艾艾精工",
-      "price": 46.3,
-      "today_chg": 10.0,
-      "ret_10d": 53.67
-    },
-    {
-      "code": "300534",
-      "name": "陇神戎发",
-      "price": 11.18,
-      "today_chg": -13.0,
-      "ret_10d": 49.07
-    },
-    {
-      "code": "003001",
-      "name": "中岩大地",
-      "price": 20.39,
-      "today_chg": 9.98,
-      "ret_10d": 43.49
-    },
-    {
-      "code": "600722",
-      "name": "金牛化工",
-      "price": 11.43,
-      "today_chg": 4.86,
-      "ret_10d": 42.16
-    },
-    {
-      "code": "002879",
-      "name": "长缆科技",
-      "price": 18.05,
-      "today_chg": 9.99,
-      "ret_10d": 37.79
-    },
-    {
-      "code": "300779",
-      "name": "惠城环保",
-      "price": 77.22,
-      "today_chg": 9.55,
-      "ret_10d": 36.67
-    },
-    {
-      "code": "600744",
-      "name": "华银电力",
-      "price": 7.53,
-      "today_chg": -4.44,
-      "ret_10d": 35.19
-    }
-  ],
-  "chip_concentration": [
-    {
-      "code": "000538",
-      "name": "云南白药",
-      "price": 51,
-      "change_pct": -1.353965,
-      "market_cap": 904.2,
-      "turnover_rate": 0.43,
-      "turnover": 3.92,
-      "concentration_90": 9.01,
-      "holder_date": "2026-03-31"
-    },
-    {
-      "code": "000021",
-      "name": "深科技",
-      "price": 41.99,
-      "change_pct": 7.418777,
-      "market_cap": 661.0,
-      "turnover_rate": 13.32,
-      "turnover": 85.93,
-      "concentration_90": 5.3,
-      "holder_date": "2026-06-10"
-    },
-    {
-      "code": "000703",
-      "name": "恒逸石化",
-      "price": 15.05,
-      "change_pct": -4.867257,
-      "market_cap": 572.3,
-      "turnover_rate": 2.9,
-      "turnover": 17.38,
-      "concentration_90": 10.75,
-      "holder_date": "2026-03-31"
-    },
-    {
-      "code": "000729",
-      "name": "燕京啤酒",
-      "price": 12.42,
-      "change_pct": -0.480769,
-      "market_cap": 311.7,
-      "turnover_rate": 0.86,
-      "turnover": 2.69,
-      "concentration_90": 10.18,
-      "holder_date": "2026-07-20"
-    },
-    {
-      "code": "000415",
-      "name": "渤海租赁",
-      "price": 4.12,
-      "change_pct": -2.830189,
-      "market_cap": 222.2,
-      "turnover_rate": 0.86,
-      "turnover": 1.92,
-      "concentration_90": 15.57,
-      "holder_date": "2026-03-31"
-    }
-  ],
-  "hotmoney": {
-    "date": "2026-07-24",
-    "total_net_yi": 8.14,
-    "entries": [
-      {
-        "name": "美利云",
-        "code": "",
-        "net_buy": 1.9,
-        "ratio_pct": 23.4,
-        "seats": [
-          "机构专用",
-          "深股通专用"
-        ]
-      },
-      {
-        "name": "利通电子",
-        "code": "",
-        "net_buy": 1.85,
-        "ratio_pct": 15.9,
-        "seats": []
-      },
-      {
-        "name": "孚日股份",
-        "code": "",
-        "net_buy": 1.73,
-        "ratio_pct": 54.2,
-        "seats": [
-          "温州帮",
-          "机构专用",
-          "量化打板"
-        ]
-      },
-      {
-        "name": "立新能源",
-        "code": "",
-        "net_buy": 1.41,
-        "ratio_pct": 38.9,
-        "seats": [
-          "机构专用",
-          "深股通专用"
-        ]
-      },
-      {
-        "name": "光力科技",
-        "code": "",
-        "net_buy": 1.25,
-        "ratio_pct": 29.4,
-        "seats": [
-          "温州帮",
-          "机构专用",
-          "量化打板"
-        ]
+
+      #suggestions {
+        margin-top: 35px;
+        color: #ccc;
       }
-    ],
-    "seats": [
-      {
-        "name": "炒股养家",
-        "stocks": [
-          {
-            "name": "闰土股份",
-            "net_yi": -0.08
-          }
-        ]
-      },
-      {
-        "name": "温州帮",
-        "stocks": [
-          {
-            "name": "光力科技",
-            "net_yi": 0.24
-          },
-          {
-            "name": "中光防雷",
-            "net_yi": 0.1
-          },
-          {
-            "name": "国新能源",
-            "net_yi": -0.08
-          },
-          {
-            "name": "华力创通",
-            "net_yi": -0.11
-          },
-          {
-            "name": "鑫宏业",
-            "net_yi": -0.16
-          }
-        ]
-      },
-      {
-        "name": "徐晓",
-        "stocks": [
-          {
-            "name": "深物业A",
-            "net_yi": -0.04
-          }
-        ]
-      },
-      {
-        "name": "欢乐海岸",
-        "stocks": [
-          {
-            "name": "*ST禾信",
-            "net_yi": -0.1
-          }
-        ]
-      },
-      {
-        "name": "机构专用",
-        "stocks": [
-          {
-            "name": "贤丰控股",
-            "net_yi": 1.17
-          },
-          {
-            "name": "红板科技",
-            "net_yi": 1.05
-          },
-          {
-            "name": "立新能源",
-            "net_yi": 0.87
-          },
-          {
-            "name": "美利云",
-            "net_yi": 0.76
-          },
-          {
-            "name": "鑫宏业",
-            "net_yi": 0.65
-          }
-        ]
-      },
-      {
-        "name": "量化打板",
-        "stocks": [
-          {
-            "name": "光力科技",
-            "net_yi": 1.06
-          },
-          {
-            "name": "中光防雷",
-            "net_yi": 0.49
-          },
-          {
-            "name": "中能电气",
-            "net_yi": 0.33
-          },
-          {
-            "name": "顺钠股份",
-            "net_yi": 0.31
-          },
-          {
-            "name": "汉缆股份",
-            "net_yi": 0.24
-          }
-        ]
-      },
-      {
-        "name": "深股通专用",
-        "stocks": [
-          {
-            "name": "美利云",
-            "net_yi": 1.3
-          },
-          {
-            "name": "孚日股份",
-            "net_yi": 1.08
-          },
-          {
-            "name": "合肥城建",
-            "net_yi": 0.65
-          },
-          {
-            "name": "立新能源",
-            "net_yi": 0.54
-          },
-          {
-            "name": "通源石油",
-            "net_yi": 0.48
-          }
-        ]
+      #suggestions a {
+        color: #666666;
+        font-weight: 200;
+        font-size: 14px;
+        margin: 0 10px;
       }
-    ]
-  }
-}
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>404</h1>
+      <p><strong>There isn't a GitHub Pages site here.</strong></p>
+
+      <p>
+        If you're trying to publish one,
+        <a href="https://help.github.com/pages/">read the full documentation</a>
+        to learn how to set up <strong>GitHub Pages</strong>
+        for your repository, organization, or user account.
+      </p>
+
+      <div id="suggestions">
+        <a href="https://githubstatus.com">GitHub Status</a> &mdash;
+        <a href="https://twitter.com/githubstatus">@githubstatus</a>
+      </div>
+
+      <a href="/" class="logo logo-img-1x">
+        <img width="32" height="32" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTZCRDY3REIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTZCRDY3RUIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdCQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjdDQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SM9MCAAAA+5JREFUeNrEV11Ik1EY3s4+ddOp29Q5b0opCgKFsoKoi5Kg6CIhuwi6zLJLoYLopq4qsKKgi4i6CYIoU/q5iDAKs6syoS76IRWtyJ+p7cdt7sf1PGOD+e0c3dygAx/67ZzzPM95/877GYdHRg3ZjMXFxepQKNS6sLCwJxqNNuFpiMfjVs4ZjUa/pmmjeD6VlJS8NpvNT4QQ7mxwjSsJiEQim/1+/9lgMHgIr5ohuxG1WCw9Vqv1clFR0dCqBODElV6v90ogEDjGdYbVjXhpaendioqK07CIR7ZAqE49PT09BPL2PMgTByQGsYiZlQD4uMXtdr+JxWINhgINYhGT2MsKgMrm2dnZXgRXhaHAg5jEJodUAHxux4LudHJE9RdEdA+i3Juz7bGHe4mhE9FNrgwBCLirMFV9Okh5eflFh8PR5nK5nDabrR2BNJlKO0T35+Li4n4+/J+/JQCxhmu5h3uJoXNHPbmWZAHMshWB8l5/ipqammaAf0zPDDx1ONV3vurdidqwAQL+pEc8sLcAe1CCvQ3YHxIW8Pl85xSWNC1hADDIv0rIE/o4J0k3kww4xSlwIhcq3EFFOm7KN/hUGOQkt0CFa5WpNJlMvxBEz/IVQAxg/ZRZl9wiHA63yDYieM7DnLP5CiAGsC7I5sgtYKJGWe2A8seFqgFJrJjEPY1Cn3pJ8/9W1e5VWsFDTEmFrBcoDhZJEQkXuhICMyKpjhahqN21hRYATKfUOlDmkygrR4o4C0VOLGJKrOITKB4jijzdXygBKixyC5TDQdnk/Pz8qRw6oOWGlsTKGOQW6OH6FBWsyePxdOXLTgxiyebILZCjz+GLgMIKnXNzc49YMlcRdHXcSwxFVgTInQhC9G33UhNoJLuqq6t345p9y3eUy8OTk5PjAHuI9uo4b07FBaOhsu0A4Unc+T1TU1Nj3KsSSE5yJ65jqF2DDd8QqWYmAZrIM2VlZTdnZmb6AbpdV9V6ec9znf5Q7HjYumdRE0JOp3MjitO4SFa+cZz8Umqe3TCbSLvdfkR/kWDdNQl5InuTcysOcpFT35ZrbBxx4p3JAHlZVVW1D/634VRt+FvLBgK/v5LV9WS+10xMTEwtRw7XvqOL+e2Q8V3AYIOIAXQ26/heWVnZCVfcyKHg2CBgTpmPmjYM8l24GyaUHyaIh7XwfR9ErE8qHoDfn2LTNAVC0HX6MFcBIP8Bi+6F6cdW/DICkANRfx99fEYFQ7Nph5i/uQiA214gno7K+guhaiKg9gC62+M8eR7XsBsYJ4ilam60Fb7r7uAj8wFyuwM1oIOWgfmDy6RXEEQzJMPe23DXrVS7rtyD3Df8z/FPgAEAzWU5Ku59ZAUAAAAASUVORK5CYII=">
+      </a>
+
+      <a href="/" class="logo logo-img-2x">
+        <img width="32" height="32" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQUM1QkUxRUI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQUM1QkUxRkI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdGQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjgwQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hfPRaQAAB6lJREFUeNrsW2mM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">
+      </a>
+    </div>
+  </body>
+</html>
