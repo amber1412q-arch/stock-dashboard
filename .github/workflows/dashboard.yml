@@ -2,11 +2,19 @@ name: 仪表盘数据更新
 
 on:
   schedule:
-    # 交易日每 10 分钟更新 (北京时间 9:00-15:50 / UTC 1:00-7:50)
+    # 盘中每 10 分钟更新 (北京时间 9:00-15:50 / UTC 1:00-7:50)
+    #   仅更新行情数据，跳过十日涨幅/突破榜全市场扫描
     - cron: '*/10 1-7 * * 1-5'
-    # 盘后更新一次确保收盘数据 (北京时间 16:00 / UTC 8:00)
+    # 收盘后完整更新 (北京时间 16:00 / UTC 8:00)
+    #   全量抓取，含十日涨幅和突破榜
     - cron: '0 8 * * 1-5'
   workflow_dispatch:  # 手动触发
+    inputs:
+      full_scan:
+        description: '完整扫描（含十日涨幅/突破榜）'
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write   # 允许 peaceiris/actions-gh-pages 推送 gh-pages 分支
@@ -18,7 +26,7 @@ concurrency:
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: 检出代码
@@ -72,7 +80,27 @@ jobs:
         continue-on-error: true
 
       - name: 抓取仪表盘数据
-        run: python scripts/fetch_dashboard_data.py
+        run: |
+          # 判断是否需要完整扫描：
+          # - 盘中定时触发 (UTC 1:00-7:50) → 跳过全市场扫描
+          # - 16:00 收盘触发 (UTC 8:00) → 完整抓取
+          # - 手动触发 → 根据输入决定
+          SKIP_FLAG=""
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            SCHEDULE_HOUR=$(date -u +%H)
+            if [ "$SCHEDULE_HOUR" -lt 8 ]; then
+              SKIP_FLAG="--skip-daily"
+              echo "🕐 盘中定时触发 (UTC $(date -u +%H:%M))，跳过全市场扫描"
+            else
+              echo "🔔 收盘后触发 (UTC $(date -u +%H:%M))，执行完整扫描"
+            fi
+          elif [ "${{ github.event.inputs.full_scan || 'true' }}" = "false" ]; then
+            SKIP_FLAG="--skip-daily"
+            echo "👤 手动触发，跳过全市场扫描"
+          else
+            echo "👤 手动触发，执行完整扫描"
+          fi
+          python scripts/fetch_dashboard_data.py $SKIP_FLAG
         env:
           FUYAO_KEY: ${{ secrets.FUYAO_KEY }}
         timeout-minutes: 15

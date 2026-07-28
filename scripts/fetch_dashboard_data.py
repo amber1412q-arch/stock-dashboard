@@ -1676,10 +1676,19 @@ def fetch_hotmoney():
 
 # ====== 主流程 ======
 def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(description="仪表盘数据抓取")
+    parser.add_argument("--skip-daily", action="store_true",
+                        help="盘中模式：跳过十日涨幅和突破榜的全市场扫描（收盘后运行再补）")
+    args = parser.parse_args()
+
     print("=" * 60)
     print(f"📊 仪表盘数据抓取 v4 — {datetime.now().isoformat()}")
     trading = is_trading_day()
     print(f"   交易日: {'是' if trading else '否'}")
+    if args.skip_daily:
+        print(f"   模式: 盘中（跳过十日涨幅/突破榜全市场扫描）")
     print("=" * 60)
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -1726,15 +1735,30 @@ def main():
     omo = fetch_omo()                      # 5
     margin = fetch_margin_balance()        # 6
     sector_flow = fetch_sector_flow()      # 7
-    breakout = fetch_breakout_stocks()     # 8
+
+    # 盘中模式：跳过全市场扫描步骤，沿用上次数据
+    prev_data = load_previous_data()
+    if args.skip_daily:
+        print("⏩ 盘中模式：跳过突破榜和十日涨幅全市场扫描")
+        breakout = (prev_data or {}).get('breakout_stocks', [])
+        top_gainers = (prev_data or {}).get('top_10day_gainers', [])
+        if not breakout:
+            print("   上次突破榜为空，补抓...")
+            breakout = fetch_breakout_stocks()
+        if not top_gainers:
+            print("   上次十日涨幅为空，补抓...")
+            top_gainers = fetch_top_10day_gainers()
+        print(f"   沿用: 突破榜{len(breakout)}只, 十日涨幅{len(top_gainers)}只")
+    else:
+        breakout = fetch_breakout_stocks()     # 8
+        top_gainers = fetch_top_10day_gainers() # 11
+
     countdown = calc_countdown()           # 9
     limit_up = fetch_limit_up_height()     # 10
-    top_gainers = fetch_top_10day_gainers() # 11
     chip_conc = fetch_chip_concentration()  # 12
     hotmoney = fetch_hotmoney()            # 13 游资龙虎榜
 
     # 构建 turnover_history（持久化最近5天成交额，用于下次MA5计算）
-    prev_data = load_previous_data()
     turnover_history = prev_data.get('turnover_history', []) if prev_data else []
     # 把当前日期和成交额插入最前面
     today_turnover = market['total_turnover']
