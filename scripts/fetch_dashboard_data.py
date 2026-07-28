@@ -1205,10 +1205,10 @@ def _gainers_via_fuyao():
     if not stocks:
         return []
 
-    # 按成交额排序，只取 Top600 拉 K 线（覆盖主要活跃股，从全市场 5000+ → 600）
+    # 按成交额排序，只取 Top1000 拉 K 线（覆盖主要活跃股，从全市场 5000+ → 1000）
     stocks.sort(key=lambda x: x.get('turnover', 0), reverse=True)
-    stocks = stocks[:600]
-    print(f"  [fuyao] 按成交额取 Top600 拉 K 线")
+    stocks = stocks[:1000]
+    print(f"  [fuyao] 按成交额取 Top1000 拉 K 线")
     now_ms = int(time.time() * 1000)
     start_ms = now_ms - 40 * 86400 * 1000
 
