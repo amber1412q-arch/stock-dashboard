@@ -592,7 +592,7 @@ def _main_force_via_sina():
             return None
 
     rows = []
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    with ThreadPoolExecutor(max_workers=12) as ex:
         futs = {ex.submit(flow, c): c for c in big}
         for fu in as_completed(futs):
             net = fu.result()
@@ -963,10 +963,10 @@ def fetch_breakout_stocks():
             break
         time.sleep(0.08)
 
-    # 按成交额排序取Top1000（平衡覆盖面 vs K线API耗时 ~1000×0.12s≈120s）
+    # 按成交额排序取Top600（平衡覆盖面 vs K线API耗时 ~600×0.15s≈90s）
     all_stocks.sort(key=lambda x: x['turnover'], reverse=True)
-    pool = all_stocks[:1000]
-    print(f"  全市场 {len(all_stocks)} 只(成交额>0.5亿), 取Top1000")
+    pool = all_stocks[:600]
+    print(f"  全市场 {len(all_stocks)} 只(成交额>0.5亿), 取Top600")
 
     # 2. fuyao历史K线并发查250日高
     now_ms = int(time.time() * 1000)
@@ -1021,7 +1021,7 @@ def fetch_breakout_stocks():
 
     breakout = []
     done = 0
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    with ThreadPoolExecutor(max_workers=12) as ex:
         futs = {ex.submit(check_250d, s): s for s in pool}
         for fu in as_completed(futs):
             done += 1
@@ -1196,6 +1196,7 @@ def _gainers_via_fuyao():
                 "code": s['ticker'], "name": "",
                 "price": s['last_price'],
                 "today_chg": s.get('price_change_ratio_pct', 0) or 0,
+                "turnover": t,
             })
         if len(data['data']['item']) < 100:
             break
@@ -1204,7 +1205,10 @@ def _gainers_via_fuyao():
     if not stocks:
         return []
 
-    # 2. 并发拉历史K线（前复权），算10交易日涨幅
+    # 按成交额排序，只取 Top600 拉 K 线（覆盖主要活跃股，从全市场 5000+ → 600）
+    stocks.sort(key=lambda x: x.get('turnover', 0), reverse=True)
+    stocks = stocks[:600]
+    print(f"  [fuyao] 按成交额取 Top600 拉 K 线")
     now_ms = int(time.time() * 1000)
     start_ms = now_ms - 40 * 86400 * 1000
 
@@ -1239,7 +1243,7 @@ def _gainers_via_fuyao():
 
     gainers = []
     done = 0
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    with ThreadPoolExecutor(max_workers=12) as ex:
         futs = [ex.submit(calc, s) for s in stocks]
         for fu in as_completed(futs):
             done += 1
@@ -1450,7 +1454,7 @@ def _gainers_via_sampling():
         return stock
 
     gainers = []
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=12) as executor:
         futures = {executor.submit(calc, s): s for s in candidates}
         for future in as_completed(futures):
             try:

@@ -103,7 +103,7 @@ jobs:
           python scripts/fetch_dashboard_data.py $SKIP_FLAG
         env:
           FUYAO_KEY: ${{ secrets.FUYAO_KEY }}
-        timeout-minutes: 15
+        timeout-minutes: 20
 
       - name: 检查输出文件
         run: |
