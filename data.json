@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-07-31T07:23:00+08:00",
+  "updated_at": "2026-07-31T10:08:26+08:00",
   "data_date": "2026-07-31",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 25598.98,
+    "total_turnover": 25599.01,
     "prev_turnover": null,
-    "ma5_turnover": 25598.98,
+    "ma5_turnover": 25599.01,
     "ma5_ready": false,
     "advancing": 4691,
     "declining": 728,
@@ -15,16 +15,16 @@
   "turnover_history": [
     [
       "2026-07-31",
-      25598.98
+      25599.01
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 85.85,
-      "pre_close": 85.97,
-      "change_pct": -0.14,
-      "high": 87.45,
+      "price": 87.43,
+      "pre_close": 87.43,
+      "change_pct": 0.0,
+      "high": 87.48,
       "low": 84.62
     },
     "sc": {
@@ -32,24 +32,24 @@
       "price": 559.2,
       "pre_close": 558.1,
       "change_pct": 0.2,
-      "high": 569.4,
-      "low": 547.1
+      "high": 559.2,
+      "low": 538.0
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4134.74,
-      "pre_close": 4135.0,
-      "change_pct": -0.01,
+      "price": 4109.41,
+      "pre_close": 4109.6,
+      "change_pct": -0.0,
       "high": 4170.7,
-      "low": 4129.7
+      "low": 4106.5
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 58.41,
-      "pre_close": 58.41,
-      "change_pct": 0.0,
+      "price": 58.16,
+      "pre_close": 58.16,
+      "change_pct": -0.01,
       "high": 59.41,
-      "low": 58.26
+      "low": 58.12
     }
   },
   "etfs": [
@@ -119,44 +119,44 @@
   ],
   "northbound": [
     {
-      "code": "300750",
-      "name": "宁德时代",
-      "price": 395.3,
-      "change_pct": -1.64,
-      "market_cap": 16840.1,
-      "net_buy": 23.38
+      "code": "300502",
+      "name": "新易盛",
+      "price": 396.01,
+      "change_pct": 6.71,
+      "market_cap": 4966.9,
+      "net_buy": 31.08
     },
     {
-      "code": "600519",
-      "name": "贵州茅台",
-      "price": 1350.6,
-      "change_pct": -0.82,
-      "market_cap": 16883.6,
-      "net_buy": 20.33
+      "code": "600183",
+      "name": "生益科技",
+      "price": 105.64,
+      "change_pct": 5.56,
+      "market_cap": 2547.8,
+      "net_buy": 21.52
     },
     {
-      "code": "601318",
-      "name": "中国平安",
-      "price": 54.9,
-      "change_pct": -1.61,
-      "market_cap": 5852.4,
-      "net_buy": 8.96
+      "code": "002384",
+      "name": "东山精密",
+      "price": 171.48,
+      "change_pct": 5.98,
+      "market_cap": 2377.3,
+      "net_buy": 21.37
     },
     {
-      "code": "601328",
-      "name": "交通银行",
-      "price": 7.18,
-      "change_pct": -1.91,
-      "market_cap": 1872.0,
-      "net_buy": 7.86
+      "code": "002281",
+      "name": "光迅科技",
+      "price": 161.65,
+      "change_pct": 6.12,
+      "market_cap": 1271.1,
+      "net_buy": 15.0
     },
     {
-      "code": "600036",
-      "name": "招商银行",
-      "price": 39.62,
-      "change_pct": -2.29,
-      "market_cap": 8173.2,
-      "net_buy": 7.55
+      "code": "688111",
+      "name": "金山办公",
+      "price": 269.58,
+      "change_pct": 6.9,
+      "market_cap": 1250.9,
+      "net_buy": 10.3
     }
   ],
   "omo": {
