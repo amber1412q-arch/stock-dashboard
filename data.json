@@ -1,28 +1,56 @@
 {
-  "updated_at": "2026-08-03T08:02:55+08:00",
+  "updated_at": "2026-08-03T11:21:59+08:00",
   "data_date": "2026-07-31",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 20110.52,
+    "total_turnover": 20110.59,
     "prev_turnover": null,
-    "ma5_turnover": 20110.52,
+    "ma5_turnover": 20110.59,
     "ma5_ready": false,
     "advancing": 4005,
-    "declining": 1465,
+    "declining": 1466,
     "limit_up": 108,
-    "limit_down": 29
+    "limit_down": 30
   },
   "turnover_history": [
     [
       "2026-07-31",
-      20110.52
+      20110.59
     ]
   ],
   "commodities": {
-    "brent": null,
-    "sc": null,
-    "gold_comex": null,
-    "silver_comex": null
+    "brent": {
+      "name": "布伦特原油",
+      "price": 83.61,
+      "pre_close": 83.47,
+      "change_pct": 0.17,
+      "high": 84.66,
+      "low": 81.55
+    },
+    "sc": {
+      "name": "上海原油SC",
+      "price": 568.0,
+      "pre_close": 566.0,
+      "change_pct": 0.35,
+      "high": 568.0,
+      "low": 526.2
+    },
+    "gold_comex": {
+      "name": "纽约金(COMEX)",
+      "price": 4105.5,
+      "pre_close": 4105.8,
+      "change_pct": -0.01,
+      "high": 4145.5,
+      "low": 4101.9
+    },
+    "silver_comex": {
+      "name": "纽约银(COMEX)",
+      "price": 58.1,
+      "pre_close": 58.11,
+      "change_pct": -0.01,
+      "high": 58.88,
+      "low": 57.97
+    }
   },
   "etfs": [
     {
@@ -91,20 +119,28 @@
   ],
   "northbound": [
     {
-      "code": "300502",
-      "name": "新易盛",
-      "price": 394.08,
-      "change_pct": -0.49,
-      "market_cap": 4942.7,
-      "net_buy": 31.08
+      "code": "300394",
+      "name": "天孚通信",
+      "price": 180.5,
+      "change_pct": 5.55,
+      "market_cap": 1964.5,
+      "net_buy": 9.11
     },
     {
-      "code": "600183",
-      "name": "生益科技",
-      "price": 102.03,
-      "change_pct": -3.42,
-      "market_cap": 2460.7,
-      "net_buy": 21.52
+      "code": "600036",
+      "name": "招商银行",
+      "price": 40.36,
+      "change_pct": 1.87,
+      "market_cap": 8325.8,
+      "net_buy": 7.87
+    },
+    {
+      "code": "688498",
+      "name": "源杰科技",
+      "price": 1147.01,
+      "change_pct": 5.03,
+      "market_cap": 1409.6,
+      "net_buy": 5.48
     },
     {
       "code": "002384",
@@ -112,23 +148,15 @@
       "price": 162.81,
       "change_pct": -5.06,
       "market_cap": 2257.1,
-      "net_buy": 21.37
+      "net_buy": 4.23
     },
     {
-      "code": "002281",
-      "name": "光迅科技",
-      "price": 156.65,
-      "change_pct": -3.09,
-      "market_cap": 1231.8,
-      "net_buy": 15.0
-    },
-    {
-      "code": "688111",
-      "name": "金山办公",
-      "price": 274.01,
-      "change_pct": 1.64,
-      "market_cap": 1271.4,
-      "net_buy": 10.3
+      "code": "600406",
+      "name": "国电南瑞",
+      "price": 25.07,
+      "change_pct": 2.96,
+      "market_cap": 2007.7,
+      "net_buy": 3.59
     }
   ],
   "omo": {
@@ -362,6 +390,17 @@
       "holder_date": "2026-06-10"
     },
     {
+      "code": "000423",
+      "name": "东阿阿胶",
+      "price": 55.4,
+      "change_pct": 1.428048,
+      "market_cap": 353.8,
+      "turnover_rate": 1.18,
+      "turnover": 4.2,
+      "concentration_90": 8.64,
+      "holder_date": "2026-07-31"
+    },
+    {
       "code": "000729",
       "name": "燕京啤酒",
       "price": 13.03,
@@ -396,7 +435,7 @@
     }
   ],
   "hotmoney": {
-    "date": "2026-07-31",
+    "date": "2026-08-03",
     "total_net_yi": 25.85,
     "entries": [
       {
