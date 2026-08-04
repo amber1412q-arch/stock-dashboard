@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T09:26:16+08:00",
+  "updated_at": "2026-08-04T10:35:18+08:00",
   "data_date": "2026-08-04",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 86.07,
-      "pre_close": 86.03,
-      "change_pct": 0.05,
+      "price": 85.84,
+      "pre_close": 85.79,
+      "change_pct": 0.06,
       "high": 86.33,
       "low": 83.8
     },
@@ -37,16 +37,16 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4106.57,
-      "pre_close": 4107.1,
+      "price": 4104.46,
+      "pre_close": 4105.0,
       "change_pct": -0.01,
       "high": 4129.6,
       "low": 4098.2
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 58.89,
-      "pre_close": 58.84,
+      "price": 58.95,
+      "pre_close": 58.9,
       "change_pct": 0.08,
       "high": 59.4,
       "low": 58.19
@@ -307,6 +307,14 @@
       "ret_10d": 54.8
     },
     {
+      "code": "300981",
+      "name": "中红医疗",
+      "price": 15.68,
+      "today_chg": 6.739278,
+      "turnover": 529194670,
+      "ret_10d": 54.03
+    },
+    {
       "code": "605179",
       "name": "一鸣食品",
       "price": 21.69,
@@ -345,14 +353,6 @@
       "today_chg": 9.0625,
       "turnover": 670635070,
       "ret_10d": 44.21
-    },
-    {
-      "code": "301082",
-      "name": "久盛电气",
-      "price": 11.28,
-      "today_chg": 6.214689,
-      "turnover": 546797590,
-      "ret_10d": 39.6
     }
   ],
   "chip_concentration": [
@@ -435,7 +435,7 @@
     }
   ],
   "hotmoney": {
-    "date": "2026-08-03",
+    "date": "2026-08-04",
     "total_net_yi": 16.18,
     "entries": [
       {
