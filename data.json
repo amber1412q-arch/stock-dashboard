@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T09:18:43+08:00",
+  "updated_at": "2026-08-05T10:32:05+08:00",
   "data_date": "2026-08-05",
   "is_trading_day": true,
   "market_overview": {
@@ -21,10 +21,10 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 80.21,
-      "pre_close": 80.18,
-      "change_pct": 0.04,
-      "high": 80.57,
+      "price": 80.86,
+      "pre_close": 80.84,
+      "change_pct": 0.02,
+      "high": 80.93,
       "low": 78.11
     },
     "sc": {
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4224.79,
-      "pre_close": 4223.0,
-      "change_pct": 0.04,
+      "price": 4217.57,
+      "pre_close": 4215.3,
+      "change_pct": 0.05,
       "high": 4238.5,
       "low": 4121.6
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 61.89,
-      "pre_close": 61.85,
-      "change_pct": 0.06,
+      "price": 61.6,
+      "pre_close": 61.53,
+      "change_pct": 0.11,
       "high": 62.18,
       "low": 59.62
     }
@@ -173,45 +173,69 @@
     "trade_date": "2026-08-04"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "电池",
-        "change_pct": 1.2,
-        "net_flow": -14.0,
-        "leader": "铜冠铜箔"
+        "code": "801080",
+        "name": "电子",
+        "change_pct": 5.65,
+        "index_val": 8531.54
       },
       {
+        "code": "801050",
+        "name": "有色金属",
+        "change_pct": 5.34,
+        "index_val": 8365.1
+      },
+      {
+        "code": "801710",
         "name": "建筑材料",
-        "change_pct": 2.3,
-        "net_flow": -17.0,
-        "leader": "中材科技"
+        "change_pct": 3.86,
+        "index_val": 5835.14
       },
       {
-        "name": "计算机设备",
-        "change_pct": 4.6,
-        "net_flow": -22.0,
-        "leader": "中威电子"
+        "code": "801890",
+        "name": "机械设备",
+        "change_pct": 3.19,
+        "index_val": 2192.28
       },
       {
-        "name": "小金属",
-        "change_pct": 1.0,
-        "net_flow": -24.0,
-        "leader": "云南锗业"
-      },
-      {
-        "name": "通用设备",
-        "change_pct": 0.9,
-        "net_flow": -24.0,
-        "leader": "海川智能"
+        "code": "801750",
+        "name": "计算机",
+        "change_pct": 2.55,
+        "index_val": 4690.43
       }
     ],
     "outflow_top5": [
       {
-        "name": "保险",
-        "change_pct": -0.3,
-        "net_flow": -26.0,
-        "leader": "新华保险"
+        "code": "801770",
+        "name": "通信",
+        "change_pct": -1.52,
+        "index_val": 7043.85
+      },
+      {
+        "code": "801780",
+        "name": "银行",
+        "change_pct": -1.11,
+        "index_val": 3956.04
+      },
+      {
+        "code": "801120",
+        "name": "食品饮料",
+        "change_pct": -1.09,
+        "index_val": 14145.06
+      },
+      {
+        "code": "801160",
+        "name": "公用事业",
+        "change_pct": -0.54,
+        "index_val": 2505.25
+      },
+      {
+        "code": "801960",
+        "name": "石油石化",
+        "change_pct": -0.31,
+        "index_val": 2581.9
       }
     ]
   },
@@ -267,20 +291,20 @@
       "ret_10d": 87.52
     },
     {
+      "code": "301234",
+      "name": "五洲医疗",
+      "price": 71.55,
+      "today_chg": 3.997093,
+      "turnover": 379503240,
+      "ret_10d": 75.37
+    },
+    {
       "code": "300996",
       "name": "普联软件",
       "price": 19.2,
       "today_chg": 6.371191,
       "turnover": 2117675100,
       "ret_10d": 70.52
-    },
-    {
-      "code": "605179",
-      "name": "一鸣食品",
-      "price": 23.34,
-      "today_chg": 7.607192,
-      "turnover": 868998990,
-      "ret_10d": 62.65
     },
     {
       "code": "000533",
@@ -315,20 +339,20 @@
       "ret_10d": 53.54
     },
     {
-      "code": "688260",
-      "name": "昀冢科技",
-      "price": 106.63,
-      "today_chg": 6.63,
-      "turnover": 1178313210,
-      "ret_10d": 53.53
+      "code": "000820",
+      "name": "神雾节能",
+      "price": 4.12,
+      "today_chg": -3.286385,
+      "turnover": 389252840,
+      "ret_10d": 52.59
     },
     {
-      "code": "000779",
-      "name": "甘咨询",
-      "price": 13.49,
-      "today_chg": -1.027146,
-      "turnover": 804861600,
-      "ret_10d": 51.23
+      "code": "300935",
+      "name": "盈建科",
+      "price": 32,
+      "today_chg": 2.040816,
+      "turnover": 421296080,
+      "ret_10d": 52.09
     }
   ],
   "chip_concentration": [
@@ -411,7 +435,7 @@
     }
   ],
   "hotmoney": {
-    "date": "2026-08-04",
+    "date": "2026-08-05",
     "total_net_yi": 24.58,
     "entries": [
       {
