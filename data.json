@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T08:08:12+08:00",
+  "updated_at": "2026-08-07T08:55:29+08:00",
   "data_date": "2026-08-07",
   "is_trading_day": true,
   "market_overview": {
@@ -21,34 +21,34 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 83.21,
-      "pre_close": 83.22,
+      "price": 83.22,
+      "pre_close": 83.24,
       "change_pct": -0.02,
       "high": 84.44,
-      "low": 83.02
+      "low": 82.96
     },
     "sc": {
       "name": "上海原油SC",
       "price": 536.8,
       "pre_close": 520.0,
       "change_pct": 3.23,
-      "high": 518.3,
-      "low": 501.6
+      "high": 536.8,
+      "low": 515.5
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4351.95,
-      "pre_close": 4351.1,
+      "price": 4371.09,
+      "pre_close": 4370.1,
       "change_pct": 0.02,
-      "high": 4358.0,
+      "high": 4375.9,
       "low": 4288.0
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 64.22,
-      "pre_close": 64.21,
-      "change_pct": 0.02,
-      "high": 64.22,
+      "price": 64.64,
+      "pre_close": 64.62,
+      "change_pct": 0.03,
+      "high": 64.75,
       "low": 61.42
     }
   },
@@ -135,34 +135,34 @@
       "net_buy": 30.76
     },
     {
-      "code": "300274",
-      "name": "阳光电源",
-      "price": 114.16,
-      "change_pct": 6.99,
-      "market_cap": 1812.3,
-      "net_buy": 11.76
+      "code": "603228",
+      "name": "景旺电子",
+      "price": 94.95,
+      "change_pct": 10.0,
+      "market_cap": 932.3,
+      "net_buy": 27.23
     },
     {
-      "code": "300308",
-      "name": "中际旭创",
-      "price": 919.87,
-      "change_pct": -3.68,
-      "market_cap": 10210.0,
-      "net_buy": 7.02
+      "code": "603986",
+      "name": "兆易创新",
+      "price": 417.05,
+      "change_pct": 8.32,
+      "market_cap": 2787.9,
+      "net_buy": 24.42
     },
     {
-      "code": "000725",
-      "name": "京东方Ａ",
-      "price": 6.07,
-      "change_pct": 1.85,
-      "market_cap": 2146.8,
-      "net_buy": 5.44
+      "code": "600183",
+      "name": "生益科技",
+      "price": 139.98,
+      "change_pct": 10.0,
+      "market_cap": 3376.0,
+      "net_buy": 21.14
     }
   ],
   "omo": {
-    "matured": 0,
+    "matured": 2330.0,
     "new_issue": 10.0,
-    "net": 10.0,
+    "net": -2320.0,
     "trade_date": "2026-08-07"
   },
   "margin": {
