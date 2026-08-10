@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T08:07:39+08:00",
+  "updated_at": "2026-08-10T09:16:27+08:00",
   "data_date": "2026-08-07",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 83.69,
-      "pre_close": 83.69,
-      "change_pct": -0.01,
+      "price": 84.56,
+      "pre_close": 84.5,
+      "change_pct": 0.07,
       "high": 84.97,
       "low": 83.33
     },
@@ -32,22 +32,22 @@
       "price": 539.7,
       "pre_close": 522.0,
       "change_pct": 3.39,
-      "high": 536.8,
-      "low": 515.5
+      "high": 539.7,
+      "low": 521.3
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4415.31,
-      "pre_close": 4414.6,
-      "change_pct": 0.02,
+      "price": 4407.4,
+      "pre_close": 4405.8,
+      "change_pct": 0.04,
       "high": 4421.5,
       "low": 4373.9
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 64.53,
-      "pre_close": 64.5,
-      "change_pct": 0.06,
+      "price": 64.41,
+      "pre_close": 64.39,
+      "change_pct": 0.04,
       "high": 64.63,
       "low": 63.2
     }
@@ -119,20 +119,12 @@
   ],
   "northbound": [
     {
-      "code": "603986",
-      "name": "兆易创新",
-      "price": 403.03,
-      "change_pct": -3.36,
-      "market_cap": 2694.2,
-      "net_buy": 24.42
-    },
-    {
-      "code": "600176",
-      "name": "中国巨石",
-      "price": 43.28,
-      "change_pct": -2.48,
-      "market_cap": 1718.9,
-      "net_buy": 18.61
+      "code": "600519",
+      "name": "贵州茅台",
+      "price": 1348.86,
+      "change_pct": 3.03,
+      "market_cap": 16861.8,
+      "net_buy": 12.88
     },
     {
       "code": "002714",
@@ -143,12 +135,20 @@
       "net_buy": 7.61
     },
     {
-      "code": "688256",
-      "name": "寒武纪",
-      "price": 1124.0,
-      "change_pct": -6.33,
-      "market_cap": 7062.0,
-      "net_buy": 7.23
+      "code": "688012",
+      "name": "中微公司",
+      "price": 389.99,
+      "change_pct": 6.08,
+      "market_cap": 3674.5,
+      "net_buy": 6.47
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "price": 393.87,
+      "change_pct": 1.86,
+      "market_cap": 16779.2,
+      "net_buy": 5.51
     },
     {
       "code": "688072",
