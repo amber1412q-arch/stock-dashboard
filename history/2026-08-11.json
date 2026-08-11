@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T08:46:35+08:00",
+  "updated_at": "2026-08-11T08:54:31+08:00",
   "data_date": "2026-08-11",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 89.76,
-      "pre_close": 89.72,
-      "change_pct": 0.04,
+      "price": 89.75,
+      "pre_close": 89.73,
+      "change_pct": 0.03,
       "high": 90.03,
       "low": 87.41
     },
@@ -32,22 +32,22 @@
       "price": 564.7,
       "pre_close": 540.0,
       "change_pct": 4.57,
-      "high": 539.7,
-      "low": 521.3
+      "high": 564.7,
+      "low": 537.9
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4431.89,
-      "pre_close": 4433.1,
+      "price": 4431.35,
+      "pre_close": 4432.8,
       "change_pct": -0.03,
       "high": 4495.0,
       "low": 4415.7
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 64.96,
-      "pre_close": 64.99,
-      "change_pct": -0.05,
+      "price": 65.0,
+      "pre_close": 65.06,
+      "change_pct": -0.09,
       "high": 66.69,
       "low": 64.47
     }
@@ -173,69 +173,51 @@
     "trade_date": "2026-08-10"
   },
   "sector_flow": {
-    "source": "sw",
+    "source": "fund_flow",
     "inflow_top5": [
       {
-        "code": "801770",
-        "name": "通信",
-        "change_pct": 1.12,
-        "index_val": 6986.31
+        "name": "军工装备",
+        "change_pct": 7.7,
+        "net_flow": -10.0,
+        "leader": "北方长龙"
       },
       {
-        "code": "801960",
-        "name": "石油石化",
-        "change_pct": 0.44,
-        "index_val": 2690.66
+        "name": "养殖业",
+        "change_pct": 6.3,
+        "net_flow": -11.0,
+        "leader": "益生股份"
       },
       {
-        "code": "801150",
-        "name": "医药生物",
-        "change_pct": 0.31,
-        "index_val": 8197.52
+        "name": "化学制品",
+        "change_pct": 7.9,
+        "net_flow": -12.0,
+        "leader": "凯龙股份"
       },
       {
-        "code": "801160",
-        "name": "公用事业",
-        "change_pct": 0.25,
-        "index_val": 2517.16
+        "name": "黄金概念",
+        "change_pct": 12.4,
+        "net_flow": -17.0,
+        "leader": "鹏欣资源"
       },
       {
-        "code": "801110",
-        "name": "家用电器",
-        "change_pct": 0.19,
-        "index_val": 8716.29
+        "name": "白酒",
+        "change_pct": 5.3,
+        "net_flow": -19.0,
+        "leader": "迎驾贡酒"
       }
     ],
     "outflow_top5": [
       {
-        "code": "801050",
-        "name": "有色金属",
-        "change_pct": -4.41,
-        "index_val": 8496.06
+        "name": "保险",
+        "change_pct": -2.2,
+        "net_flow": -10.0,
+        "leader": "中国平安"
       },
       {
-        "code": "801740",
-        "name": "国防军工",
-        "change_pct": -2.38,
-        "index_val": 1657.71
-      },
-      {
-        "code": "801030",
-        "name": "基础化工",
-        "change_pct": -1.55,
-        "index_val": 4395.96
-      },
-      {
-        "code": "801040",
-        "name": "钢铁",
-        "change_pct": -1.5,
-        "index_val": 2200.18
-      },
-      {
-        "code": "801170",
-        "name": "交通运输",
-        "change_pct": -1.43,
-        "index_val": 2060.26
+        "name": "银行",
+        "change_pct": -0.5,
+        "net_flow": 21.0,
+        "leader": "苏州银行"
       }
     ]
   },
