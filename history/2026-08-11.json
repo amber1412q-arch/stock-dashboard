@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T07:56:58+08:00",
+  "updated_at": "2026-08-11T08:46:35+08:00",
   "data_date": "2026-08-11",
   "is_trading_day": true,
   "market_overview": {
@@ -21,10 +21,10 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 89.63,
-      "pre_close": 89.61,
-      "change_pct": 0.02,
-      "high": 89.69,
+      "price": 89.76,
+      "pre_close": 89.72,
+      "change_pct": 0.04,
+      "high": 90.03,
       "low": 87.41
     },
     "sc": {
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4417.12,
-      "pre_close": 4417.2,
-      "change_pct": -0.0,
+      "price": 4431.89,
+      "pre_close": 4433.1,
+      "change_pct": -0.03,
       "high": 4495.0,
       "low": 4415.7
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 64.62,
-      "pre_close": 64.61,
-      "change_pct": 0.01,
+      "price": 64.96,
+      "pre_close": 64.99,
+      "change_pct": -0.05,
       "high": 66.69,
       "low": 64.47
     }
@@ -119,44 +119,44 @@
   ],
   "northbound": [
     {
-      "code": "600519",
-      "name": "贵州茅台",
-      "price": 1346.5,
-      "change_pct": -0.17,
-      "market_cap": 16832.3,
-      "net_buy": 12.88
+      "code": "300308",
+      "name": "中际旭创",
+      "price": 886.96,
+      "change_pct": 2.59,
+      "market_cap": 9844.7,
+      "net_buy": 35.72
     },
     {
-      "code": "002714",
-      "name": "牧原股份",
-      "price": 40.11,
-      "change_pct": -0.32,
-      "market_cap": 1315.8,
-      "net_buy": 7.61
+      "code": "002384",
+      "name": "东山精密",
+      "price": 193.87,
+      "change_pct": 4.26,
+      "market_cap": 2687.7,
+      "net_buy": 23.42
     },
     {
-      "code": "688012",
-      "name": "中微公司",
-      "price": 363.1,
-      "change_pct": -6.9,
-      "market_cap": 3421.1,
-      "net_buy": 6.47
+      "code": "300502",
+      "name": "新易盛",
+      "price": 415.3,
+      "change_pct": 3.93,
+      "market_cap": 5208.9,
+      "net_buy": 20.45
     },
     {
-      "code": "300750",
-      "name": "宁德时代",
-      "price": 390.4,
-      "change_pct": -0.88,
-      "market_cap": 16631.4,
-      "net_buy": 5.51
+      "code": "300274",
+      "name": "阳光电源",
+      "price": 120.07,
+      "change_pct": 5.59,
+      "market_cap": 1906.1,
+      "net_buy": 14.51
     },
     {
-      "code": "688072",
-      "name": "拓荆科技",
-      "price": 700.0,
-      "change_pct": -3.85,
-      "market_cap": 1978.8,
-      "net_buy": 5.41
+      "code": "002281",
+      "name": "光迅科技",
+      "price": 184.07,
+      "change_pct": 3.24,
+      "market_cap": 1447.4,
+      "net_buy": 10.99
     }
   ],
   "omo": {
@@ -377,17 +377,6 @@
       "turnover": 45.25,
       "concentration_90": 5.3,
       "holder_date": "2026-06-10"
-    },
-    {
-      "code": "000423",
-      "name": "东阿阿胶",
-      "price": 53.62,
-      "change_pct": -0.81391,
-      "market_cap": 342.5,
-      "turnover_rate": 0.77,
-      "turnover": 2.67,
-      "concentration_90": 8.64,
-      "holder_date": "2026-07-31"
     },
     {
       "code": "000729",
