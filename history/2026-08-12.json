@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T08:03:10+08:00",
+  "updated_at": "2026-08-12T09:10:57+08:00",
   "data_date": "2026-08-12",
   "is_trading_day": true,
   "market_overview": {
@@ -21,23 +21,23 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 89.75,
-      "pre_close": 89.71,
-      "change_pct": 0.04,
+      "price": 89.2,
+      "pre_close": 89.2,
+      "change_pct": -0.0,
       "high": 90.07,
-      "low": 89.08
+      "low": 88.89
     },
     "sc": {
       "name": "上海原油SC",
       "price": 558.5,
       "pre_close": 558.3,
       "change_pct": 0.04,
-      "high": 564.7,
-      "low": 537.9
+      "high": 558.5,
+      "low": 545.1
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4465.23,
+      "price": 4465.35,
       "pre_close": 4464.1,
       "change_pct": 0.03,
       "high": 4475.7,
@@ -45,10 +45,10 @@
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 66.23,
-      "pre_close": 66.2,
-      "change_pct": 0.03,
-      "high": 66.38,
+      "price": 66.42,
+      "pre_close": 66.39,
+      "change_pct": 0.05,
+      "high": 66.55,
       "low": 64.81
     }
   },
@@ -119,44 +119,44 @@
   ],
   "northbound": [
     {
-      "code": "000100",
-      "name": "TCL科技",
-      "price": 5.09,
-      "change_pct": 1.8,
-      "market_cap": 1023.9,
-      "net_buy": 7.25
+      "code": "688825",
+      "name": "长鑫科技",
+      "price": 53.52,
+      "change_pct": 6.19,
+      "market_cap": 2410.0,
+      "net_buy": 20.74
     },
     {
-      "code": "000725",
-      "name": "京东方Ａ",
-      "price": 5.93,
-      "change_pct": 0.34,
-      "market_cap": 2097.3,
-      "net_buy": 4.25
+      "code": "300502",
+      "name": "新易盛",
+      "price": 428.2,
+      "change_pct": 3.11,
+      "market_cap": 5370.7,
+      "net_buy": 15.27
     },
     {
-      "code": "000776",
-      "name": "广发证券",
-      "price": 21.15,
-      "change_pct": 1.24,
-      "market_cap": 1248.7,
-      "net_buy": 0.61
+      "code": "300394",
+      "name": "天孚通信",
+      "price": 240.05,
+      "change_pct": 7.89,
+      "market_cap": 2612.7,
+      "net_buy": 15.06
     },
     {
-      "code": "000301",
-      "name": "东方盛虹",
-      "price": 12.92,
-      "change_pct": -0.54,
-      "market_cap": 853.8,
-      "net_buy": 0.36
+      "code": "002384",
+      "name": "东山精密",
+      "price": 200.19,
+      "change_pct": 3.26,
+      "market_cap": 2775.3,
+      "net_buy": 12.58
     },
     {
-      "code": "000617",
-      "name": "中油资本",
-      "price": 7.11,
-      "change_pct": -0.56,
-      "market_cap": 898.9,
-      "net_buy": 0.07
+      "code": "688008",
+      "name": "澜起科技",
+      "price": 215.43,
+      "change_pct": 4.22,
+      "market_cap": 2466.2,
+      "net_buy": 12.14
     }
   ],
   "omo": {
