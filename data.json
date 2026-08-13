@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T08:14:04+08:00",
+  "updated_at": "2026-08-13T09:11:03+08:00",
   "data_date": "2026-08-13",
   "is_trading_day": true,
   "market_overview": {
@@ -21,35 +21,35 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 87.86,
-      "pre_close": 87.88,
-      "change_pct": -0.02,
+      "price": 87.31,
+      "pre_close": 87.31,
+      "change_pct": 0.0,
       "high": 89.07,
-      "low": 87.52
+      "low": 87.25
     },
     "sc": {
       "name": "上海原油SC",
       "price": 557.9,
       "pre_close": 547.0,
       "change_pct": 1.99,
-      "high": 558.5,
-      "low": 545.1
+      "high": 557.9,
+      "low": 543.6
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4425.27,
-      "pre_close": 4425.5,
-      "change_pct": -0.01,
+      "price": 4429.56,
+      "pre_close": 4430.5,
+      "change_pct": -0.02,
       "high": 4509.1,
-      "low": 4421.4
+      "low": 4420.3
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 64.65,
-      "pre_close": 64.66,
-      "change_pct": -0.01,
+      "price": 64.55,
+      "pre_close": 64.58,
+      "change_pct": -0.04,
       "high": 66.45,
-      "low": 64.58
+      "low": 64.31
     }
   },
   "etfs": [
@@ -275,6 +275,14 @@
   },
   "top_10day_gainers": [
     {
+      "code": "600721",
+      "name": "百花医药",
+      "price": 14.5,
+      "today_chg": 3.349964,
+      "turnover": 2571709400,
+      "ret_10d": 111.68
+    },
+    {
       "code": "300720",
       "name": "海川智能",
       "price": 86.3,
@@ -291,12 +299,44 @@
       "ret_10d": 98.39
     },
     {
+      "code": "301520",
+      "name": "万邦医药",
+      "price": 88.68,
+      "today_chg": 20,
+      "turnover": 1276425650,
+      "ret_10d": 97.24
+    },
+    {
       "code": "300489",
       "name": "光智科技",
       "price": 242.63,
       "today_chg": -2.165323,
       "turnover": 3034694400,
       "ret_10d": 93.16
+    },
+    {
+      "code": "605179",
+      "name": "一鸣食品",
+      "price": 33.43,
+      "today_chg": 10.003291,
+      "turnover": 853829910,
+      "ret_10d": 89.84
+    },
+    {
+      "code": "688073",
+      "name": "毕得医药",
+      "price": 84.83,
+      "today_chg": 6.570352,
+      "turnover": 799091280,
+      "ret_10d": 87.76
+    },
+    {
+      "code": "301080",
+      "name": "百普赛斯",
+      "price": 88.21,
+      "today_chg": 7.311436,
+      "turnover": 2189108200,
+      "ret_10d": 85.63
     },
     {
       "code": "002552",
@@ -313,46 +353,6 @@
       "today_chg": 10.011872,
       "turnover": 978570810,
       "ret_10d": 80.75
-    },
-    {
-      "code": "002827",
-      "name": "高争民爆",
-      "price": 55.1,
-      "today_chg": -9.996733,
-      "turnover": 1257910580,
-      "ret_10d": 75.2
-    },
-    {
-      "code": "002792",
-      "name": "通宇通讯",
-      "price": 38.63,
-      "today_chg": 4.095931,
-      "turnover": 3884067100,
-      "ret_10d": 71.31
-    },
-    {
-      "code": "300620",
-      "name": "光库科技",
-      "price": 314.15,
-      "today_chg": 1.666667,
-      "turnover": 4642638300,
-      "ret_10d": 64.31
-    },
-    {
-      "code": "000802",
-      "name": "北京文化",
-      "price": 6.26,
-      "today_chg": 10.017575,
-      "turnover": 851181590,
-      "ret_10d": 62.6
-    },
-    {
-      "code": "002428",
-      "name": "云南锗业",
-      "price": 100.21,
-      "today_chg": -5.444423,
-      "turnover": 10485962500,
-      "ret_10d": 62.15
     }
   ],
   "chip_concentration": [
