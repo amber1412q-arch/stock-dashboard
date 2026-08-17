@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T08:29:11+08:00",
+  "updated_at": "2026-08-17T08:39:50+08:00",
   "data_date": "2026-08-14",
   "is_trading_day": true,
   "market_overview": {
@@ -22,8 +22,8 @@
     "brent": {
       "name": "布伦特原油",
       "price": 88.9,
-      "pre_close": 88.83,
-      "change_pct": 0.08,
+      "pre_close": 88.84,
+      "change_pct": 0.07,
       "high": 89.4,
       "low": 88.01
     },
@@ -32,22 +32,22 @@
       "price": 571.8,
       "pre_close": 550.6,
       "change_pct": 3.85,
-      "high": 559.1,
-      "low": 540.7
+      "high": 571.8,
+      "low": 549.4
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4460.47,
-      "pre_close": 4458.6,
+      "price": 4458.26,
+      "pre_close": 4456.5,
       "change_pct": 0.04,
       "high": 4473.2,
       "low": 4422.3
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 65.79,
-      "pre_close": 65.72,
-      "change_pct": 0.1,
+      "price": 65.76,
+      "pre_close": 65.69,
+      "change_pct": 0.11,
       "high": 66.39,
       "low": 64.85
     }
@@ -127,14 +127,6 @@
       "net_buy": 43.5
     },
     {
-      "code": "688825",
-      "name": "长鑫科技",
-      "price": 61.8,
-      "change_pct": 12.0,
-      "market_cap": 2782.9,
-      "net_buy": 41.75
-    },
-    {
       "code": "002156",
       "name": "通富微电",
       "price": 69.26,
@@ -157,6 +149,14 @@
       "change_pct": 5.76,
       "market_cap": 7263.1,
       "net_buy": 26.2
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "price": 444.0,
+      "change_pct": 6.35,
+      "market_cap": 2968.1,
+      "net_buy": 22.71
     }
   ],
   "omo": {
@@ -307,6 +307,22 @@
       "ret_10d": 100.27
     },
     {
+      "code": "600721",
+      "name": "百花医药",
+      "price": 14.02,
+      "today_chg": 1.520637,
+      "turnover": 1617744100,
+      "ret_10d": 94.72
+    },
+    {
+      "code": "300720",
+      "name": "海川智能",
+      "price": 96.5,
+      "today_chg": 2.030027,
+      "turnover": 1537894900,
+      "ret_10d": 93.81
+    },
+    {
       "code": "688137",
       "name": "近岸蛋白",
       "price": 68.43,
@@ -337,22 +353,6 @@
       "today_chg": 2.225886,
       "turnover": 2375850600,
       "ret_10d": 90.71
-    },
-    {
-      "code": "688143",
-      "name": "长盈通",
-      "price": 154,
-      "today_chg": 10,
-      "turnover": 3412328100,
-      "ret_10d": 87.35
-    },
-    {
-      "code": "603186",
-      "name": "华正新材",
-      "price": 184.31,
-      "today_chg": 10.002984,
-      "turnover": 862191180,
-      "ret_10d": 86.93
     }
   ],
   "chip_concentration": [
