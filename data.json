@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-08-19T07:47:25+08:00",
+  "updated_at": "2026-08-19T08:13:52+08:00",
   "data_date": "2026-08-19",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 25300.11,
+    "total_turnover": 24438.69,
     "prev_turnover": null,
-    "ma5_turnover": 25300.11,
+    "ma5_turnover": 24438.69,
     "ma5_ready": false,
-    "advancing": 449,
-    "declining": 5069,
+    "advancing": 445,
+    "declining": 4973,
     "limit_up": 43,
-    "limit_down": 367
+    "limit_down": 359
   },
   "turnover_history": [
     [
       "2026-08-19",
-      25300.11
+      24438.69
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 91.29,
-      "pre_close": 91.29,
-      "change_pct": 0.0,
+      "price": 91.45,
+      "pre_close": 91.48,
+      "change_pct": -0.03,
       "high": 92.05,
       "low": 91.2
     },
@@ -32,22 +32,22 @@
       "price": 589.7,
       "pre_close": 584.0,
       "change_pct": 0.98,
-      "high": 587.8,
-      "low": 563.6
+      "high": 589.7,
+      "low": 579.0
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4411.83,
-      "pre_close": 4411.0,
-      "change_pct": 0.02,
+      "price": 4412.52,
+      "pre_close": 4412.0,
+      "change_pct": 0.01,
       "high": 4417.2,
       "low": 4378.0
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 63.22,
-      "pre_close": 63.19,
-      "change_pct": 0.05,
+      "price": 63.28,
+      "pre_close": 63.23,
+      "change_pct": 0.07,
       "high": 63.52,
       "low": 62.45
     }
@@ -119,36 +119,20 @@
   ],
   "northbound": [
     {
-      "code": "000725",
-      "name": "京东方Ａ",
-      "price": 6.01,
-      "change_pct": -7.11,
-      "market_cap": 2125.6,
-      "net_buy": 43.62
+      "code": "000651",
+      "name": "格力电器",
+      "price": 41.32,
+      "change_pct": 3.15,
+      "market_cap": 2281.7,
+      "net_buy": 5.86
     },
     {
-      "code": "002156",
-      "name": "通富微电",
-      "price": 63.59,
-      "change_pct": -10.01,
-      "market_cap": 965.0,
-      "net_buy": 6.19
-    },
-    {
-      "code": "002353",
-      "name": "杰瑞股份",
-      "price": 150.5,
-      "change_pct": -7.41,
-      "market_cap": 1040.1,
-      "net_buy": 3.77
-    },
-    {
-      "code": "300394",
-      "name": "天孚通信",
-      "price": 277.4,
-      "change_pct": -4.82,
-      "market_cap": 3019.2,
-      "net_buy": 3.12
+      "code": "000001",
+      "name": "平安银行",
+      "price": 11.27,
+      "change_pct": 1.99,
+      "market_cap": 2187.0,
+      "net_buy": 2.34
     },
     {
       "code": "002648",
@@ -156,7 +140,23 @@
       "price": 26.82,
       "change_pct": -0.04,
       "market_cap": 902.9,
-      "net_buy": 3.05
+      "net_buy": 1.24
+    },
+    {
+      "code": "002142",
+      "name": "宁波银行",
+      "price": 32.98,
+      "change_pct": 1.6,
+      "market_cap": 2176.5,
+      "net_buy": 1.14
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "price": 84.72,
+      "change_pct": 1.36,
+      "market_cap": 5832.8,
+      "net_buy": 1.11
     }
   ],
   "omo": {
@@ -275,84 +275,74 @@
   },
   "top_10day_gainers": [
     {
-      "code": "300313",
-      "name": "天山生物",
-      "price": 14.45,
-      "today_chg": 12.189441,
-      "turnover": 887516320,
-      "ret_10d": 74.73
+      "code": "000505",
+      "name": "京粮控股",
+      "price": 7.47,
+      "today_chg": 10.014728,
+      "ret_10d": 33.39
     },
     {
-      "code": "301282",
-      "name": "金禄电子",
-      "price": 37.66,
-      "today_chg": -3.584229,
-      "turnover": 1409038000,
-      "ret_10d": 65.47
+      "code": "000020",
+      "name": "深华发Ａ",
+      "price": 13.74,
+      "today_chg": 10.008006,
+      "ret_10d": 25.82
     },
     {
-      "code": "300333",
-      "name": "兆日科技",
-      "price": 11.29,
-      "today_chg": -4.403048,
-      "turnover": 536878330,
-      "ret_10d": 64.34
+      "code": "000026",
+      "name": "飞亚达",
+      "price": 21.05,
+      "today_chg": -9.228116,
+      "ret_10d": 23.24
     },
     {
-      "code": "301080",
-      "name": "百普赛斯",
-      "price": 85.75,
-      "today_chg": -6.232914,
-      "turnover": 1923794100,
-      "ret_10d": 58.83
+      "code": "000703",
+      "name": "恒逸石化",
+      "price": 19.08,
+      "today_chg": 9.215799,
+      "ret_10d": 16.41
     },
     {
-      "code": "301520",
-      "name": "万邦医药",
-      "price": 77.16,
-      "today_chg": 4.467912,
-      "turnover": 1085819310,
-      "ret_10d": 56.67
+      "code": "000657",
+      "name": "中钨高新",
+      "price": 66.16,
+      "today_chg": -9.295311,
+      "ret_10d": 15.2
     },
     {
-      "code": "300404",
-      "name": "博济医药",
-      "price": 15.35,
-      "today_chg": -7.752404,
-      "turnover": 1039117740,
-      "ret_10d": 54.89
+      "code": "000007",
+      "name": "全新好",
+      "price": 10.99,
+      "today_chg": -5.988024,
+      "ret_10d": 15.08
     },
     {
-      "code": "301106",
-      "name": "骏成科技",
-      "price": 25.42,
-      "today_chg": 20.018886,
-      "turnover": 525340140,
-      "ret_10d": 52.67
+      "code": "000059",
+      "name": "华锦股份",
+      "price": 5.07,
+      "today_chg": 9.978308,
+      "ret_10d": 11.92
     },
     {
-      "code": "301251",
-      "name": "威尔高",
-      "price": 49.29,
-      "today_chg": 1.419753,
-      "turnover": 772179040,
-      "ret_10d": 48.51
+      "code": "000716",
+      "name": "黑芝麻",
+      "price": 5.23,
+      "today_chg": -9.982788,
+      "ret_10d": 10.34
     },
     {
-      "code": "301516",
-      "name": "中远通",
-      "price": 23.31,
-      "today_chg": 3.6,
-      "turnover": 747939440,
-      "ret_10d": 48.0
+      "code": "000593",
+      "name": "德龙汇能",
+      "price": 24.81,
+      "today_chg": -7.940631,
+      "ret_10d": 10.17
     },
     {
-      "code": "002437",
-      "name": "誉衡药业",
-      "price": 4.3,
-      "today_chg": -9.663866,
-      "turnover": 3387760600,
-      "ret_10d": 47.26
+      "code": "000736",
+      "name": "中交发展",
+      "price": 4.9,
+      "today_chg": 10.11236,
+      "ret_10d": 10.11
     }
   ],
   "chip_concentration": [
