@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T04:06:15+08:00",
+  "updated_at": "2026-08-19T04:43:44+08:00",
   "data_date": "2026-08-19",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 91.59,
-      "pre_close": 91.61,
-      "change_pct": -0.02,
+      "price": 91.58,
+      "pre_close": 91.59,
+      "change_pct": -0.01,
       "high": 92.05,
       "low": 91.25
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4409.82,
-      "pre_close": 4409.0,
-      "change_pct": 0.02,
+      "price": 4402.75,
+      "pre_close": 4401.2,
+      "change_pct": 0.04,
       "high": 4415.8,
       "low": 4378.0
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 63.19,
-      "pre_close": 63.13,
-      "change_pct": 0.09,
+      "price": 62.86,
+      "pre_close": 62.91,
+      "change_pct": -0.07,
       "high": 63.52,
       "low": 62.45
     }
@@ -173,69 +173,69 @@
     "trade_date": "2026-08-18"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "电机",
-        "change_pct": 6.7,
-        "net_flow": -5.0,
-        "leader": "卧龙电驱"
+        "code": "801780",
+        "name": "银行",
+        "change_pct": 1.59,
+        "index_val": 4023.89
       },
       {
-        "name": "养殖业",
-        "change_pct": 7.8,
-        "net_flow": -8.0,
-        "leader": "天山生物"
+        "code": "801960",
+        "name": "石油石化",
+        "change_pct": 1.52,
+        "index_val": 2730.21
       },
       {
-        "name": "农业种植",
-        "change_pct": 8.5,
-        "net_flow": -9.0,
-        "leader": "秋乐种业"
+        "code": "801950",
+        "name": "煤炭",
+        "change_pct": 1.17,
+        "index_val": 3340.57
       },
       {
-        "name": "种植业与林业",
-        "change_pct": 14.7,
-        "net_flow": -10.0,
-        "leader": "秋乐种业"
+        "code": "801170",
+        "name": "交通运输",
+        "change_pct": 0.41,
+        "index_val": 2074.78
       },
       {
-        "name": "光伏设备",
-        "change_pct": 6.7,
-        "net_flow": -11.0,
-        "leader": "迈为股份"
+        "code": "801110",
+        "name": "家用电器",
+        "change_pct": -0.37,
+        "index_val": 8634.68
       }
     ],
     "outflow_top5": [
       {
-        "name": "期货概念",
-        "change_pct": -0.3,
-        "net_flow": -49.0,
-        "leader": "中油工程"
+        "code": "801080",
+        "name": "电子",
+        "change_pct": -6.72,
+        "index_val": 8776.25
       },
       {
-        "name": "证券",
-        "change_pct": -1.5,
-        "net_flow": -48.0,
-        "leader": "兴业证券"
+        "code": "801770",
+        "name": "通信",
+        "change_pct": -6.4,
+        "index_val": 7211.15
       },
       {
-        "name": "电力",
-        "change_pct": -1.0,
-        "net_flow": -46.0,
-        "leader": "物产环能"
+        "code": "801890",
+        "name": "机械设备",
+        "change_pct": -5.31,
+        "index_val": 2214.94
       },
       {
-        "name": "互联网保险",
-        "change_pct": -0.0,
-        "net_flow": -26.0,
-        "leader": "国源科技"
+        "code": "801750",
+        "name": "计算机",
+        "change_pct": -4.39,
+        "index_val": 4406.17
       },
       {
-        "name": "保险",
-        "change_pct": -4.2,
-        "net_flow": -7.0,
-        "leader": "中国人保"
+        "code": "801710",
+        "name": "建筑材料",
+        "change_pct": -4.27,
+        "index_val": 5965.74
       }
     ]
   },
