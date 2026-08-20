@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-20T07:03:58+08:00",
+  "updated_at": "2026-08-20T07:56:08+08:00",
   "data_date": "2026-08-20",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 20939.09,
+    "total_turnover": 20939.15,
     "prev_turnover": null,
-    "ma5_turnover": 20939.09,
+    "ma5_turnover": 20939.15,
     "ma5_ready": false,
     "advancing": 4096,
     "declining": 1347,
@@ -15,16 +15,16 @@
   "turnover_history": [
     [
       "2026-08-20",
-      20939.09
+      20939.15
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 92.47,
-      "pre_close": 92.46,
-      "change_pct": 0.01,
-      "high": 92.5,
+      "price": 93.02,
+      "pre_close": 93.01,
+      "change_pct": 0.02,
+      "high": 93.3,
       "low": 91.47
     },
     "sc": {
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4547.67,
-      "pre_close": 4549.0,
+      "price": 4545.93,
+      "pre_close": 4547.3,
       "change_pct": -0.03,
       "high": 4583.8,
       "low": 4534.8
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 67.83,
-      "pre_close": 67.8,
-      "change_pct": 0.05,
+      "price": 67.53,
+      "pre_close": 67.53,
+      "change_pct": -0.01,
       "high": 68.23,
       "low": 67.25
     }
@@ -275,6 +275,22 @@
   },
   "top_10day_gainers": [
     {
+      "code": "001210",
+      "name": "金房能源",
+      "price": 29.76,
+      "today_chg": 10.018484,
+      "turnover": 145946380,
+      "ret_10d": 36.64
+    },
+    {
+      "code": "001277",
+      "name": "速达股份",
+      "price": 36.27,
+      "today_chg": 10.009099,
+      "turnover": 222483220,
+      "ret_10d": 29.26
+    },
+    {
       "code": "000505",
       "name": "京粮控股",
       "price": 7.49,
@@ -299,12 +315,28 @@
       "ret_10d": 23.12
     },
     {
+      "code": "001301",
+      "name": "尚太科技",
+      "price": 64.18,
+      "today_chg": 2.968073,
+      "turnover": 1340368660,
+      "ret_10d": 22.18
+    },
+    {
       "code": "000523",
       "name": "红棉股份",
       "price": 3.53,
       "today_chg": 9.968847,
       "turnover": 646299420,
       "ret_10d": 22.15
+    },
+    {
+      "code": "001360",
+      "name": "南矿集团",
+      "price": 18.11,
+      "today_chg": 10.024301,
+      "turnover": 106572249,
+      "ret_10d": 21.71
     },
     {
       "code": "000506",
@@ -321,38 +353,6 @@
       "today_chg": 6.031594,
       "turnover": 1516655300,
       "ret_10d": 17.57
-    },
-    {
-      "code": "000620",
-      "name": "盈新发展",
-      "price": 3.25,
-      "today_chg": -8.19209,
-      "turnover": 1799052800,
-      "ret_10d": 16.91
-    },
-    {
-      "code": "000703",
-      "name": "恒逸石化",
-      "price": 20.1,
-      "today_chg": 5.345912,
-      "turnover": 3496242000,
-      "ret_10d": 16.86
-    },
-    {
-      "code": "000517",
-      "name": "荣安地产",
-      "price": 2.47,
-      "today_chg": 8.810573,
-      "turnover": 183489150,
-      "ret_10d": 16.51
-    },
-    {
-      "code": "000735",
-      "name": "罗 牛 山",
-      "price": 5.98,
-      "today_chg": 1.873935,
-      "turnover": 994518900,
-      "ret_10d": 15.89
     }
   ],
   "chip_concentration": [
