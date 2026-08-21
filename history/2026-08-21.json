@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T04:09:03+08:00",
+  "updated_at": "2026-08-21T04:56:29+08:00",
   "data_date": "2026-08-21",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 93.44,
-      "pre_close": 93.47,
-      "change_pct": -0.03,
+      "price": 93.46,
+      "pre_close": 93.5,
+      "change_pct": -0.04,
       "high": 94.0,
       "low": 93.08
     },
@@ -37,18 +37,18 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4595.32,
-      "pre_close": 4594.5,
+      "price": 4598.64,
+      "pre_close": 4597.8,
       "change_pct": 0.02,
-      "high": 4600.3,
+      "high": 4604.4,
       "low": 4565.5
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 69.82,
-      "pre_close": 69.78,
+      "price": 69.84,
+      "pre_close": 69.81,
       "change_pct": 0.05,
-      "high": 69.89,
+      "high": 70.03,
       "low": 68.75
     }
   },
@@ -275,84 +275,84 @@
   },
   "top_10day_gainers": [
     {
-      "code": "000007",
-      "name": "全新好",
-      "price": 12.44,
-      "today_chg": 2.894955,
-      "turnover": 192137710,
-      "ret_10d": 28.78
+      "code": "300313",
+      "name": "天山生物",
+      "price": 12.98,
+      "today_chg": -8.203678,
+      "turnover": 404962310,
+      "ret_10d": 59.26
     },
     {
-      "code": "000026",
-      "name": "飞亚达",
-      "price": 20.69,
-      "today_chg": -2.221172,
-      "turnover": 113958282,
-      "ret_10d": 19.32
+      "code": "300345",
+      "name": "华民股份",
+      "price": 9.02,
+      "today_chg": 6.493506,
+      "turnover": 500912990,
+      "ret_10d": 55.79
     },
     {
-      "code": "000505",
-      "name": "京粮控股",
-      "price": 6.75,
-      "today_chg": -9.87984,
-      "turnover": 391056840,
-      "ret_10d": 16.78
+      "code": "300333",
+      "name": "兆日科技",
+      "price": 10.68,
+      "today_chg": -2.3766,
+      "turnover": 163065860,
+      "ret_10d": 55.69
     },
     {
-      "code": "000628",
-      "name": "高新发展",
-      "price": 45.35,
-      "today_chg": 9.992724,
-      "turnover": 676420160,
-      "ret_10d": 16.25
+      "code": "002412",
+      "name": "汉森制药",
+      "price": 10.19,
+      "today_chg": 10.043197,
+      "turnover": 216622240,
+      "ret_10d": 40.17
     },
     {
-      "code": "000017",
-      "name": "深中华A",
-      "price": 7.11,
-      "today_chg": 10.06192,
-      "turnover": 282330620,
-      "ret_10d": 15.05
+      "code": "002437",
+      "name": "誉衡药业",
+      "price": 4.36,
+      "today_chg": -7.82241,
+      "turnover": 2218340800,
+      "ret_10d": 39.74
     },
     {
-      "code": "000703",
-      "name": "恒逸石化",
-      "price": 20.35,
-      "today_chg": 1.243781,
-      "turnover": 1405026200,
-      "ret_10d": 14.91
+      "code": "001277",
+      "name": "速达股份",
+      "price": 37.81,
+      "today_chg": 4.245933,
+      "turnover": 471651560,
+      "ret_10d": 33.79
     },
     {
-      "code": "000668",
-      "name": "荣丰控股",
-      "price": 22.34,
-      "today_chg": 0.44964,
-      "turnover": 45365139,
-      "ret_10d": 13.98
+      "code": "300404",
+      "name": "博济医药",
+      "price": 14.43,
+      "today_chg": -8.322745,
+      "turnover": 797297900,
+      "ret_10d": 32.39
     },
     {
-      "code": "000710",
-      "name": "贝瑞基因",
-      "price": 10.31,
-      "today_chg": 10.032017,
-      "turnover": 570924070,
-      "ret_10d": 13.55
+      "code": "300120",
+      "name": "经纬辉开",
+      "price": 8.98,
+      "today_chg": -0.222222,
+      "turnover": 349729080,
+      "ret_10d": 32.25
     },
     {
-      "code": "000523",
-      "name": "红棉股份",
-      "price": 3.23,
-      "today_chg": -8.498584,
-      "turnover": 375784880,
-      "ret_10d": 12.15
+      "code": "002647",
+      "name": "仁东控股",
+      "price": 12.51,
+      "today_chg": -0.079872,
+      "turnover": 260581720,
+      "ret_10d": 31.13
     },
     {
-      "code": "000506",
-      "name": "招金黄金",
-      "price": 20.3,
-      "today_chg": 4.37018,
-      "turnover": 1758642500,
-      "ret_10d": 11.97
+      "code": "002081",
+      "name": "金 螳 螂",
+      "price": 5.13,
+      "today_chg": -7.567568,
+      "turnover": 1494381400,
+      "ret_10d": 29.87
     }
   ],
   "chip_concentration": [
