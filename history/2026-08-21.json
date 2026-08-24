@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T07:24:50+08:00",
+  "updated_at": "2026-08-24T08:11:56+08:00",
   "data_date": "2026-08-21",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 91.04,
-      "pre_close": 91.09,
-      "change_pct": -0.06,
+      "price": 91.47,
+      "pre_close": 91.39,
+      "change_pct": 0.08,
       "high": 92.06,
       "low": 90.3
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4700.32,
-      "pre_close": 4698.9,
-      "change_pct": 0.03,
+      "price": 4698.32,
+      "pre_close": 4696.3,
+      "change_pct": 0.04,
       "high": 4716.7,
       "low": 4651.8
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 70.03,
-      "pre_close": 69.86,
-      "change_pct": 0.26,
+      "price": 69.65,
+      "pre_close": 69.68,
+      "change_pct": -0.04,
       "high": 70.47,
       "low": 69.21
     }
@@ -119,44 +119,44 @@
   ],
   "northbound": [
     {
-      "code": "300308",
-      "name": "中际旭创",
-      "price": 870.22,
-      "change_pct": -7.72,
-      "market_cap": 9658.9,
-      "net_buy": 36.73
+      "code": "600519",
+      "name": "贵州茅台",
+      "price": 1304.66,
+      "change_pct": 2.5,
+      "market_cap": 16309.3,
+      "net_buy": 15.56
     },
     {
-      "code": "300502",
-      "name": "新易盛",
-      "price": 412.0,
-      "change_pct": -6.79,
-      "market_cap": 5167.5,
-      "net_buy": 35.25
+      "code": "601318",
+      "name": "中国平安",
+      "price": 54.92,
+      "change_pct": 2.94,
+      "market_cap": 5854.5,
+      "net_buy": 11.42
     },
     {
-      "code": "688256",
-      "name": "寒武纪",
-      "price": 969.05,
-      "change_pct": -6.37,
-      "market_cap": 6093.9,
-      "net_buy": 18.14
+      "code": "688012",
+      "name": "中微公司",
+      "price": 357.65,
+      "change_pct": -1.34,
+      "market_cap": 3369.8,
+      "net_buy": 7.74
     },
     {
-      "code": "300750",
-      "name": "宁德时代",
-      "price": 387.89,
-      "change_pct": -0.83,
-      "market_cap": 16524.4,
-      "net_buy": 16.58
+      "code": "600036",
+      "name": "招商银行",
+      "price": 39.58,
+      "change_pct": 1.75,
+      "market_cap": 8164.9,
+      "net_buy": 5.17
     },
     {
-      "code": "600183",
-      "name": "生益科技",
-      "price": 126.3,
-      "change_pct": -4.89,
-      "market_cap": 3046.0,
-      "net_buy": 10.78
+      "code": "601166",
+      "name": "兴业银行",
+      "price": 18.28,
+      "change_pct": 0.99,
+      "market_cap": 3868.6,
+      "net_buy": 5.14
     }
   ],
   "omo": {
@@ -173,69 +173,69 @@
     "trade_date": "2026-08-21"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "化学原料",
-        "change_pct": 2.6,
-        "net_flow": -4.0,
-        "leader": "三维化学"
+        "code": "801950",
+        "name": "煤炭",
+        "change_pct": 2.3,
+        "index_val": 3411.65
       },
       {
-        "name": "港口航运",
-        "change_pct": 2.7,
-        "net_flow": -13.0,
-        "leader": "招商轮船"
+        "code": "801780",
+        "name": "银行",
+        "change_pct": 1.27,
+        "index_val": 4088.41
       },
       {
-        "name": "能源金属",
-        "change_pct": 4.1,
-        "net_flow": -14.0,
-        "leader": "*ST威领"
+        "code": "801120",
+        "name": "食品饮料",
+        "change_pct": 0.98,
+        "index_val": 13923.7
       },
       {
-        "name": "航运概念",
-        "change_pct": 1.8,
-        "net_flow": -20.0,
-        "leader": "招商轮船"
+        "code": "801790",
+        "name": "非银金融",
+        "change_pct": 0.97,
+        "index_val": 1737.94
       },
       {
-        "name": "工业金属",
-        "change_pct": 3.6,
-        "net_flow": -45.0,
-        "leader": "盛达资源"
+        "code": "801040",
+        "name": "钢铁",
+        "change_pct": 0.84,
+        "index_val": 2196.58
       }
     ],
     "outflow_top5": [
       {
-        "name": "高股息精选",
-        "change_pct": -0.3,
-        "net_flow": -35.0,
-        "leader": "南大环境"
+        "code": "801770",
+        "name": "通信",
+        "change_pct": -4.53,
+        "index_val": 7058.96
       },
       {
-        "name": "眼科医疗",
-        "change_pct": -0.0,
-        "net_flow": -30.0,
-        "leader": "大恒科技"
+        "code": "801150",
+        "name": "医药生物",
+        "change_pct": -3.32,
+        "index_val": 7751.98
       },
       {
-        "name": "超级品牌",
-        "change_pct": -1.9,
-        "net_flow": -26.0,
-        "leader": "莲花控股"
+        "code": "801080",
+        "name": "电子",
+        "change_pct": -3.12,
+        "index_val": 8499.86
       },
       {
-        "name": "绿色电力",
-        "change_pct": -0.3,
-        "net_flow": -24.0,
-        "leader": "斯莱克"
+        "code": "801710",
+        "name": "建筑材料",
+        "change_pct": -2.52,
+        "index_val": 5777.74
       },
       {
-        "name": "雄安新区",
-        "change_pct": -0.1,
-        "net_flow": -21.0,
-        "leader": "中关村"
+        "code": "801230",
+        "name": "综合",
+        "change_pct": -2.21,
+        "index_val": 4209.18
       }
     ]
   },
