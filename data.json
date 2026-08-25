@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T04:07:37+08:00",
+  "updated_at": "2026-08-25T04:55:50+08:00",
   "data_date": "2026-08-25",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 90.92,
-      "pre_close": 90.87,
-      "change_pct": 0.06,
+      "price": 90.48,
+      "pre_close": 90.51,
+      "change_pct": -0.03,
       "high": 91.29,
       "low": 90.13
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4686.07,
-      "pre_close": 4687.5,
-      "change_pct": -0.03,
+      "price": 4680.2,
+      "pre_close": 4681.2,
+      "change_pct": -0.02,
       "high": 4755.0,
       "low": 4670.5
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 68.66,
-      "pre_close": 68.69,
-      "change_pct": -0.05,
+      "price": 68.53,
+      "pre_close": 68.53,
+      "change_pct": 0.0,
       "high": 70.77,
       "low": 68.28
     }
@@ -275,6 +275,14 @@
   },
   "top_10day_gainers": [
     {
+      "code": "300862",
+      "name": "蓝盾光电",
+      "price": 52.94,
+      "today_chg": -3.920145,
+      "turnover": 878788490,
+      "ret_10d": 196.09
+    },
+    {
       "code": "300313",
       "name": "天山生物",
       "price": 16.85,
@@ -345,14 +353,6 @@
       "today_chg": 15.8356,
       "turnover": 664544590,
       "ret_10d": 50.96
-    },
-    {
-      "code": "688137",
-      "name": "近岸蛋白",
-      "price": 84.51,
-      "today_chg": 11.948602,
-      "turnover": 480340570,
-      "ret_10d": 49.58
     }
   ],
   "chip_concentration": [
