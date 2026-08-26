@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T08:16:28+08:00",
+  "updated_at": "2026-08-26T08:39:30+08:00",
   "data_date": "2026-08-26",
   "is_trading_day": true,
   "market_overview": {
@@ -21,8 +21,8 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 85.27,
-      "pre_close": 85.29,
+      "price": 85.06,
+      "pre_close": 85.08,
       "change_pct": -0.02,
       "high": 85.99,
       "low": 85.0
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4683.53,
-      "pre_close": 4683.6,
-      "change_pct": -0.0,
+      "price": 4682.28,
+      "pre_close": 4682.7,
+      "change_pct": -0.01,
       "high": 4730.9,
-      "low": 4681.1
+      "low": 4677.3
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 69.38,
-      "pre_close": 69.42,
-      "change_pct": -0.05,
+      "price": 69.3,
+      "pre_close": 69.33,
+      "change_pct": -0.04,
       "high": 70.56,
       "low": 68.98
     }
@@ -173,69 +173,69 @@
     "trade_date": "2026-08-25"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "建筑装饰",
-        "change_pct": 2.8,
-        "net_flow": -9.0,
-        "leader": "东易日盛"
+        "code": "801790",
+        "name": "非银金融",
+        "change_pct": 2.49,
+        "index_val": 1782.87
       },
       {
+        "code": "801050",
+        "name": "有色金属",
+        "change_pct": 1.85,
+        "index_val": 8551.97
+      },
+      {
+        "code": "801040",
+        "name": "钢铁",
+        "change_pct": 1.24,
+        "index_val": 2229.81
+      },
+      {
+        "code": "801180",
         "name": "房地产",
-        "change_pct": 1.7,
-        "net_flow": -9.0,
-        "leader": "我爱我家"
+        "change_pct": 1.22,
+        "index_val": 1890.61
       },
       {
-        "name": "零售",
-        "change_pct": 2.1,
-        "net_flow": -10.0,
-        "leader": "汇通能源"
-      },
-      {
-        "name": "养殖业",
-        "change_pct": 3.6,
-        "net_flow": -12.0,
-        "leader": "天山生物"
-      },
-      {
-        "name": "养老概念",
-        "change_pct": 1.4,
-        "net_flow": -21.0,
-        "leader": "西点药业"
+        "code": "801970",
+        "name": "环保",
+        "change_pct": 1.22,
+        "index_val": 1942.13
       }
     ],
     "outflow_top5": [
       {
-        "name": "金属钴",
-        "change_pct": -0.6,
-        "net_flow": -26.0,
-        "leader": "大地熊"
+        "code": "801230",
+        "name": "综合",
+        "change_pct": -0.47,
+        "index_val": 4192.41
       },
       {
-        "name": "2026一季报预增",
-        "change_pct": -0.1,
-        "net_flow": -23.0,
-        "leader": "鸿富瀚"
+        "code": "801760",
+        "name": "传媒",
+        "change_pct": -0.39,
+        "index_val": 662.2
       },
       {
-        "name": "同花顺漂亮100",
-        "change_pct": -1.4,
-        "net_flow": -10.0,
-        "leader": "*ST闻泰"
+        "code": "801890",
+        "name": "机械设备",
+        "change_pct": -0.22,
+        "index_val": 2204.72
       },
       {
-        "name": "氟化工概念",
-        "change_pct": -1.2,
-        "net_flow": -8.0,
-        "leader": "九洲药业"
+        "code": "801110",
+        "name": "家用电器",
+        "change_pct": -0.17,
+        "index_val": 8713.72
       },
       {
-        "name": "PVDF概念",
-        "change_pct": -1.1,
-        "net_flow": -2.0,
-        "leader": "浙江众成"
+        "code": "801960",
+        "name": "石油石化",
+        "change_pct": -0.13,
+        "index_val": 2726.92
       }
     ]
   },
