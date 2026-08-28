@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T12:30:03+08:00",
+  "updated_at": "2026-08-28T19:55:29+08:00",
   "data_date": "2026-08-28",
   "is_trading_day": true,
   "market_overview": {
@@ -21,35 +21,35 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 87.84,
-      "pre_close": 87.86,
-      "change_pct": -0.02,
+      "price": 88.31,
+      "pre_close": 88.23,
+      "change_pct": 0.09,
       "high": 88.75,
-      "low": 87.6
+      "low": 87.26
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 604.8,
-      "pre_close": 586.0,
-      "change_pct": 3.21,
+      "price": 619.5,
+      "pre_close": 595.0,
+      "change_pct": 4.12,
       "high": 604.8,
       "low": 581.8
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4654.05,
-      "pre_close": 4652.5,
-      "change_pct": 0.03,
-      "high": 4667.7,
-      "low": 4623.0
+      "price": 4505.74,
+      "pre_close": 4506.8,
+      "change_pct": -0.02,
+      "high": 4688.0,
+      "low": 4495.0
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 71.4,
-      "pre_close": 71.36,
-      "change_pct": 0.07,
-      "high": 71.78,
-      "low": 69.22
+      "price": 67.12,
+      "pre_close": 67.14,
+      "change_pct": -0.03,
+      "high": 72.05,
+      "low": 66.83
     }
   },
   "etfs": [
@@ -58,7 +58,7 @@
       "name": "沪深300ETF",
       "price": 4.679,
       "change_pct": -0.26,
-      "mkt_cap_yi": 1103.25,
+      "mkt_cap_yi": 1089.98,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -67,7 +67,7 @@
       "name": "中证500ETF",
       "price": 7.923,
       "change_pct": -0.63,
-      "mkt_cap_yi": 428.39,
+      "mkt_cap_yi": 422.63,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -85,7 +85,7 @@
       "name": "科创50ETF",
       "price": 1.756,
       "change_pct": -1.79,
-      "mkt_cap_yi": 878.8,
+      "mkt_cap_yi": 883.91,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -94,7 +94,7 @@
       "name": "中证红利ETF",
       "price": 1.614,
       "change_pct": 0.25,
-      "mkt_cap_yi": 114.84,
+      "mkt_cap_yi": 114.21,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -103,7 +103,7 @@
       "name": "券商ETF",
       "price": 0.528,
       "change_pct": -0.19,
-      "mkt_cap_yi": 385.79,
+      "mkt_cap_yi": 384.15,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -155,7 +155,7 @@
       "name": "比亚迪",
       "price": 92.32,
       "change_pct": 0.91,
-      "market_cap": 3218.8,
+      "market_cap": 3219.3,
       "net_buy": 4.07
     }
   ],
@@ -356,6 +356,17 @@
     }
   ],
   "chip_concentration": [
+    {
+      "code": "000776",
+      "name": "广发证券",
+      "price": 21.43,
+      "change_pct": -0.741084,
+      "market_cap": 1265.2,
+      "turnover_rate": 0.72,
+      "turnover": 9.07,
+      "concentration_90": 12.69,
+      "holder_date": "2026-06-30"
+    },
     {
       "code": "000617",
       "name": "中油资本",
