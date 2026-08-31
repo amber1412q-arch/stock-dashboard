@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T14:22:41+08:00",
+  "updated_at": "2026-08-31T15:49:32+08:00",
   "data_date": "2026-08-28",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 90.63,
-      "pre_close": 90.51,
-      "change_pct": 0.13,
+      "price": 90.69,
+      "pre_close": 90.6,
+      "change_pct": 0.1,
       "high": 91.52,
       "low": 89.03
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4471.9,
-      "pre_close": 4474.4,
+      "price": 4478.09,
+      "pre_close": 4480.8,
       "change_pct": -0.06,
       "high": 4521.5,
       "low": 4445.6
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 66.83,
-      "pre_close": 66.92,
-      "change_pct": -0.14,
+      "price": 66.81,
+      "pre_close": 66.89,
+      "change_pct": -0.11,
       "high": 68.18,
       "low": 65.83
     }
@@ -58,7 +58,7 @@
       "name": "沪深300ETF",
       "price": 4.685,
       "change_pct": 0.13,
-      "mkt_cap_yi": 1091.38,
+      "mkt_cap_yi": 1101.16,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -67,7 +67,7 @@
       "name": "中证500ETF",
       "price": 7.967,
       "change_pct": 0.56,
-      "mkt_cap_yi": 424.97,
+      "mkt_cap_yi": 430.42,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -85,7 +85,7 @@
       "name": "科创50ETF",
       "price": 1.777,
       "change_pct": 1.2,
-      "mkt_cap_yi": 894.48,
+      "mkt_cap_yi": 898.11,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -94,7 +94,7 @@
       "name": "中证红利ETF",
       "price": 1.622,
       "change_pct": 0.5,
-      "mkt_cap_yi": 114.78,
+      "mkt_cap_yi": 114.97,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -103,7 +103,7 @@
       "name": "券商ETF",
       "price": 0.528,
       "change_pct": 0.0,
-      "mkt_cap_yi": 384.15,
+      "mkt_cap_yi": 383.3,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
