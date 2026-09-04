@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T09:49:22+08:00",
+  "updated_at": "2026-09-04T12:31:43+08:00",
   "data_date": "2026-09-04",
   "is_trading_day": true,
   "market_overview": {
@@ -21,11 +21,11 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 95.14,
-      "pre_close": 95.16,
-      "change_pct": -0.02,
+      "price": 94.79,
+      "pre_close": 94.79,
+      "change_pct": 0.0,
       "high": 96.21,
-      "low": 94.81
+      "low": 94.71
     },
     "sc": {
       "name": "上海原油SC",
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4513.22,
-      "pre_close": 4513.6,
+      "price": 4511.75,
+      "pre_close": 4512.1,
       "change_pct": -0.01,
       "high": 4537.8,
       "low": 4506.6
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 67.25,
-      "pre_close": 67.28,
-      "change_pct": -0.05,
+      "price": 67.55,
+      "pre_close": 67.53,
+      "change_pct": 0.04,
       "high": 67.81,
       "low": 66.88
     }
@@ -468,56 +468,54 @@
     }
   ],
   "hotmoney": {
-    "date": "2026-09-03",
-    "total_net_yi": 11.94,
+    "date": "2026-09-04",
+    "total_net_yi": 24.9,
     "entries": [
       {
-        "name": "黄河旋风",
+        "name": "远东股份",
         "code": "",
-        "net_buy": 4.26,
-        "ratio_pct": 48.0,
+        "net_buy": 8.2,
+        "ratio_pct": 18.6,
         "seats": [
-          "章盟主",
-          "紫阳东路",
-          "量化打板"
+          "量化基金"
         ]
       },
       {
-        "name": "白银有色",
+        "name": "平潭发展",
         "code": "",
-        "net_buy": 2.43,
-        "ratio_pct": 22.3,
-        "seats": []
-      },
-      {
-        "name": "博云新材",
-        "code": "",
-        "net_buy": 1.99,
-        "ratio_pct": 21.8,
+        "net_buy": 5.44,
+        "ratio_pct": 63.9,
         "seats": [
-          "温州帮",
-          "深股通专用",
-          "量化打板"
+          "成都系",
+          "量化基金",
+          "深股通专用"
         ]
       },
       {
-        "name": "思泉新材",
+        "name": "楚天龙",
         "code": "",
-        "net_buy": 1.69,
-        "ratio_pct": 22.6,
+        "net_buy": 4.8,
+        "ratio_pct": 96.3,
         "seats": [
-          "温州帮",
+          "深股通专用"
+        ]
+      },
+      {
+        "name": "天娱数科",
+        "code": "",
+        "net_buy": 4.51,
+        "ratio_pct": 35.4,
+        "seats": [
           "深股通专用",
           "机构专用"
         ]
       },
       {
-        "name": "华盛昌",
+        "name": "易点天下",
         "code": "",
-        "net_buy": 1.57,
-        "ratio_pct": 29.6,
+        "net_buy": 1.95,
+        "ratio_pct": 14.9,
         "seats": [
-          "章盟主",
           "深股通专用",
           "机构专用"
         ]
@@ -528,12 +526,12 @@
         "name": "成都系",
         "stocks": [
           {
-            "name": "金富科技",
-            "net_yi": 0.23
+            "name": "平潭发展",
+            "net_yi": 1.01
           },
           {
-            "name": "恒宝股份",
-            "net_yi": -0.24
+            "name": "亚盛集团",
+            "net_yi": 0.26
           }
         ]
       },
@@ -541,24 +539,8 @@
         "name": "温州帮",
         "stocks": [
           {
-            "name": "博云新材",
-            "net_yi": 0.41
-          },
-          {
-            "name": "思泉新材",
-            "net_yi": 0.37
-          },
-          {
-            "name": "光洋股份",
-            "net_yi": 0.34
-          },
-          {
-            "name": "新朋股份",
-            "net_yi": 0.34
-          },
-          {
-            "name": "一鸣食品",
-            "net_yi": 0.01
+            "name": "千岸科技",
+            "net_yi": -0.02
           }
         ]
       },
@@ -566,24 +548,58 @@
         "name": "章盟主",
         "stocks": [
           {
-            "name": "黄河旋风",
-            "net_yi": 0.66
+            "name": "敦煌种业",
+            "net_yi": 0.46
           },
           {
-            "name": "华盛昌",
-            "net_yi": 0.42
+            "name": "欢瑞世纪",
+            "net_yi": 0.23
           },
           {
-            "name": "信达地产",
-            "net_yi": 0.3
+            "name": "爱仕达",
+            "net_yi": 0.08
           },
           {
-            "name": "金现代",
-            "net_yi": 0.19
+            "name": "深中华A",
+            "net_yi": -0.1
           },
           {
-            "name": "集泰股份",
-            "net_yi": 0.16
+            "name": "我爱我家",
+            "net_yi": -0.25
+          }
+        ]
+      },
+      {
+        "name": "欢乐海岸",
+        "stocks": [
+          {
+            "name": "浪潮信息",
+            "net_yi": 1.24
+          }
+        ]
+      },
+      {
+        "name": "量化基金",
+        "stocks": [
+          {
+            "name": "远东股份",
+            "net_yi": 4.43
+          },
+          {
+            "name": "宏和科技",
+            "net_yi": 1.59
+          },
+          {
+            "name": "德龙激光",
+            "net_yi": 1.2
+          },
+          {
+            "name": "海通发展",
+            "net_yi": 1.12
+          },
+          {
+            "name": "敦煌种业",
+            "net_yi": 1.11
           }
         ]
       },
@@ -591,70 +607,24 @@
         "name": "深股通专用",
         "stocks": [
           {
-            "name": "博云新材",
-            "net_yi": 1.52
-          },
-          {
-            "name": "思泉新材",
-            "net_yi": 0.63
-          },
-          {
-            "name": "华盛昌",
-            "net_yi": 0.61
-          },
-          {
-            "name": "恒宝股份",
-            "net_yi": 0.44
+            "name": "易点天下",
+            "net_yi": 2.41
           },
           {
             "name": "楚天龙",
-            "net_yi": 0.39
-          }
-        ]
-      },
-      {
-        "name": "紫阳东路",
-        "stocks": [
-          {
-            "name": "黄河旋风",
-            "net_yi": 1.45
+            "net_yi": 1.83
           },
           {
-            "name": "金富科技",
-            "net_yi": 1.07
+            "name": "浪潮信息",
+            "net_yi": 1.66
           },
           {
-            "name": "大众交通",
-            "net_yi": 0.71
+            "name": "天娱数科",
+            "net_yi": 1.33
           },
           {
-            "name": "飞龙股份",
-            "net_yi": -0.11
-          }
-        ]
-      },
-      {
-        "name": "量化打板",
-        "stocks": [
-          {
-            "name": "黄河旋风",
-            "net_yi": 0.82
-          },
-          {
-            "name": "大众交通",
-            "net_yi": 0.76
-          },
-          {
-            "name": "金帝股份",
-            "net_yi": 0.7
-          },
-          {
-            "name": "太阳电缆",
-            "net_yi": 0.44
-          },
-          {
-            "name": "博云新材",
-            "net_yi": 0.42
+            "name": "平潭发展",
+            "net_yi": 1.01
           }
         ]
       },
@@ -662,24 +632,24 @@
         "name": "机构专用",
         "stocks": [
           {
-            "name": "华盛昌",
-            "net_yi": 0.54
+            "name": "天娱数科",
+            "net_yi": 1.41
           },
           {
-            "name": "恒宝股份",
-            "net_yi": 0.34
+            "name": "新希望",
+            "net_yi": 1.26
           },
           {
-            "name": "新朋股份",
-            "net_yi": 0.33
+            "name": "平潭发展",
+            "net_yi": 0.85
           },
           {
             "name": "肯特股份",
-            "net_yi": 0.32
+            "net_yi": 0.52
           },
           {
-            "name": "光洋股份",
-            "net_yi": 0.31
+            "name": "海峡创新",
+            "net_yi": 0.41
           }
         ]
       }
