@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T10:01:23+08:00",
+  "updated_at": "2026-09-08T12:30:24+08:00",
   "data_date": "2026-09-08",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 98.53,
-      "pre_close": 98.41,
-      "change_pct": 0.12,
+      "price": 98.68,
+      "pre_close": 98.61,
+      "change_pct": 0.08,
       "high": 99.42,
       "low": 96.78
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4446.86,
-      "pre_close": 4448.8,
-      "change_pct": -0.04,
+      "price": 4437.86,
+      "pre_close": 4439.2,
+      "change_pct": -0.03,
       "high": 4488.8,
       "low": 4426.2
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 66.69,
-      "pre_close": 66.73,
-      "change_pct": -0.06,
+      "price": 66.46,
+      "pre_close": 66.5,
+      "change_pct": -0.07,
       "high": 67.83,
       "low": 66.03
     }
@@ -119,14 +119,6 @@
   ],
   "northbound": [
     {
-      "code": "601899",
-      "name": "紫金矿业",
-      "price": 33.86,
-      "change_pct": 3.01,
-      "market_cap": 6975.8,
-      "net_buy": 13.17
-    },
-    {
       "code": "002463",
       "name": "沪电股份",
       "price": 124.9,
@@ -157,6 +149,14 @@
       "change_pct": 5.45,
       "market_cap": 1007.1,
       "net_buy": 7.39
+    },
+    {
+      "code": "600150",
+      "name": "中国船舶",
+      "price": 39.08,
+      "change_pct": 1.82,
+      "market_cap": 2941.0,
+      "net_buy": 5.98
     }
   ],
   "omo": {
@@ -173,69 +173,69 @@
     "trade_date": "2026-09-07"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "专用设备",
-        "change_pct": 1.5,
-        "net_flow": -25.0,
-        "leader": "华兴源创"
+        "code": "801960",
+        "name": "石油石化",
+        "change_pct": 3.68,
+        "index_val": 2863.58
       },
       {
-        "name": "消费电子",
-        "change_pct": 2.4,
-        "net_flow": -35.0,
-        "leader": "福立旺"
+        "code": "801180",
+        "name": "房地产",
+        "change_pct": 2.09,
+        "index_val": 1940.51
       },
       {
-        "name": "自动化设备",
-        "change_pct": 1.1,
-        "net_flow": -57.0,
-        "leader": "智立方"
+        "code": "801040",
+        "name": "钢铁",
+        "change_pct": 2.07,
+        "index_val": 2230.41
       },
       {
-        "name": "元件",
-        "change_pct": 4.5,
-        "net_flow": -154.0,
-        "leader": "则成电子"
+        "code": "801230",
+        "name": "综合",
+        "change_pct": 1.86,
+        "index_val": 4316.54
       },
       {
-        "name": "通信设备",
-        "change_pct": 3.3,
-        "net_flow": -187.0,
-        "leader": "蘅东光"
+        "code": "801030",
+        "name": "基础化工",
+        "change_pct": 1.7,
+        "index_val": 4409.84
       }
     ],
     "outflow_top5": [
       {
-        "name": "同花顺漂亮100",
-        "change_pct": -1.6,
-        "net_flow": -55.0,
-        "leader": "工业富联"
+        "code": "801730",
+        "name": "电力设备",
+        "change_pct": -1.14,
+        "index_val": 8780.16
       },
       {
-        "name": "黄金概念",
-        "change_pct": -0.8,
-        "net_flow": -34.0,
-        "leader": "宁波中百"
+        "code": "801080",
+        "name": "电子",
+        "change_pct": -1.11,
+        "index_val": 8546.2
       },
       {
-        "name": "电力",
-        "change_pct": -0.3,
-        "net_flow": -26.0,
-        "leader": "恒盛能源"
+        "code": "801750",
+        "name": "计算机",
+        "change_pct": -0.89,
+        "index_val": 4413.74
       },
       {
-        "name": "金属铜",
-        "change_pct": -0.9,
-        "net_flow": -21.0,
-        "leader": "智慧农业"
+        "code": "801110",
+        "name": "家用电器",
+        "change_pct": -0.77,
+        "index_val": 8631.24
       },
       {
-        "name": "金属铅",
-        "change_pct": -0.9,
-        "net_flow": -20.0,
-        "leader": "智慧农业"
+        "code": "801790",
+        "name": "非银金融",
+        "change_pct": -0.48,
+        "index_val": 1773.64
       }
     ]
   },
@@ -468,7 +468,7 @@
     }
   ],
   "hotmoney": {
-    "date": "2026-09-07",
+    "date": "2026-09-08",
     "total_net_yi": 58.24,
     "entries": [
       {
