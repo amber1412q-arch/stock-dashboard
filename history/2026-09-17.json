@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T10:32:30+08:00",
+  "updated_at": "2026-09-17T13:01:26+08:00",
   "data_date": "2026-09-17",
   "is_trading_day": true,
   "market_overview": {
@@ -21,11 +21,11 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 103.75,
-      "pre_close": 103.78,
-      "change_pct": -0.02,
+      "price": 102.19,
+      "pre_close": 102.24,
+      "change_pct": -0.05,
       "high": 106.02,
-      "low": 103.39
+      "low": 101.53
     },
     "sc": {
       "name": "上海原油SC",
@@ -37,18 +37,18 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4350.66,
-      "pre_close": 4348.3,
-      "change_pct": 0.05,
-      "high": 4374.4,
+      "price": 4414.84,
+      "pre_close": 4414.0,
+      "change_pct": 0.02,
+      "high": 4423.3,
       "low": 4294.5
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 64.42,
-      "pre_close": 64.37,
-      "change_pct": 0.08,
-      "high": 64.91,
+      "price": 65.99,
+      "pre_close": 65.97,
+      "change_pct": 0.03,
+      "high": 66.12,
       "low": 63.28
     }
   },
@@ -469,107 +469,82 @@
   ],
   "hotmoney": {
     "date": "2026-09-17",
-    "total_net_yi": 25.38,
+    "total_net_yi": 9.67,
     "entries": [
       {
-        "name": "光迅科技",
+        "name": "山子高科",
         "code": "",
-        "net_buy": 8.76,
-        "ratio_pct": 39.4,
+        "net_buy": 4.34,
+        "ratio_pct": 63.0,
         "seats": [
-          "温州帮",
+          "机构专用",
           "紫阳东路",
-          "深股通专用"
+          "量化打板"
         ]
       },
       {
-        "name": "有研硅",
+        "name": "瑞丰高材",
         "code": "",
-        "net_buy": 7.45,
-        "ratio_pct": 67.6,
+        "net_buy": 1.64,
+        "ratio_pct": 28.0,
         "seats": [
-          "紫阳东路",
+          "温州帮",
+          "机构专用",
           "量化基金"
         ]
       },
       {
-        "name": "通鼎互联",
+        "name": "金石亚药",
         "code": "",
-        "net_buy": 3.78,
-        "ratio_pct": 20.5,
+        "net_buy": 1.37,
+        "ratio_pct": 85.4,
         "seats": [
-          "章盟主",
-          "紫阳东路",
-          "深股通专用"
+          "温州帮",
+          "机构专用"
         ]
       },
       {
-        "name": "超声电子",
+        "name": "跨境通",
         "code": "",
-        "net_buy": 2.79,
-        "ratio_pct": 13.9,
+        "net_buy": 1.29,
+        "ratio_pct": 39.5,
         "seats": [
-          "紫阳东路",
-          "量化基金",
-          "深股通专用"
+          "机构专用"
         ]
       },
       {
-        "name": "致尚科技",
+        "name": "华正新材",
         "code": "",
-        "net_buy": 2.6,
-        "ratio_pct": 37.4,
+        "net_buy": 1.03,
+        "ratio_pct": 6.1,
         "seats": [
-          "量化基金",
-          "深股通专用"
+          "量化基金"
         ]
       }
     ],
     "seats": [
       {
-        "name": "炒股养家",
-        "stocks": [
-          {
-            "name": "莱绅通灵",
-            "net_yi": 0.11
-          },
-          {
-            "name": "瑞尔特",
-            "net_yi": -0.09
-          }
-        ]
-      },
-      {
-        "name": "成都系",
-        "stocks": [
-          {
-            "name": "锡华科技",
-            "net_yi": 0.08
-          }
-        ]
-      },
-      {
         "name": "温州帮",
         "stocks": [
           {
-            "name": "北自科技",
-            "net_yi": 0.68
+            "name": "金石亚药",
+            "net_yi": 0.6
           },
           {
-            "name": "瑞丰高材",
-            "net_yi": 0.47
+            "name": "近岸蛋白",
+            "net_yi": 0.36
           },
           {
-            "name": "中晶科技",
-            "net_yi": 0.31
+            "name": "云煤能源",
+            "net_yi": 0.19
           },
           {
-            "name": "西陇科学",
-            "net_yi": 0.3
+            "name": "*ST皇庭",
+            "net_yi": 0.02
           },
           {
-            "name": "桂林旅游",
-            "net_yi": 0.16
+            "name": "世联行",
+            "net_yi": -0.12
           }
         ]
       },
@@ -577,49 +552,62 @@
         "name": "章盟主",
         "stocks": [
           {
-            "name": "星网锐捷",
-            "net_yi": 0.59
+            "name": "世嘉科技",
+            "net_yi": 0.17
           },
           {
-            "name": "晶升股份",
-            "net_yi": 0.15
+            "name": "龙头股份",
+            "net_yi": 0.14
           },
           {
-            "name": "远望谷",
-            "net_yi": -0.18
+            "name": "内蒙新华",
+            "net_yi": 0.13
           },
           {
-            "name": "天融信",
-            "net_yi": -0.36
+            "name": "世联行",
+            "net_yi": 0.06
           },
           {
-            "name": "通鼎互联",
-            "net_yi": -0.55
+            "name": "电科思仪",
+            "net_yi": -0.19
           }
         ]
       },
       {
-        "name": "紫阳东路",
+        "name": "欢乐海岸",
         "stocks": [
           {
-            "name": "通鼎互联",
-            "net_yi": 2.44
+            "name": "国芳集团",
+            "net_yi": 0.16
           },
           {
-            "name": "星网锐捷",
-            "net_yi": 2.31
+            "name": "千岸科技",
+            "net_yi": 0.03
+          }
+        ]
+      },
+      {
+        "name": "机构专用",
+        "stocks": [
+          {
+            "name": "瑞丰高材",
+            "net_yi": 2.12
           },
           {
-            "name": "光迅科技",
-            "net_yi": 2.26
+            "name": "华宝股份",
+            "net_yi": 0.31
           },
           {
-            "name": "平潭发展",
-            "net_yi": 1.57
+            "name": "中新赛克",
+            "net_yi": 0.29
           },
           {
-            "name": "超声电子",
-            "net_yi": 1.47
+            "name": "和胜股份",
+            "net_yi": 0.24
+          },
+          {
+            "name": "山子高科",
+            "net_yi": 0.24
           }
         ]
       },
@@ -627,49 +615,58 @@
         "name": "量化基金",
         "stocks": [
           {
-            "name": "新农开发",
-            "net_yi": 1.94
+            "name": "沐曦股份",
+            "net_yi": 9.37
           },
           {
-            "name": "有研硅",
-            "net_yi": 1.8
+            "name": "华正新材",
+            "net_yi": 2.0
           },
           {
-            "name": "安凯微",
-            "net_yi": 1.36
+            "name": "博汇科技",
+            "net_yi": 0.9
           },
           {
-            "name": "金健米业",
-            "net_yi": 1.18
+            "name": "近岸蛋白",
+            "net_yi": 0.58
           },
           {
-            "name": "北自科技",
-            "net_yi": 0.92
+            "name": "瑞丰高材",
+            "net_yi": 0.52
           }
         ]
       },
       {
-        "name": "深股通专用",
+        "name": "紫阳东路",
         "stocks": [
           {
-            "name": "光迅科技",
-            "net_yi": 4.61
+            "name": "山子高科",
+            "net_yi": 1.78
+          }
+        ]
+      },
+      {
+        "name": "量化打板",
+        "stocks": [
+          {
+            "name": "山子高科",
+            "net_yi": 1.22
           },
           {
-            "name": "致尚科技",
-            "net_yi": 1.47
+            "name": "海马汽车",
+            "net_yi": 0.38
           },
           {
-            "name": "平潭发展",
-            "net_yi": 1.02
+            "name": "中岩大地",
+            "net_yi": 0.21
           },
           {
-            "name": "星网锐捷",
-            "net_yi": 0.78
+            "name": "众泰汽车",
+            "net_yi": 0.2
           },
           {
-            "name": "远望谷",
-            "net_yi": 0.41
+            "name": "锡华科技",
+            "net_yi": 0.19
           }
         ]
       }
