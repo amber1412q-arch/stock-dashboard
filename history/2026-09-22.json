@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T10:25:07+08:00",
+  "updated_at": "2026-09-22T13:06:55+08:00",
   "data_date": "2026-09-22",
   "is_trading_day": true,
   "market_overview": {
@@ -21,11 +21,11 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 94.17,
-      "pre_close": 94.2,
-      "change_pct": -0.03,
+      "price": 94.87,
+      "pre_close": 94.99,
+      "change_pct": -0.13,
       "high": 97.91,
-      "low": 93.76
+      "low": 93.71
     },
     "sc": {
       "name": "上海原油SC",
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4363.65,
-      "pre_close": 4368.1,
-      "change_pct": -0.1,
+      "price": 4378.06,
+      "pre_close": 4374.2,
+      "change_pct": 0.09,
       "high": 4414.1,
       "low": 4327.6
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 65.95,
-      "pre_close": 66.06,
-      "change_pct": -0.15,
+      "price": 66.51,
+      "pre_close": 66.42,
+      "change_pct": 0.13,
       "high": 67.33,
       "low": 65.04
     }
@@ -458,81 +458,90 @@
   ],
   "hotmoney": {
     "date": "2026-09-22",
-    "total_net_yi": 11.36,
+    "total_net_yi": 12.51,
     "entries": [
       {
-        "name": "中材科技",
+        "name": "哈药股份",
         "code": "",
-        "net_buy": 5.06,
-        "ratio_pct": 41.9,
+        "net_buy": 3.8,
+        "ratio_pct": 54.1,
         "seats": [
-          "宁波桑田路",
+          "量化基金",
+          "沪股通专用"
+        ]
+      },
+      {
+        "name": "博通集成",
+        "code": "",
+        "net_buy": 2.25,
+        "ratio_pct": 30.6,
+        "seats": [
+          "量化基金",
+          "沪股通专用"
+        ]
+      },
+      {
+        "name": "国芳集团",
+        "code": "",
+        "net_buy": 2.25,
+        "ratio_pct": 23.6,
+        "seats": [
+          "量化基金",
+          "沪股通专用"
+        ]
+      },
+      {
+        "name": "贤丰控股",
+        "code": "",
+        "net_buy": 2.13,
+        "ratio_pct": 53.9,
+        "seats": [
           "机构专用"
         ]
       },
       {
-        "name": "广合科技",
+        "name": "义翘神州",
         "code": "",
-        "net_buy": 1.89,
-        "ratio_pct": 20.6,
+        "net_buy": 2.08,
+        "ratio_pct": 43.0,
         "seats": [
-          "量化打板",
+          "温州帮",
           "机构专用"
-        ]
-      },
-      {
-        "name": "大连圣亚",
-        "code": "",
-        "net_buy": 1.72,
-        "ratio_pct": 30.7,
-        "seats": [
-          "量化基金"
-        ]
-      },
-      {
-        "name": "德尔未来",
-        "code": "",
-        "net_buy": 1.4,
-        "ratio_pct": 15.4,
-        "seats": [
-          "机构专用"
-        ]
-      },
-      {
-        "name": "绿地控股",
-        "code": "",
-        "net_buy": 1.29,
-        "ratio_pct": 33.7,
-        "seats": [
-          "章盟主",
-          "量化打板",
-          "量化基金"
         ]
       }
     ],
     "seats": [
       {
+        "name": "成都系",
+        "stocks": [
+          {
+            "name": "旋极信息",
+            "net_yi": 0.16
+          }
+        ]
+      },
+      {
         "name": "温州帮",
         "stocks": [
           {
-            "name": "万科A",
-            "net_yi": 0.51
+            "name": "我爱我家",
+            "net_yi": 0.43
           },
           {
-            "name": "中视传媒",
-            "net_yi": 0.08
+            "name": "义翘神州",
+            "net_yi": 0.42
           },
           {
-            "name": "菲林格尔",
-            "net_yi": 0.06
+            "name": "艾艾精工",
+            "net_yi": 0.39
           },
           {
-            "name": "南宁百货",
-            "net_yi": -0.08
+            "name": "国恩股份",
+            "net_yi": 0.2
           },
           {
-            "name": "安德利",
-            "net_yi": -0.1
+            "name": "乔治白",
+            "net_yi": 0.1
           }
         ]
       },
@@ -540,67 +549,37 @@
         "name": "章盟主",
         "stocks": [
           {
-            "name": "南华生物",
-            "net_yi": 0.12
+            "name": "大亚圣象",
+            "net_yi": 0.34
           },
           {
-            "name": "万邦医药",
-            "net_yi": 0.11
+            "name": "南威软件",
+            "net_yi": 0.16
           },
           {
-            "name": "绿地控股",
-            "net_yi": -0.14
+            "name": "菲林格尔",
+            "net_yi": 0.05
           },
           {
-            "name": "托伦斯",
+            "name": "澳洋健康",
             "net_yi": -0.26
+          },
+          {
+            "name": "龙头股份",
+            "net_yi": -0.28
           }
         ]
       },
       {
-        "name": "佛山系",
+        "name": "欢乐海岸",
         "stocks": [
           {
-            "name": "万科A",
-            "net_yi": -3.65
-          }
-        ]
-      },
-      {
-        "name": "量化打板",
-        "stocks": [
-          {
-            "name": "广合科技",
-            "net_yi": 1.18
+            "name": "新华制药",
+            "net_yi": -0.12
           },
           {
-            "name": "双星新材",
-            "net_yi": 0.78
-          },
-          {
-            "name": "透景生命",
-            "net_yi": 0.56
-          },
-          {
-            "name": "宏昌科技",
-            "net_yi": 0.42
-          },
-          {
-            "name": "绿地控股",
-            "net_yi": 0.35
-          }
-        ]
-      },
-      {
-        "name": "宁波桑田路",
-        "stocks": [
-          {
-            "name": "中材科技",
-            "net_yi": 2.19
-          },
-          {
-            "name": "万科A",
-            "net_yi": 0.51
+            "name": "华仁药业",
+            "net_yi": -0.27
           }
         ]
       },
@@ -608,24 +587,49 @@
         "name": "量化基金",
         "stocks": [
           {
-            "name": "近岸蛋白",
-            "net_yi": 1.03
+            "name": "艾艾精工",
+            "net_yi": 1.69
           },
           {
-            "name": "大连圣亚",
-            "net_yi": 0.86
+            "name": "国芳集团",
+            "net_yi": 1.67
           },
           {
-            "name": "绿地控股",
-            "net_yi": 0.77
+            "name": "哈药股份",
+            "net_yi": 1.01
           },
           {
-            "name": "托伦斯",
-            "net_yi": 0.62
+            "name": "博通集成",
+            "net_yi": 0.93
           },
           {
-            "name": "肯特催化",
+            "name": "百花医药",
+            "net_yi": 0.81
+          }
+        ]
+      },
+      {
+        "name": "沪股通专用",
+        "stocks": [
+          {
+            "name": "哈药股份",
+            "net_yi": 2.68
+          },
+          {
+            "name": "博通集成",
+            "net_yi": 0.98
+          },
+          {
+            "name": "国芳集团",
             "net_yi": 0.57
+          },
+          {
+            "name": "诺唯赞",
+            "net_yi": 0.53
+          },
+          {
+            "name": "金健米业",
+            "net_yi": 0.33
           }
         ]
       },
@@ -633,24 +637,24 @@
         "name": "机构专用",
         "stocks": [
           {
-            "name": "中材科技",
-            "net_yi": 0.74
+            "name": "五洲医疗",
+            "net_yi": 1.35
           },
           {
-            "name": "我爱我家",
-            "net_yi": 0.62
+            "name": "贤丰控股",
+            "net_yi": 1.0
           },
           {
-            "name": "德尔未来",
-            "net_yi": 0.6
+            "name": "中塑股份",
+            "net_yi": 0.98
           },
           {
-            "name": "洛轴股份",
-            "net_yi": 0.49
+            "name": "万邦医药",
+            "net_yi": 0.69
           },
           {
-            "name": "三羊马",
-            "net_yi": 0.47
+            "name": "国脉文化",
+            "net_yi": 0.61
           }
         ]
       }
