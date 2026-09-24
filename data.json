@@ -1,168 +1,168 @@
 {
-  "updated_at": "2026-09-24T05:48:30+08:00",
+  "updated_at": "2026-09-24T10:39:01+08:00",
   "data_date": "2026-09-24",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 12419.99,
+    "total_turnover": 16691.12,
     "prev_turnover": null,
-    "ma5_turnover": 12419.99,
+    "ma5_turnover": 16691.12,
     "ma5_ready": false,
-    "advancing": 1489,
-    "declining": 3922,
-    "limit_up": 49,
-    "limit_down": 12
+    "advancing": 1120,
+    "declining": 4306,
+    "limit_up": 65,
+    "limit_down": 22
   },
   "turnover_history": [
     [
       "2026-09-24",
-      12419.99
+      16691.12
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 98.16,
-      "pre_close": 98.14,
-      "change_pct": 0.02,
-      "high": 98.17,
+      "price": 99.64,
+      "pre_close": 99.51,
+      "change_pct": 0.13,
+      "high": 100.94,
       "low": 97.09
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 734.4,
+      "price": 744.0,
       "pre_close": 703.0,
-      "change_pct": 4.47,
-      "high": 710.6,
-      "low": 680.0
+      "change_pct": 5.83,
+      "high": 744.0,
+      "low": 702.8
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4317.48,
-      "pre_close": 4318.3,
-      "change_pct": -0.02,
+      "price": 4279.9,
+      "pre_close": 4279.8,
+      "change_pct": 0.0,
       "high": 4338.0,
-      "low": 4308.0
+      "low": 4279.0
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 64.53,
-      "pre_close": 64.56,
-      "change_pct": -0.05,
+      "price": 63.81,
+      "pre_close": 63.81,
+      "change_pct": 0.0,
       "high": 65.0,
-      "low": 64.17
+      "low": 63.75
     }
   },
   "etfs": [
     {
       "code": "510300",
       "name": "沪深300ETF",
-      "price": 4.531,
-      "change_pct": -1.29,
-      "mkt_cap_yi": 1087.68,
+      "price": 4.515,
+      "change_pct": -1.63,
+      "mkt_cap_yi": 1083.84,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "510500",
       "name": "中证500ETF",
-      "price": 7.708,
-      "change_pct": -1.41,
-      "mkt_cap_yi": 444.36,
+      "price": 7.65,
+      "change_pct": -2.15,
+      "mkt_cap_yi": 441.02,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "159915",
       "name": "创业板ETF",
-      "price": 3.336,
-      "change_pct": -1.85,
-      "mkt_cap_yi": 655.47,
+      "price": 3.312,
+      "change_pct": -2.56,
+      "mkt_cap_yi": 650.76,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "588000",
       "name": "科创50ETF",
-      "price": 1.729,
-      "change_pct": -1.48,
-      "mkt_cap_yi": 938.69,
+      "price": 1.713,
+      "change_pct": -2.39,
+      "mkt_cap_yi": 930.0,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "515080",
       "name": "中证红利ETF",
-      "price": 1.542,
-      "change_pct": -0.06,
-      "mkt_cap_yi": 110.53,
+      "price": 1.541,
+      "change_pct": -0.13,
+      "mkt_cap_yi": 110.46,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "512000",
       "name": "券商ETF",
-      "price": 0.502,
-      "change_pct": -1.57,
-      "mkt_cap_yi": 356.85,
+      "price": 0.501,
+      "change_pct": -1.76,
+      "mkt_cap_yi": 356.14,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "513180",
       "name": "恒生科技ETF",
-      "price": 0.548,
-      "change_pct": -0.72,
-      "mkt_cap_yi": 390.53,
+      "price": 0.549,
+      "change_pct": -0.54,
+      "mkt_cap_yi": 391.24,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     }
   ],
   "northbound": [
     {
-      "code": "002463",
-      "name": "沪电股份",
-      "price": 125.7,
-      "change_pct": -1.87,
-      "market_cap": 2417.0,
-      "net_buy": 8.56
+      "code": "688082",
+      "name": "盛美上海",
+      "price": 304.11,
+      "change_pct": 4.39,
+      "market_cap": 1466.5,
+      "net_buy": 4.18
     },
     {
-      "code": "688825",
-      "name": "长鑫科技",
-      "price": 56.7,
-      "change_pct": -3.28,
-      "market_cap": 2553.2,
-      "net_buy": 7.56
+      "code": "601288",
+      "name": "农业银行",
+      "price": 6.87,
+      "change_pct": 0.59,
+      "market_cap": 21932.1,
+      "net_buy": 3.25
     },
     {
-      "code": "300502",
-      "name": "新易盛",
-      "price": 438.3,
-      "change_pct": -2.86,
-      "market_cap": 5499.4,
-      "net_buy": 6.4
+      "code": "600900",
+      "name": "长江电力",
+      "price": 28.36,
+      "change_pct": 1.0,
+      "market_cap": 6939.2,
+      "net_buy": 3.13
     },
     {
-      "code": "603893",
-      "name": "瑞芯微",
-      "price": 221.55,
-      "change_pct": -0.65,
-      "market_cap": 936.9,
-      "net_buy": 5.33
+      "code": "300857",
+      "name": "协创数据",
+      "price": 268.58,
+      "change_pct": 0.21,
+      "market_cap": 1302.3,
+      "net_buy": 3.05
     },
     {
-      "code": "002916",
-      "name": "深南电路",
-      "price": 397.12,
-      "change_pct": -4.26,
-      "market_cap": 2640.9,
-      "net_buy": 4.58
+      "code": "601398",
+      "name": "工商银行",
+      "price": 8.13,
+      "change_pct": 0.49,
+      "market_cap": 21919.5,
+      "net_buy": 2.88
     }
   ],
   "omo": {
-    "matured": 0,
+    "matured": 7033.0,
     "new_issue": 515.0,
-    "net": 515.0,
+    "net": -6518.0,
     "trade_date": "2026-09-24"
   },
   "margin": {
@@ -176,66 +176,66 @@
     "source": "sw",
     "inflow_top5": [
       {
-        "code": "801130",
-        "name": "纺织服饰",
-        "change_pct": 0.68,
-        "index_val": 1531.14
-      },
-      {
         "code": "801950",
         "name": "煤炭",
-        "change_pct": 0.58,
-        "index_val": 3343.86
+        "change_pct": 0.64,
+        "index_val": 3345.82
+      },
+      {
+        "code": "801130",
+        "name": "纺织服饰",
+        "change_pct": 0.37,
+        "index_val": 1526.47
       },
       {
         "code": "801780",
         "name": "银行",
-        "change_pct": 0.34,
-        "index_val": 4141.35
+        "change_pct": 0.35,
+        "index_val": 4141.68
       },
       {
         "code": "801110",
         "name": "家用电器",
-        "change_pct": 0.3,
-        "index_val": 8513.67
+        "change_pct": 0.03,
+        "index_val": 8490.52
       },
       {
-        "code": "801980",
-        "name": "美容护理",
-        "change_pct": -0.09,
-        "index_val": 3483.48
+        "code": "801160",
+        "name": "公用事业",
+        "change_pct": -0.06,
+        "index_val": 2430.79
       }
     ],
     "outflow_top5": [
       {
         "code": "801050",
         "name": "有色金属",
-        "change_pct": -2.91,
-        "index_val": 7736.34
-      },
-      {
-        "code": "801710",
-        "name": "建筑材料",
-        "change_pct": -2.28,
-        "index_val": 6042.2
-      },
-      {
-        "code": "801770",
-        "name": "通信",
-        "change_pct": -2.09,
-        "index_val": 7435.88
-      },
-      {
-        "code": "801150",
-        "name": "医药生物",
-        "change_pct": -2.04,
-        "index_val": 7849.23
+        "change_pct": -3.52,
+        "index_val": 7688.44
       },
       {
         "code": "801080",
         "name": "电子",
-        "change_pct": -1.97,
-        "index_val": 8872.14
+        "change_pct": -2.9,
+        "index_val": 8787.55
+      },
+      {
+        "code": "801710",
+        "name": "建筑材料",
+        "change_pct": -2.83,
+        "index_val": 6008.31
+      },
+      {
+        "code": "801770",
+        "name": "通信",
+        "change_pct": -2.67,
+        "index_val": 7392.5
+      },
+      {
+        "code": "801150",
+        "name": "医药生物",
+        "change_pct": -2.53,
+        "index_val": 7809.91
       }
     ]
   },
@@ -277,104 +277,104 @@
     {
       "code": "605058",
       "name": "澳弘电子",
-      "price": 59.5,
-      "today_chg": 1.535836,
-      "turnover": 990423190,
-      "ret_10d": 96.53
+      "price": 60.2,
+      "today_chg": 2.730375,
+      "turnover": 1319514260,
+      "ret_10d": 98.81
     },
     {
       "code": "001216",
       "name": "华瓷股份",
-      "price": 28.47,
-      "today_chg": 0.565171,
-      "turnover": 1034942630,
-      "ret_10d": 94.79
+      "price": 28.4,
+      "today_chg": 0.317909,
+      "turnover": 1222641480,
+      "ret_10d": 94.65
     },
     {
       "code": "603230",
       "name": "内蒙新华",
-      "price": 18.3,
-      "today_chg": 8.993448,
-      "turnover": 1233937990,
-      "ret_10d": 88.0
-    },
-    {
-      "code": "688112",
-      "name": "鼎阳科技",
-      "price": 119.98,
-      "today_chg": 4.348582,
-      "turnover": 1120178100,
-      "ret_10d": 79.77
+      "price": 18.47,
+      "today_chg": 10.005956,
+      "turnover": 1311807280,
+      "ret_10d": 89.44
     },
     {
       "code": "688137",
       "name": "近岸蛋白",
-      "price": 123.5,
-      "today_chg": 0.537284,
-      "turnover": 815502710,
-      "ret_10d": 77.82
+      "price": 125.25,
+      "today_chg": 1.961902,
+      "turnover": 1014181770,
+      "ret_10d": 79.78
+    },
+    {
+      "code": "688112",
+      "name": "鼎阳科技",
+      "price": 117.08,
+      "today_chg": 1.826405,
+      "turnover": 1329709290,
+      "ret_10d": 75.72
     },
     {
       "code": "600641",
       "name": "先导基电",
-      "price": 52.05,
-      "today_chg": 8.891213,
-      "turnover": 6735093500,
-      "ret_10d": 73.14
+      "price": 51.56,
+      "today_chg": 7.866109,
+      "turnover": 8047256500,
+      "ret_10d": 71.58
     },
     {
       "code": "300829",
       "name": "金丹科技",
-      "price": 27.35,
-      "today_chg": -4.770195,
-      "turnover": 1156130910,
-      "ret_10d": 60.31
+      "price": 27.56,
+      "today_chg": -4.038997,
+      "turnover": 1370565100,
+      "ret_10d": 61.83
     },
     {
       "code": "000504",
       "name": "南华生物",
-      "price": 13.92,
-      "today_chg": 9.090909,
-      "turnover": 1406891500,
-      "ret_10d": 59.54
+      "price": 13.73,
+      "today_chg": 7.601881,
+      "turnover": 1525092500,
+      "ret_10d": 57.82
     },
     {
       "code": "688203",
       "name": "海正生材",
-      "price": 23.3,
-      "today_chg": -4.115226,
-      "turnover": 730408900,
-      "ret_10d": 59.33
+      "price": 23.06,
+      "today_chg": -5.102881,
+      "turnover": 908837910,
+      "ret_10d": 57.62
     },
     {
       "code": "601579",
       "name": "会稽山",
-      "price": 38.37,
-      "today_chg": 4.408163,
-      "turnover": 1808749500,
-      "ret_10d": 58.42
+      "price": 38.04,
+      "today_chg": 3.510204,
+      "turnover": 2130961100,
+      "ret_10d": 56.93
     }
   ],
   "chip_concentration": [
     {
       "code": "000776",
       "name": "广发证券",
-      "price": 20.33,
-      "change_pct": -2.400384,
-      "market_cap": 1200.3,
-      "turnover_rate": 0.45,
-      "turnover": 5.48,
+      "price": 20.37,
+      "change_pct": -2.208353,
+      "market_cap": 1202.7,
+      "turnover_rate": 0.64,
+      "turnover": 7.76,
       "concentration_90": 12.69,
       "holder_date": "2026-06-30"
     },
     {
       "code": "000301",
       "name": "东方盛虹",
-      "price": 13.43,
-      "change_pct": -2.184996,
-      "market_cap": 886.8,
-      "turnover_rate": 0.15,
-      "turnover": 1.38,
+      "price": 13.36,
+      "change_pct": -2.694829,
+      "market_cap": 882.9,
+      "turnover_rate": 0.21,
+      "turnover": 1.89,
       "concentration_90": 17.6,
       "holder_date": "2026-06-30"
     },
@@ -384,80 +384,69 @@
       "price": 6.67,
       "change_pct": -1.185185,
       "market_cap": 843.2,
-      "turnover_rate": 0.25,
-      "turnover": 2.11,
+      "turnover_rate": 0.34,
+      "turnover": 2.92,
       "concentration_90": 26.37,
       "holder_date": "2026-06-30"
     },
     {
       "code": "000630",
       "name": "铜陵有色",
-      "price": 5.91,
-      "change_pct": -3.431373,
-      "market_cap": 658.5,
-      "turnover_rate": 1.28,
-      "turnover": 8.52,
+      "price": 5.89,
+      "change_pct": -3.75817,
+      "market_cap": 656.3,
+      "turnover_rate": 1.9,
+      "turnover": 12.58,
       "concentration_90": 14.1,
       "holder_date": "2026-06-30"
     },
     {
       "code": "000559",
       "name": "万向钱潮",
-      "price": 11.19,
-      "change_pct": 0.268817,
-      "market_cap": 372.3,
-      "turnover_rate": 1.93,
-      "turnover": 7.29,
+      "price": 11.1,
+      "change_pct": -0.537634,
+      "market_cap": 369.3,
+      "turnover_rate": 2.25,
+      "turnover": 8.49,
       "concentration_90": 13.43,
       "holder_date": "2026-06-30"
     },
     {
       "code": "000661",
       "name": "长春高新",
-      "price": 71,
-      "change_pct": -3.071672,
-      "market_cap": 280.3,
-      "turnover_rate": 0.89,
-      "turnover": 2.52,
+      "price": 70.85,
+      "change_pct": -3.276451,
+      "market_cap": 279.7,
+      "turnover_rate": 1.16,
+      "turnover": 3.28,
       "concentration_90": 5.79,
       "holder_date": "2026-06-30"
     },
     {
       "code": "000415",
       "name": "渤海租赁",
-      "price": 4.13,
-      "change_pct": -0.959233,
-      "market_cap": 222.7,
-      "turnover_rate": 0.49,
-      "turnover": 1.1,
+      "price": 4.11,
+      "change_pct": -1.438849,
+      "market_cap": 221.7,
+      "turnover_rate": 0.72,
+      "turnover": 1.61,
       "concentration_90": 6.61,
       "holder_date": "2026-06-30"
     },
     {
       "code": "000603",
       "name": "盛达资源",
-      "price": 32.3,
-      "change_pct": -4.381291,
-      "market_cap": 215.3,
-      "turnover_rate": 2.76,
-      "turnover": 5.98,
+      "price": 32.12,
+      "change_pct": -4.91415,
+      "market_cap": 214.2,
+      "turnover_rate": 3.89,
+      "turnover": 8.39,
       "concentration_90": 9.75,
-      "holder_date": "2026-06-30"
-    },
-    {
-      "code": "000158",
-      "name": "常山北明",
-      "price": 12.6,
-      "change_pct": -0.943396,
-      "market_cap": 200.6,
-      "turnover_rate": 0.66,
-      "turnover": 1.33,
-      "concentration_90": 10.9,
       "holder_date": "2026-06-30"
     }
   ],
   "hotmoney": {
-    "date": "2026-09-23",
+    "date": "2026-09-24",
     "total_net_yi": 22.48,
     "entries": [
       {
