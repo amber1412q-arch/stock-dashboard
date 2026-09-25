@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T10:38:50+08:00",
+  "updated_at": "2026-09-25T13:16:06+08:00",
   "data_date": "2026-09-25",
   "is_trading_day": true,
   "market_overview": {
@@ -21,11 +21,11 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 98.96,
-      "pre_close": 98.87,
-      "change_pct": 0.09,
+      "price": 98.37,
+      "pre_close": 98.4,
+      "change_pct": -0.03,
       "high": 99.76,
-      "low": 97.81
+      "low": 97.75
     },
     "sc": {
       "name": "上海原油SC",
@@ -37,18 +37,18 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4343.74,
-      "pre_close": 4343.5,
-      "change_pct": 0.01,
-      "high": 4345.3,
+      "price": 4333.85,
+      "pre_close": 4331.9,
+      "change_pct": 0.05,
+      "high": 4351.6,
       "low": 4290.3
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 65.38,
-      "pre_close": 65.36,
-      "change_pct": 0.02,
-      "high": 65.44,
+      "price": 65.13,
+      "pre_close": 65.08,
+      "change_pct": 0.08,
+      "high": 65.5,
       "low": 63.78
     }
   },
