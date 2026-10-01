@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T14:07:19+08:00",
+  "updated_at": "2026-10-01T15:05:28+08:00",
   "data_date": "2026-10-01",
   "is_trading_day": true,
   "market_overview": {
@@ -21,10 +21,10 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 100.88,
-      "pre_close": 100.85,
-      "change_pct": 0.03,
-      "high": 101.04,
+      "price": 101.19,
+      "pre_close": 101.18,
+      "change_pct": 0.01,
+      "high": 101.25,
       "low": 96.55
     },
     "sc": {
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4189.6,
-      "pre_close": 4191.8,
-      "change_pct": -0.05,
+      "price": 4193.34,
+      "pre_close": 4196.0,
+      "change_pct": -0.06,
       "high": 4222.8,
       "low": 4169.4
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 61.43,
-      "pre_close": 61.4,
-      "change_pct": 0.05,
+      "price": 61.24,
+      "pre_close": 61.17,
+      "change_pct": 0.11,
       "high": 61.75,
       "low": 60.26
     }
@@ -127,14 +127,6 @@
       "net_buy": 10.76
     },
     {
-      "code": "600519",
-      "name": "贵州茅台",
-      "price": 1258.62,
-      "change_pct": 1.86,
-      "market_cap": 15733.8,
-      "net_buy": 7.96
-    },
-    {
       "code": "600276",
       "name": "恒瑞医药",
       "price": 47.2,
@@ -157,6 +149,14 @@
       "change_pct": 1.94,
       "market_cap": 1217.8,
       "net_buy": 3.2
+    },
+    {
+      "code": "002594",
+      "name": "比亚迪",
+      "price": 83.31,
+      "change_pct": 1.57,
+      "market_cap": 2905.1,
+      "net_buy": 2.94
     }
   ],
   "omo": {
