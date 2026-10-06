@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T07:09:17+08:00",
+  "updated_at": "2026-10-06T14:10:20+08:00",
   "data_date": "2026-10-06",
   "is_trading_day": true,
   "market_overview": {
@@ -21,11 +21,11 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 99.61,
-      "pre_close": 99.62,
-      "change_pct": -0.01,
+      "price": 98.23,
+      "pre_close": 98.35,
+      "change_pct": -0.12,
       "high": 100.99,
-      "low": 99.38
+      "low": 97.06
     },
     "sc": {
       "name": "上海原油SC",
@@ -37,18 +37,18 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4159.22,
-      "pre_close": 4157.0,
-      "change_pct": 0.05,
-      "high": 4179.6,
+      "price": 4184.34,
+      "pre_close": 4181.9,
+      "change_pct": 0.06,
+      "high": 4208.0,
       "low": 4130.7
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 60.89,
-      "pre_close": 60.91,
-      "change_pct": -0.03,
-      "high": 61.53,
+      "price": 61.24,
+      "pre_close": 61.3,
+      "change_pct": -0.1,
+      "high": 62.05,
       "low": 60.57
     }
   },
@@ -173,69 +173,69 @@
     "trade_date": "2026-09-29"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "生物制品",
-        "change_pct": 8.6,
-        "net_flow": -14.0,
-        "leader": "康希诺"
+        "code": "801150",
+        "name": "医药生物",
+        "change_pct": 2.73,
+        "index_val": 7989.13
       },
       {
-        "name": "医疗服务",
-        "change_pct": 7.4,
-        "net_flow": -25.0,
-        "leader": "南模生物"
+        "code": "801980",
+        "name": "美容护理",
+        "change_pct": 1.7,
+        "index_val": 3487.3
       },
       {
-        "name": "房地产",
-        "change_pct": 4.9,
-        "net_flow": -25.0,
-        "leader": "陆家嘴"
+        "code": "801120",
+        "name": "食品饮料",
+        "change_pct": 1.68,
+        "index_val": 13618.21
       },
       {
-        "name": "CRO概念",
-        "change_pct": 6.7,
-        "net_flow": -26.0,
-        "leader": "康希诺"
+        "code": "801780",
+        "name": "银行",
+        "change_pct": 1.47,
+        "index_val": 4203.77
       },
       {
-        "name": "减肥药",
-        "change_pct": 4.0,
-        "net_flow": -28.0,
-        "leader": "美诺华"
+        "code": "801040",
+        "name": "钢铁",
+        "change_pct": 1.24,
+        "index_val": 2125.77
       }
     ],
     "outflow_top5": [
       {
-        "name": "芯片概念",
-        "change_pct": -2.6,
-        "net_flow": -291.0,
-        "leader": "园林股份"
+        "code": "801080",
+        "name": "电子",
+        "change_pct": -2.38,
+        "index_val": 8223.61
       },
       {
-        "name": "汽车电子",
-        "change_pct": -1.6,
-        "net_flow": -151.0,
-        "leader": "松原安全"
+        "code": "801750",
+        "name": "计算机",
+        "change_pct": -0.98,
+        "index_val": 4192.48
       },
       {
-        "name": "数据中心(AIDC)",
-        "change_pct": -2.5,
-        "net_flow": -149.0,
-        "leader": "华是科技"
+        "code": "801890",
+        "name": "机械设备",
+        "change_pct": -0.9,
+        "index_val": 2080.16
       },
       {
-        "name": "华为概念",
-        "change_pct": -2.0,
-        "net_flow": -146.0,
-        "leader": "华是科技"
+        "code": "801770",
+        "name": "通信",
+        "change_pct": -0.62,
+        "index_val": 6807.58
       },
       {
-        "name": "5G",
-        "change_pct": -2.8,
-        "net_flow": -145.0,
-        "leader": "国网信通"
+        "code": "801110",
+        "name": "家用电器",
+        "change_pct": -0.57,
+        "index_val": 8337.71
       }
     ]
   },
