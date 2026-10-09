@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-10-09T14:12:00+08:00",
+  "updated_at": "2026-10-09T14:58:12+08:00",
   "data_date": "2026-10-09",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 19166.94,
+    "total_turnover": 18859.96,
     "prev_turnover": null,
-    "ma5_turnover": 19166.94,
+    "ma5_turnover": 18859.96,
     "ma5_ready": false,
-    "advancing": 3297,
-    "declining": 2144,
-    "limit_up": 99,
+    "advancing": 3232,
+    "declining": 2114,
+    "limit_up": 98,
     "limit_down": 15
   },
   "turnover_history": [
     [
       "2026-10-09",
-      19166.94
+      18859.96
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 104.08,
-      "pre_close": 104.11,
-      "change_pct": -0.03,
-      "high": 104.14,
+      "price": 104.39,
+      "pre_close": 104.35,
+      "change_pct": 0.03,
+      "high": 104.68,
       "low": 102.33
     },
     "sc": {
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4214.44,
-      "pre_close": 4212.2,
-      "change_pct": 0.05,
+      "price": 4210.06,
+      "pre_close": 4207.7,
+      "change_pct": 0.06,
       "high": 4233.7,
       "low": 4156.1
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 61.25,
-      "pre_close": 61.23,
-      "change_pct": 0.04,
+      "price": 61.11,
+      "pre_close": 61.06,
+      "change_pct": 0.08,
       "high": 61.46,
       "low": 59.45
     }
@@ -58,7 +58,7 @@
       "name": "沪深300ETF",
       "price": 4.385,
       "change_pct": -0.09,
-      "mkt_cap_yi": 1055.2,
+      "mkt_cap_yi": 1069.6,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -67,7 +67,7 @@
       "name": "中证500ETF",
       "price": 7.282,
       "change_pct": 0.04,
-      "mkt_cap_yi": 407.43,
+      "mkt_cap_yi": 416.54,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -173,69 +173,69 @@
     "trade_date": "2026-10-08"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "文化传媒",
-        "change_pct": 3.7,
-        "net_flow": -13.0,
-        "leader": "流金科技"
+        "code": "801760",
+        "name": "传媒",
+        "change_pct": 5.32,
+        "index_val": 682.69
       },
       {
-        "name": "种植业与林业",
-        "change_pct": 0.7,
-        "net_flow": -13.0,
-        "leader": "秋乐种业"
+        "code": "801750",
+        "name": "计算机",
+        "change_pct": 2.33,
+        "index_val": 4203.42
       },
       {
-        "name": "影视院线",
-        "change_pct": 4.1,
-        "net_flow": -14.0,
-        "leader": "捷成股份"
+        "code": "801200",
+        "name": "商贸零售",
+        "change_pct": 2.3,
+        "index_val": 1778.43
       },
       {
-        "name": "电池",
-        "change_pct": 5.9,
-        "net_flow": -23.0,
-        "leader": "力王股份"
+        "code": "801050",
+        "name": "有色金属",
+        "change_pct": 2.2,
+        "index_val": 7599.68
       },
       {
-        "name": "软件开发",
-        "change_pct": 0.6,
-        "net_flow": -23.0,
-        "leader": "绿盟科技"
+        "code": "801010",
+        "name": "农林牧渔",
+        "change_pct": 1.93,
+        "index_val": 2584.25
       }
     ],
     "outflow_top5": [
       {
-        "name": "芯片概念",
-        "change_pct": -5.3,
-        "net_flow": -80.0,
-        "leader": "流金科技"
+        "code": "801740",
+        "name": "国防军工",
+        "change_pct": -1.7,
+        "index_val": 1582.76
       },
       {
-        "name": "共封装光学(CPO)",
-        "change_pct": -8.9,
-        "net_flow": -71.0,
-        "leader": "宇特光电"
+        "code": "801080",
+        "name": "电子",
+        "change_pct": -1.46,
+        "index_val": 7758.76
       },
       {
-        "name": "商业航天",
-        "change_pct": -4.1,
-        "net_flow": -66.0,
-        "leader": "流金科技"
+        "code": "801780",
+        "name": "银行",
+        "change_pct": -0.99,
+        "index_val": 4205.31
       },
       {
-        "name": "5G",
-        "change_pct": -5.0,
-        "net_flow": -64.0,
-        "leader": "流金科技"
+        "code": "801890",
+        "name": "机械设备",
+        "change_pct": -0.97,
+        "index_val": 2008.39
       },
       {
-        "name": "PCB概念",
-        "change_pct": -6.8,
-        "net_flow": -63.0,
-        "leader": "澳弘电子"
+        "code": "801710",
+        "name": "建筑材料",
+        "change_pct": -0.89,
+        "index_val": 5694.01
       }
     ]
   },
