@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T10:45:23+08:00",
+  "updated_at": "2026-10-14T13:20:52+08:00",
   "data_date": "2026-10-14",
   "is_trading_day": true,
   "market_overview": {
@@ -21,35 +21,35 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 106.57,
-      "pre_close": 106.52,
-      "change_pct": 0.05,
+      "price": 105.47,
+      "pre_close": 105.48,
+      "change_pct": -0.01,
       "high": 107.15,
       "low": 105.21
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 760.8,
-      "pre_close": 726.7,
-      "change_pct": 4.69,
+      "price": 752.4,
+      "pre_close": 752.0,
+      "change_pct": 0.05,
       "high": 760.8,
       "low": 726.7
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4164.31,
-      "pre_close": 4164.2,
-      "change_pct": 0.0,
+      "price": 4108.43,
+      "pre_close": 4108.7,
+      "change_pct": -0.01,
       "high": 4193.5,
-      "low": 4162.6
+      "low": 4104.2
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 58.73,
-      "pre_close": 58.73,
-      "change_pct": -0.0,
+      "price": 56.97,
+      "pre_close": 56.98,
+      "change_pct": -0.01,
       "high": 59.59,
-      "low": 58.62
+      "low": 56.94
     }
   },
   "etfs": [
@@ -173,69 +173,69 @@
     "trade_date": "2026-10-13"
   },
   "sector_flow": {
-    "source": "fund_flow",
+    "source": "sw",
     "inflow_top5": [
       {
-        "name": "影视院线",
-        "change_pct": 7.8,
-        "net_flow": -1.0,
-        "leader": "慈文传媒"
+        "code": "801960",
+        "name": "石油石化",
+        "change_pct": 1.73,
+        "index_val": 2764.08
       },
       {
-        "name": "公路铁路运输",
-        "change_pct": 2.2,
-        "net_flow": -2.0,
-        "leader": "龙江交通"
+        "code": "801950",
+        "name": "煤炭",
+        "change_pct": 1.5,
+        "index_val": 3467.54
       },
       {
-        "name": "轨交设备",
-        "change_pct": 0.3,
-        "net_flow": -2.0,
-        "leader": "日月明"
+        "code": "801760",
+        "name": "传媒",
+        "change_pct": 1.17,
+        "index_val": 703.16
       },
       {
-        "name": "互联网电商",
-        "change_pct": 1.1,
-        "net_flow": -4.0,
-        "leader": "丽人丽妆"
+        "code": "801160",
+        "name": "公用事业",
+        "change_pct": 1.08,
+        "index_val": 2490.69
       },
       {
-        "name": "煤炭开采加工",
-        "change_pct": 0.1,
-        "net_flow": -7.0,
-        "leader": "广汇能源"
+        "code": "801170",
+        "name": "交通运输",
+        "change_pct": 0.58,
+        "index_val": 2125.8
       }
     ],
     "outflow_top5": [
       {
-        "name": "钠离子电池",
-        "change_pct": -1.4,
-        "net_flow": -46.0,
-        "leader": "科翔股份"
+        "code": "801770",
+        "name": "通信",
+        "change_pct": -3.91,
+        "index_val": 6058.71
       },
       {
-        "name": "储能",
-        "change_pct": -3.3,
-        "net_flow": -43.0,
-        "leader": "华骐环保"
+        "code": "801710",
+        "name": "建筑材料",
+        "change_pct": -3.01,
+        "index_val": 5443.51
       },
       {
-        "name": "同花顺漂亮100",
-        "change_pct": -2.2,
-        "net_flow": -42.0,
-        "leader": "航发动力"
+        "code": "801080",
+        "name": "电子",
+        "change_pct": -2.87,
+        "index_val": 7333.55
       },
       {
-        "name": "动力电池回收",
-        "change_pct": -2.1,
-        "net_flow": -38.0,
-        "leader": "粤宏远A"
+        "code": "801730",
+        "name": "电力设备",
+        "change_pct": -2.74,
+        "index_val": 7827.93
       },
       {
-        "name": "固态电池",
-        "change_pct": -3.3,
-        "net_flow": -37.0,
-        "leader": "泰金新能"
+        "code": "801890",
+        "name": "机械设备",
+        "change_pct": -2.37,
+        "index_val": 1934.51
       }
     ]
   },
@@ -447,63 +447,63 @@
   ],
   "hotmoney": {
     "date": "2026-10-14",
-    "total_net_yi": 8.5,
+    "total_net_yi": 7.88,
     "entries": [
       {
-        "name": "粤芯半导体",
+        "name": "会稽山",
         "code": "",
-        "net_buy": 2.76,
-        "ratio_pct": 46.7,
+        "net_buy": 2.12,
+        "ratio_pct": 18.0,
+        "seats": []
+      },
+      {
+        "name": "德才股份",
+        "code": "",
+        "net_buy": 1.94,
+        "ratio_pct": 37.5,
         "seats": [
-          "T王"
+          "机构专用"
         ]
       },
       {
-        "name": "九阳股份",
+        "name": "电科思仪",
         "code": "",
-        "net_buy": 1.98,
-        "ratio_pct": 62.6,
+        "net_buy": 1.47,
+        "ratio_pct": 39.2,
         "seats": [
-          "T王"
+          "机构专用"
         ]
       },
       {
-        "name": "雪人集团",
+        "name": "富春股份",
         "code": "",
-        "net_buy": 1.36,
-        "ratio_pct": 37.2,
-        "seats": [
-          "章盟主"
-        ]
-      },
-      {
-        "name": "敦煌种业",
-        "code": "",
-        "net_buy": 1.27,
-        "ratio_pct": 49.7,
-        "seats": [
-          "量化基金"
-        ]
-      },
-      {
-        "name": "杭氧股份",
-        "code": "",
-        "net_buy": 1.13,
-        "ratio_pct": 20.1,
+        "net_buy": 1.18,
+        "ratio_pct": 26.2,
         "seats": [
           "温州帮",
           "章盟主",
+          "机构专用"
+        ]
+      },
+      {
+        "name": "七匹狼",
+        "code": "",
+        "net_buy": 1.17,
+        "ratio_pct": 66.7,
+        "seats": [
+          "机构专用",
+          "深股通专用",
           "量化打板"
         ]
       }
     ],
     "seats": [
       {
-        "name": "赵老哥",
+        "name": "炒股养家",
         "stocks": [
           {
-            "name": "ST喜临门",
-            "net_yi": 0.05
+            "name": "开创国际",
+            "net_yi": -0.03
           }
         ]
       },
@@ -511,24 +511,24 @@
         "name": "温州帮",
         "stocks": [
           {
-            "name": "杭氧股份",
-            "net_yi": 0.74
+            "name": "航发科技",
+            "net_yi": 0.8
           },
           {
-            "name": "建新股份",
+            "name": "富春股份",
             "net_yi": 0.36
           },
           {
-            "name": "托伦斯",
-            "net_yi": 0.22
+            "name": "龙江交通",
+            "net_yi": 0.34
           },
           {
-            "name": "中京电子",
+            "name": "阳光乳业",
             "net_yi": 0.21
           },
           {
-            "name": "海欣股份",
-            "net_yi": 0.14
+            "name": "新华文轩",
+            "net_yi": 0.18
           }
         ]
       },
@@ -536,74 +536,83 @@
         "name": "章盟主",
         "stocks": [
           {
-            "name": "杭氧股份",
-            "net_yi": 0.54
+            "name": "富春股份",
+            "net_yi": 0.5
           },
           {
-            "name": "雪人集团",
-            "net_yi": 0.53
-          },
-          {
-            "name": "华盛昌",
-            "net_yi": 0.38
-          },
-          {
-            "name": "跨境通",
-            "net_yi": 0.35
-          },
-          {
-            "name": "国恩股份",
-            "net_yi": 0.21
-          }
-        ]
-      },
-      {
-        "name": "T王",
-        "stocks": [
-          {
-            "name": "粤芯半导体",
-            "net_yi": 2.76
-          },
-          {
-            "name": "华北制药",
-            "net_yi": 0.51
+            "name": "超声电子",
+            "net_yi": 0.33
           },
           {
             "name": "博纳影业",
-            "net_yi": 0.38
-          },
-          {
-            "name": "*ST威领",
-            "net_yi": 0.16
-          },
-          {
-            "name": "新华文轩",
             "net_yi": 0.15
+          },
+          {
+            "name": "华阳国际",
+            "net_yi": -0.1
+          },
+          {
+            "name": "雪人集团",
+            "net_yi": -0.57
           }
         ]
       },
       {
-        "name": "量化基金",
+        "name": "欢乐海岸",
         "stocks": [
           {
-            "name": "金健米业",
-            "net_yi": 1.36
+            "name": "信宇人",
+            "net_yi": 0.04
+          }
+        ]
+      },
+      {
+        "name": "机构专用",
+        "stocks": [
+          {
+            "name": "电科思仪",
+            "net_yi": 1.05
           },
           {
-            "name": "敦煌种业",
-            "net_yi": 1.27
+            "name": "航发科技",
+            "net_yi": 0.66
           },
           {
-            "name": "宏柏新材",
-            "net_yi": 0.73
+            "name": "莱美药业",
+            "net_yi": 0.48
           },
           {
-            "name": "时代万恒",
-            "net_yi": 0.6
+            "name": "雪人集团",
+            "net_yi": 0.38
           },
           {
-            "name": "天马科技",
-            "net_yi": 0.36
+            "name": "德才股份",
+            "net_yi": 0.38
+          }
+        ]
+      },
+      {
+        "name": "深股通专用",
+        "stocks": [
+          {
+            "name": "雪人集团",
+            "net_yi": 0.7
+          },
+          {
+            "name": "传艺科技",
+            "net_yi": 0.12
+          },
+          {
+            "name": "韶能股份",
+            "net_yi": 0.04
+          },
+          {
+            "name": "七匹狼",
+            "net_yi": 0.0
+          },
+          {
+            "name": "尚水智能",
+            "net_yi": -0.01
           }
         ]
       },
@@ -611,49 +620,24 @@
         "name": "量化打板",
         "stocks": [
           {
-            "name": "安泰集团",
-            "net_yi": 0.61
+            "name": "七匹狼",
+            "net_yi": 1.24
           },
           {
-            "name": "亚邦股份",
-            "net_yi": 0.58
+            "name": "冰山冷热",
+            "net_yi": 0.62
           },
           {
-            "name": "跨境通",
-            "net_yi": 0.53
+            "name": "富春股份",
+            "net_yi": 0.62
           },
           {
-            "name": "杭氧股份",
-            "net_yi": 0.38
+            "name": "华瓷股份",
+            "net_yi": 0.4
           },
           {
-            "name": "建新股份",
-            "net_yi": 0.19
-          }
-        ]
-      },
-      {
-        "name": "沪股通专用",
-        "stocks": [
-          {
-            "name": "引力传媒",
-            "net_yi": 0.3
-          },
-          {
-            "name": "宏柏新材",
-            "net_yi": 0.2
-          },
-          {
-            "name": "华北制药",
-            "net_yi": 0.2
-          },
-          {
-            "name": "海欣股份",
-            "net_yi": -0.06
-          },
-          {
-            "name": "天马科技",
-            "net_yi": -0.07
+            "name": "中恒集团",
+            "net_yi": 0.37
           }
         ]
       }
