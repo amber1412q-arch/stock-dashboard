@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T10:03:28+08:00",
+  "updated_at": "2026-10-16T12:59:12+08:00",
   "data_date": "2026-10-16",
   "is_trading_day": true,
   "market_overview": {
@@ -21,10 +21,10 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 105.71,
-      "pre_close": 105.66,
-      "change_pct": 0.04,
-      "high": 105.94,
+      "price": 105.99,
+      "pre_close": 105.9,
+      "change_pct": 0.08,
+      "high": 106.75,
       "low": 104.91
     },
     "sc": {
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4202.0,
-      "pre_close": 4200.4,
+      "price": 4195.27,
+      "pre_close": 4193.5,
       "change_pct": 0.04,
       "high": 4213.3,
       "low": 4167.5
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 57.95,
-      "pre_close": 57.92,
-      "change_pct": 0.05,
+      "price": 58.01,
+      "pre_close": 57.98,
+      "change_pct": 0.04,
       "high": 58.14,
       "low": 57.23
     }
@@ -127,6 +127,14 @@
       "net_buy": 11.81
     },
     {
+      "code": "600519",
+      "name": "贵州茅台",
+      "price": 1329.0,
+      "change_pct": 1.22,
+      "market_cap": 16613.6,
+      "net_buy": 8.87
+    },
+    {
       "code": "000725",
       "name": "京东方Ａ",
       "price": 5.13,
@@ -149,14 +157,6 @@
       "change_pct": -0.54,
       "market_cap": 11801.9,
       "net_buy": 5.04
-    },
-    {
-      "code": "002714",
-      "name": "牧原股份",
-      "price": 41.1,
-      "change_pct": 3.4,
-      "market_cap": 1348.3,
-      "net_buy": 4.57
     }
   ],
   "omo": {
