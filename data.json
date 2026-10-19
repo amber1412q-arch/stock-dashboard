@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T11:13:11+08:00",
+  "updated_at": "2026-10-19T15:16:58+08:00",
   "data_date": "2026-10-16",
   "is_trading_day": true,
   "market_overview": {
@@ -21,33 +21,33 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 108.88,
-      "pre_close": 108.77,
-      "change_pct": 0.1,
+      "price": 108.03,
+      "pre_close": 108.14,
+      "change_pct": -0.11,
       "high": 109.65,
       "low": 106.82
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 740.0,
-      "pre_close": 713.1,
-      "change_pct": 3.77,
+      "price": 724.8,
+      "pre_close": 720.0,
+      "change_pct": 0.67,
       "high": 740.0,
       "low": 698.5
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4190.77,
-      "pre_close": 4192.5,
-      "change_pct": -0.04,
+      "price": 4165.33,
+      "pre_close": 4165.8,
+      "change_pct": -0.01,
       "high": 4211.2,
-      "low": 4176.0
+      "low": 4161.6
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 57.8,
-      "pre_close": 57.77,
-      "change_pct": 0.06,
+      "price": 57.23,
+      "pre_close": 57.27,
+      "change_pct": -0.07,
       "high": 58.01,
       "low": 56.9
     }
@@ -58,7 +58,7 @@
       "name": "沪深300ETF",
       "price": 4.24,
       "change_pct": 0.09,
-      "mkt_cap_yi": 1210.65,
+      "mkt_cap_yi": 1237.89,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -67,7 +67,7 @@
       "name": "中证500ETF",
       "price": 6.83,
       "change_pct": 0.31,
-      "mkt_cap_yi": 394.38,
+      "mkt_cap_yi": 435.85,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -85,7 +85,7 @@
       "name": "科创50ETF",
       "price": 1.405,
       "change_pct": -1.75,
-      "mkt_cap_yi": 986.26,
+      "mkt_cap_yi": 1005.86,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -94,7 +94,7 @@
       "name": "中证红利ETF",
       "price": 1.586,
       "change_pct": 0.83,
-      "mkt_cap_yi": 115.92,
+      "mkt_cap_yi": 115.32,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -103,7 +103,7 @@
       "name": "券商ETF",
       "price": 0.493,
       "change_pct": 0.0,
-      "mkt_cap_yi": 353.53,
+      "mkt_cap_yi": 352.56,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -469,84 +469,81 @@
   ],
   "hotmoney": {
     "date": "2026-10-19",
-    "total_net_yi": 19.3,
+    "total_net_yi": 7.72,
     "entries": [
       {
-        "name": "药明康德",
+        "name": "宇树科技",
         "code": "",
-        "net_buy": 14.41,
-        "ratio_pct": 24.2,
+        "net_buy": 1.82,
+        "ratio_pct": 25.9,
         "seats": [
-          "沪股通专用",
           "量化基金"
         ]
       },
       {
-        "name": "金健米业",
+        "name": "超声电子",
         "code": "",
-        "net_buy": 1.8,
-        "ratio_pct": 30.1,
+        "net_buy": 1.74,
+        "ratio_pct": 15.0,
         "seats": [
-          "沪股通专用",
+          "机构专用",
           "量化基金"
         ]
       },
       {
-        "name": "莱美药业",
+        "name": "新华传媒",
         "code": "",
-        "net_buy": 1.22,
-        "ratio_pct": 20.0,
-        "seats": []
-      },
-      {
-        "name": "宗申动力",
-        "code": "",
-        "net_buy": 0.94,
-        "ratio_pct": 57.5,
+        "net_buy": 1.64,
+        "ratio_pct": 68.2,
         "seats": [
-          "章盟主"
+          "T王"
         ]
       },
       {
-        "name": "华力创通",
+        "name": "天津普林",
         "code": "",
-        "net_buy": 0.93,
-        "ratio_pct": 35.5,
-        "seats": []
+        "net_buy": 1.42,
+        "ratio_pct": 50.5,
+        "seats": [
+          "章盟主",
+          "机构专用"
+        ]
+      },
+      {
+        "name": "宁波东力",
+        "code": "",
+        "net_buy": 1.1,
+        "ratio_pct": 47.4,
+        "seats": [
+          "章盟主",
+          "机构专用",
+          "T王"
+        ]
       }
     ],
     "seats": [
       {
-        "name": "陈小群",
-        "stocks": [
-          {
-            "name": "司南导航",
-            "net_yi": -0.03
-          }
-        ]
-      },
-      {
         "name": "温州帮",
         "stocks": [
           {
-            "name": "尖峰集团",
-            "net_yi": 0.38
-          },
-          {
-            "name": "神奇制药",
+            "name": "肯特股份",
             "net_yi": 0.24
           },
           {
-            "name": "福建水泥",
-            "net_yi": 0.17
+            "name": "天创股份",
+            "net_yi": 0.22
           },
           {
-            "name": "天马科技",
-            "net_yi": 0.17
+            "name": "日盈电子",
+            "net_yi": 0.12
           },
           {
-            "name": "佳力奇",
-            "net_yi": 0.14
+            "name": "亿田转债",
+            "net_yi": 0.0
+          },
+          {
+            "name": "晟楠科技",
+            "net_yi": -0.03
           }
         ]
       },
@@ -554,12 +551,12 @@
         "name": "方新侠",
         "stocks": [
           {
-            "name": "晟楠科技",
-            "net_yi": 0.07
+            "name": "捷众科技",
+            "net_yi": -0.05
           },
           {
-            "name": "捷众科技",
-            "net_yi": 0.05
+            "name": "晟楠科技",
+            "net_yi": -0.07
           }
         ]
       },
@@ -567,24 +564,24 @@
         "name": "章盟主",
         "stocks": [
           {
-            "name": "宗申动力",
-            "net_yi": 0.41
+            "name": "天津普林",
+            "net_yi": 0.25
           },
           {
-            "name": "佳力奇",
-            "net_yi": 0.24
+            "name": "宁波东力",
+            "net_yi": 0.15
           },
           {
-            "name": "冰山冷热",
-            "net_yi": 0.17
+            "name": "海洋王",
+            "net_yi": 0.14
           },
           {
-            "name": "向日葵",
-            "net_yi": -0.03
+            "name": "东方嘉盛",
+            "net_yi": 0.11
           },
           {
-            "name": "崧盛股份",
-            "net_yi": -0.16
+            "name": "华瓷股份",
+            "net_yi": -0.12
           }
         ]
       },
@@ -592,33 +589,33 @@
         "name": "欢乐海岸",
         "stocks": [
           {
-            "name": "荣丰控股",
-            "net_yi": 0.07
+            "name": "阳光乳业",
+            "net_yi": 0.03
           }
         ]
       },
       {
-        "name": "沪股通专用",
+        "name": "机构专用",
         "stocks": [
           {
-            "name": "药明康德",
-            "net_yi": 13.99
+            "name": "超声电子",
+            "net_yi": 1.7
           },
           {
-            "name": "金健米业",
-            "net_yi": 0.55
+            "name": "天津普林",
+            "net_yi": 1.31
           },
           {
-            "name": "振华股份",
-            "net_yi": 0.07
+            "name": "宁波东力",
+            "net_yi": 0.99
           },
           {
-            "name": "电魂网络",
-            "net_yi": -0.02
+            "name": "慈文传媒",
+            "net_yi": 0.76
           },
           {
-            "name": "天马科技",
-            "net_yi": -0.15
+            "name": "尚水智能",
+            "net_yi": 0.52
           }
         ]
       },
@@ -626,24 +623,49 @@
         "name": "量化基金",
         "stocks": [
           {
-            "name": "药明康德",
-            "net_yi": 6.37
+            "name": "晶科科技",
+            "net_yi": 0.35
           },
           {
-            "name": "金健米业",
-            "net_yi": 1.24
+            "name": "风语筑",
+            "net_yi": 0.35
           },
           {
-            "name": "骏亚科技",
-            "net_yi": 0.62
+            "name": "日盈电子",
+            "net_yi": 0.26
+          },
+          {
+            "name": "振华股份",
+            "net_yi": 0.24
           },
           {
             "name": "福建水泥",
-            "net_yi": 0.43
+            "net_yi": 0.22
+          }
+        ]
+      },
+      {
+        "name": "T王",
+        "stocks": [
+          {
+            "name": "新华传媒",
+            "net_yi": 2.02
           },
           {
-            "name": "均胜电子",
-            "net_yi": 0.36
+            "name": "九阳股份",
+            "net_yi": 0.22
+          },
+          {
+            "name": "龙版传媒",
+            "net_yi": 0.17
+          },
+          {
+            "name": "长春一东",
+            "net_yi": 0.14
+          },
+          {
+            "name": "大连圣亚",
+            "net_yi": 0.13
           }
         ]
       }
