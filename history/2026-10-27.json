@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T11:13:32+08:00",
+  "updated_at": "2026-10-27T13:56:00+08:00",
   "data_date": "2026-10-27",
   "is_trading_day": true,
   "market_overview": {
@@ -21,33 +21,33 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 109.95,
-      "pre_close": 109.98,
-      "change_pct": -0.02,
+      "price": 109.97,
+      "pre_close": 110.01,
+      "change_pct": -0.03,
       "high": 111.91,
-      "low": 109.53
+      "low": 109.51
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 744.6,
-      "pre_close": 729.0,
-      "change_pct": 2.14,
+      "price": 733.4,
+      "pre_close": 728.0,
+      "change_pct": 0.74,
       "high": 744.6,
       "low": 721.7
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4026.48,
-      "pre_close": 4025.1,
-      "change_pct": 0.03,
-      "high": 4038.9,
+      "price": 4041.0,
+      "pre_close": 4040.2,
+      "change_pct": 0.02,
+      "high": 4046.4,
       "low": 4001.6
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 53.59,
-      "pre_close": 53.53,
-      "change_pct": 0.11,
+      "price": 54.06,
+      "pre_close": 54.03,
+      "change_pct": 0.05,
       "high": 54.28,
       "low": 52.71
     }
@@ -173,69 +173,63 @@
     "trade_date": "2026-10-26"
   },
   "sector_flow": {
-    "source": "sw",
+    "source": "fund_flow",
     "inflow_top5": [
       {
-        "code": "801780",
+        "name": "电机",
+        "change_pct": 5.1,
+        "net_flow": 2.18,
+        "leader": "凯中精密"
+      },
+      {
+        "name": "白酒",
+        "change_pct": 1.4,
+        "net_flow": -5.78,
+        "leader": "皇台酒业"
+      },
+      {
+        "name": "证金持股",
+        "change_pct": 1.2,
+        "net_flow": -30.0,
+        "leader": "南山铝业"
+      },
+      {
         "name": "银行",
-        "change_pct": 1.19,
-        "index_val": 4322.89
-      },
-      {
-        "code": "801950",
-        "name": "煤炭",
-        "change_pct": 0.2,
-        "index_val": 3285.57
-      },
-      {
-        "code": "801170",
-        "name": "交通运输",
-        "change_pct": 0.08,
-        "index_val": 2040.92
-      },
-      {
-        "code": "801120",
-        "name": "食品饮料",
-        "change_pct": -0.56,
-        "index_val": 13984.48
-      },
-      {
-        "code": "801050",
-        "name": "有色金属",
-        "change_pct": -0.62,
-        "index_val": 6649.05
+        "change_pct": 1.5,
+        "net_flow": -74.32,
+        "leader": "沪农商行"
       }
     ],
     "outflow_top5": [
       {
-        "code": "801740",
-        "name": "国防军工",
-        "change_pct": -4.13,
-        "index_val": 1483.86
+        "name": "芯片概念",
+        "change_pct": -10.0,
+        "net_flow": -237.0,
+        "leader": "宏明电子"
       },
       {
-        "code": "801750",
-        "name": "计算机",
-        "change_pct": -4.08,
-        "index_val": 4028.41
+        "name": "人工智能",
+        "change_pct": -4.8,
+        "net_flow": -220.0,
+        "leader": "多伦科技"
       },
       {
-        "code": "801080",
-        "name": "电子",
-        "change_pct": -3.97,
-        "index_val": 6550.04
+        "name": "华为概念",
+        "change_pct": -6.7,
+        "net_flow": -195.0,
+        "leader": "天邑股份"
       },
       {
-        "code": "801230",
-        "name": "综合",
-        "change_pct": -3.51,
-        "index_val": 3615.52
+        "name": "机器人概念",
+        "change_pct": -4.4,
+        "net_flow": -190.0,
+        "leader": "宏明电子"
       },
       {
-        "code": "801150",
-        "name": "医药生物",
-        "change_pct": -3.41,
-        "index_val": 7286.99
+        "name": "国企改革",
+        "change_pct": -5.0,
+        "net_flow": -169.0,
+        "leader": "宏明电子"
       }
     ]
   },
@@ -480,96 +474,83 @@
   ],
   "hotmoney": {
     "date": "2026-10-27",
-    "total_net_yi": 10.2,
+    "total_net_yi": 6.65,
     "entries": [
       {
-        "name": "上纬新材",
+        "name": "大洋电机",
         "code": "",
-        "net_buy": 2.98,
-        "ratio_pct": 44.1,
+        "net_buy": 1.67,
+        "ratio_pct": 54.2,
         "seats": [
-          "方新侠",
-          "量化基金"
+          "深股通专用"
         ]
       },
       {
-        "name": "万向钱潮",
+        "name": "澳弘电子",
         "code": "",
-        "net_buy": 2.88,
-        "ratio_pct": 33.9,
+        "net_buy": 1.61,
+        "ratio_pct": 23.4,
         "seats": [
-          "章盟主"
+          "量化基金",
+          "机构专用"
         ]
       },
       {
-        "name": "粤芯半导体",
+        "name": "洛轴股份",
         "code": "",
-        "net_buy": 2.05,
-        "ratio_pct": 25.9,
-        "seats": []
-      },
-      {
-        "name": "模塑科技",
-        "code": "",
-        "net_buy": 1.31,
-        "ratio_pct": 15.5,
-        "seats": []
-      },
-      {
-        "name": "创维数字",
-        "code": "",
-        "net_buy": 0.98,
-        "ratio_pct": 27.4,
+        "net_buy": 1.26,
+        "ratio_pct": 53.3,
         "seats": [
-          "章盟主"
+          "量化基金",
+          "机构专用",
+          "深股通专用"
+        ]
+      },
+      {
+        "name": "金健米业",
+        "code": "",
+        "net_buy": 1.21,
+        "ratio_pct": 31.0,
+        "seats": [
+          "量化基金",
+          "沪股通专用"
+        ]
+      },
+      {
+        "name": "国脉科技",
+        "code": "",
+        "net_buy": 0.9,
+        "ratio_pct": 37.0,
+        "seats": [
+          "温州帮",
+          "机构专用",
+          "深股通专用"
         ]
       }
     ],
     "seats": [
       {
-        "name": "赵老哥",
-        "stocks": [
-          {
-            "name": "味知香",
-            "net_yi": 0.0
-          }
-        ]
-      },
-      {
         "name": "温州帮",
         "stocks": [
           {
-            "name": "金安国纪",
-            "net_yi": 0.26
+            "name": "弘景光电",
+            "net_yi": 0.33
           },
           {
-            "name": "科瑞思",
-            "net_yi": 0.03
+            "name": "胜通能源",
+            "net_yi": 0.23
           },
           {
-            "name": "鼎龙转债",
-            "net_yi": 0.0
+            "name": "国脉科技",
+            "net_yi": 0.21
           },
           {
-            "name": "华阳智能",
-            "net_yi": -0.0
+            "name": "正裕工业",
+            "net_yi": 0.18
           },
           {
-            "name": "福新转债",
-            "net_yi": -0.01
-          }
-        ]
-      },
-      {
-        "name": "方新侠",
-        "stocks": [
-          {
-            "name": "上纬新材",
-            "net_yi": 0.64
-          },
-          {
-            "name": "华正新材",
-            "net_yi": -0.45
+            "name": "宏明电子",
+            "net_yi": 0.16
           }
         ]
       },
@@ -577,24 +558,20 @@
         "name": "章盟主",
         "stocks": [
           {
-            "name": "万向钱潮",
-            "net_yi": 0.46
-          },
-          {
-            "name": "百洋股份",
-            "net_yi": 0.13
-          },
-          {
-            "name": "创维数字",
-            "net_yi": -0.08
+            "name": "桂发祥",
+            "net_yi": 0.28
           },
           {
             "name": "林州重机",
-            "net_yi": -0.16
+            "net_yi": 0.06
           },
           {
-            "name": "慈文传媒",
-            "net_yi": -0.55
+            "name": "万马科技",
+            "net_yi": -0.01
+          },
+          {
+            "name": "华瓷股份",
+            "net_yi": -0.43
           }
         ]
       },
@@ -602,8 +579,8 @@
         "name": "欢乐海岸",
         "stocks": [
           {
-            "name": "龙版传媒",
-            "net_yi": -0.03
+            "name": "郑中设计",
+            "net_yi": -0.06
           }
         ]
       },
@@ -611,33 +588,99 @@
         "name": "量化基金",
         "stocks": [
           {
-            "name": "联特科技",
-            "net_yi": 0.59
+            "name": "澳弘电子",
+            "net_yi": 2.41
           },
           {
-            "name": "超声电子",
-            "net_yi": 0.51
+            "name": "金健米业",
+            "net_yi": 1.03
           },
           {
-            "name": "格尔软件",
-            "net_yi": 0.33
+            "name": "杰克科技",
+            "net_yi": 0.71
           },
           {
-            "name": "中邮科技",
-            "net_yi": 0.33
+            "name": "晶华新材",
+            "net_yi": 0.57
           },
           {
-            "name": "泛亚微透",
-            "net_yi": 0.25
+            "name": "时代万恒",
+            "net_yi": 0.31
           }
         ]
       },
       {
-        "name": "佛山系",
+        "name": "机构专用",
         "stocks": [
           {
             "name": "天娱数科",
-            "net_yi": -2.27
+            "net_yi": 0.98
+          },
+          {
+            "name": "世纪恒通",
+            "net_yi": 0.96
+          },
+          {
+            "name": "洛轴股份",
+            "net_yi": 0.78
+          },
+          {
+            "name": "阳光乳业",
+            "net_yi": 0.76
+          },
+          {
+            "name": "郑中设计",
+            "net_yi": 0.62
+          }
+        ]
+      },
+      {
+        "name": "沪股通专用",
+        "stocks": [
+          {
+            "name": "杰克科技",
+            "net_yi": 0.84
+          },
+          {
+            "name": "金健米业",
+            "net_yi": 0.59
+          },
+          {
+            "name": "晶华新材",
+            "net_yi": 0.2
+          },
+          {
+            "name": "国芳集团",
+            "net_yi": 0.07
+          },
+          {
+            "name": "兰生股份",
+            "net_yi": 0.06
+          }
+        ]
+      },
+      {
+        "name": "深股通专用",
+        "stocks": [
+          {
+            "name": "洛轴股份",
+            "net_yi": 0.35
+          },
+          {
+            "name": "达瑞电子",
+            "net_yi": 0.34
+          },
+          {
+            "name": "襄阳轴承",
+            "net_yi": 0.29
+          },
+          {
+            "name": "大洋电机",
+            "net_yi": 0.28
+          },
+          {
+            "name": "寒锐钴业",
+            "net_yi": 0.22
           }
         ]
       }
