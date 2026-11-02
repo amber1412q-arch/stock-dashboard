@@ -1,54 +1,54 @@
 {
-  "updated_at": "2026-11-02T07:08:09+08:00",
+  "updated_at": "2026-11-02T16:56:44+08:00",
   "data_date": "2026-10-30",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 17773.4,
+    "total_turnover": 17951.97,
     "prev_turnover": null,
-    "ma5_turnover": 17773.4,
+    "ma5_turnover": 17951.97,
     "ma5_ready": false,
-    "advancing": 4660,
-    "declining": 826,
-    "limit_up": 213,
+    "advancing": 4681,
+    "declining": 817,
+    "limit_up": 215,
     "limit_down": 12
   },
   "turnover_history": [
     [
       "2026-10-30",
-      17773.4
+      17951.97
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 110.16,
-      "pre_close": 110.23,
-      "change_pct": -0.06,
+      "price": 104.92,
+      "pre_close": 104.94,
+      "change_pct": -0.02,
       "high": 112.41,
-      "low": 109.4
+      "low": 104.64
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 763.9,
-      "pre_close": 750.9,
-      "change_pct": 1.73,
-      "high": 757.0,
-      "low": 707.3
+      "price": 719.7,
+      "pre_close": 717.6,
+      "change_pct": 0.29,
+      "high": 763.9,
+      "low": 719.4
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 3917.69,
-      "pre_close": 3916.1,
-      "change_pct": 0.04,
-      "high": 3928.1,
+      "price": 3978.73,
+      "pre_close": 3978.2,
+      "change_pct": 0.01,
+      "high": 3980.8,
       "low": 3889.0
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 50.34,
-      "pre_close": 50.3,
+      "price": 51.01,
+      "pre_close": 50.98,
       "change_pct": 0.06,
-      "high": 50.6,
+      "high": 51.34,
       "low": 49.09
     }
   },
@@ -56,9 +56,9 @@
     {
       "code": "510300",
       "name": "沪深300ETF",
-      "price": 4.083,
-      "change_pct": 0.44,
-      "mkt_cap_yi": 1586.94,
+      "price": 4.085,
+      "change_pct": 0.49,
+      "mkt_cap_yi": 1691.25,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -67,34 +67,34 @@
       "name": "中证500ETF",
       "price": 6.456,
       "change_pct": 2.39,
-      "mkt_cap_yi": 444.49,
+      "mkt_cap_yi": 510.68,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "159915",
       "name": "创业板ETF",
-      "price": 2.474,
-      "change_pct": 1.6,
-      "mkt_cap_yi": 940.16,
+      "price": 2.473,
+      "change_pct": 1.56,
+      "mkt_cap_yi": 939.78,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "588000",
       "name": "科创50ETF",
-      "price": 1.259,
-      "change_pct": 2.52,
-      "mkt_cap_yi": 1133.96,
+      "price": 1.26,
+      "change_pct": 2.61,
+      "mkt_cap_yi": 1204.72,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "515080",
       "name": "中证红利ETF",
-      "price": 1.577,
-      "change_pct": -0.06,
-      "mkt_cap_yi": 118.42,
+      "price": 1.578,
+      "change_pct": 0.0,
+      "mkt_cap_yi": 117.63,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -103,60 +103,60 @@
       "name": "券商ETF",
       "price": 0.481,
       "change_pct": 4.57,
-      "mkt_cap_yi": 352.09,
+      "mkt_cap_yi": 346.32,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
     {
       "code": "513180",
       "name": "恒生科技ETF",
-      "price": 0.478,
-      "change_pct": 2.14,
-      "mkt_cap_yi": 354.09,
+      "price": 0.479,
+      "change_pct": 2.35,
+      "mkt_cap_yi": 354.83,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     }
   ],
   "northbound": [
     {
+      "code": "002384",
+      "name": "东山精密",
+      "price": 92.2,
+      "change_pct": 7.13,
+      "market_cap": 1278.2,
+      "net_buy": 15.22
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "price": 71.54,
+      "change_pct": 9.57,
+      "market_cap": 1135.7,
+      "net_buy": 14.1
+    },
+    {
+      "code": "300059",
+      "name": "东方财富",
+      "price": 18.71,
+      "change_pct": 6.31,
+      "market_cap": 2505.7,
+      "net_buy": 13.85
+    },
+    {
       "code": "600519",
       "name": "贵州茅台",
       "price": 1439.1,
       "change_pct": 3.38,
       "market_cap": 17989.9,
-      "net_buy": 13.78
+      "net_buy": 13.62
     },
     {
-      "code": "300502",
-      "name": "新易盛",
-      "price": 191.48,
-      "change_pct": -2.31,
-      "market_cap": 2402.6,
-      "net_buy": 12.61
-    },
-    {
-      "code": "000568",
-      "name": "泸州老窖",
-      "price": 79.77,
-      "change_pct": 3.5,
-      "market_cap": 1173.5,
-      "net_buy": 10.2
-    },
-    {
-      "code": "300308",
-      "name": "中际旭创",
-      "price": 550.0,
-      "change_pct": -0.54,
-      "market_cap": 6104.6,
-      "net_buy": 9.8
-    },
-    {
-      "code": "601919",
-      "name": "中远海控",
-      "price": 17.97,
-      "change_pct": 0.73,
-      "market_cap": 2247.5,
-      "net_buy": 8.49
+      "code": "300033",
+      "name": "同花顺",
+      "price": 207.74,
+      "change_pct": 8.82,
+      "market_cap": 910.8,
+      "net_buy": 10.6
     }
   ],
   "omo": {
@@ -490,91 +490,91 @@
     }
   ],
   "hotmoney": {
-    "date": "2026-10-30",
-    "total_net_yi": 16.52,
+    "date": "2026-11-02",
+    "total_net_yi": 9.17,
     "entries": [
       {
-        "name": "泸州老窖",
+        "name": "捷成股份",
         "code": "",
-        "net_buy": 5.3,
-        "ratio_pct": 50.0,
+        "net_buy": 3.07,
+        "ratio_pct": 62.6,
         "seats": [
-          "深股通专用",
-          "机构专用"
-        ]
-      },
-      {
-        "name": "埃斯顿",
-        "code": "",
-        "net_buy": 3.22,
-        "ratio_pct": 58.3,
-        "seats": [
-          "深股通专用",
-          "机构专用"
-        ]
-      },
-      {
-        "name": "西部材料",
-        "code": "",
-        "net_buy": 2.92,
-        "ratio_pct": 13.5,
-        "seats": [
-          "温州帮",
-          "深股通专用",
-          "机构专用"
-        ]
-      },
-      {
-        "name": "华正新材",
-        "code": "",
-        "net_buy": 2.84,
-        "ratio_pct": 34.1,
-        "seats": []
-      },
-      {
-        "name": "金安国纪",
-        "code": "",
-        "net_buy": 2.24,
-        "ratio_pct": 12.3,
-        "seats": [
-          "深股通专用",
           "机构专用",
-          "量化打板"
+          "深股通专用"
+        ]
+      },
+      {
+        "name": "风语筑",
+        "code": "",
+        "net_buy": 1.69,
+        "ratio_pct": 56.3,
+        "seats": [
+          "量化基金"
+        ]
+      },
+      {
+        "name": "银之杰",
+        "code": "",
+        "net_buy": 1.52,
+        "ratio_pct": 44.3,
+        "seats": [
+          "机构专用",
+          "深股通专用"
+        ]
+      },
+      {
+        "name": "巨人网络",
+        "code": "",
+        "net_buy": 1.46,
+        "ratio_pct": 28.6,
+        "seats": [
+          "机构专用",
+          "深股通专用"
+        ]
+      },
+      {
+        "name": "粤传媒",
+        "code": "",
+        "net_buy": 1.43,
+        "ratio_pct": 45.6,
+        "seats": [
+          "机构专用",
+          "深股通专用"
         ]
       }
     ],
     "seats": [
       {
-        "name": "炒股养家",
+        "name": "温州帮",
         "stocks": [
           {
-            "name": "盛洋科技",
-            "net_yi": 0.04
+            "name": "华是科技",
+            "net_yi": 0.37
+          },
+          {
+            "name": "泉阳泉",
+            "net_yi": 0.32
+          },
+          {
+            "name": "正帆科技",
+            "net_yi": 0.29
+          },
+          {
+            "name": "皇台酒业",
+            "net_yi": 0.17
+          },
+          {
+            "name": "地素时尚",
+            "net_yi": 0.12
           }
         ]
       },
       {
-        "name": "温州帮",
+        "name": "消闲派",
         "stocks": [
           {
-            "name": "西部材料",
-            "net_yi": 0.46
-          },
-          {
-            "name": "九安医疗",
-            "net_yi": 0.43
-          },
-          {
-            "name": "天洋新材",
-            "net_yi": 0.34
-          },
-          {
-            "name": "古井贡酒",
-            "net_yi": 0.31
-          },
-          {
-            "name": "邵阳液压",
-            "net_yi": 0.3
+            "name": "美埃科技",
+            "net_yi": 0.04
           }
         ]
       },
@@ -582,8 +582,12 @@
         "name": "方新侠",
         "stocks": [
           {
-            "name": "宁波东力",
+            "name": "光洋股份",
             "net_yi": 0.9
+          },
+          {
+            "name": "世纪恒通",
+            "net_yi": -0.11
           }
         ]
       },
@@ -591,49 +595,24 @@
         "name": "章盟主",
         "stocks": [
           {
-            "name": "万邦医药",
+            "name": "芒果超媒",
             "net_yi": 0.53
           },
           {
-            "name": "宁波东力",
-            "net_yi": 0.41
+            "name": "润建股份",
+            "net_yi": 0.49
           },
           {
-            "name": "九安医疗",
-            "net_yi": 0.3
+            "name": "冰山冷热",
+            "net_yi": 0.31
           },
           {
-            "name": "传智教育",
-            "net_yi": 0.24
+            "name": "和泰机电",
+            "net_yi": 0.1
           },
           {
-            "name": "科兴制药",
-            "net_yi": -0.03
-          }
-        ]
-      },
-      {
-        "name": "深股通专用",
-        "stocks": [
-          {
-            "name": "泸州老窖",
-            "net_yi": 2.81
-          },
-          {
-            "name": "埃斯顿",
-            "net_yi": 2.04
-          },
-          {
-            "name": "西部材料",
-            "net_yi": 1.43
-          },
-          {
-            "name": "奥士康",
-            "net_yi": 0.83
-          },
-          {
-            "name": "古井贡酒",
-            "net_yi": 0.74
+            "name": "海洋王",
+            "net_yi": -0.05
           }
         ]
       },
@@ -641,49 +620,74 @@
         "name": "机构专用",
         "stocks": [
           {
-            "name": "泸州老窖",
-            "net_yi": 2.49
-          },
-          {
-            "name": "光洋股份",
-            "net_yi": 2.09
-          },
-          {
-            "name": "道通科技",
-            "net_yi": 1.1
-          },
-          {
-            "name": "西部材料",
-            "net_yi": 1.0
+            "name": "捷成股份",
+            "net_yi": 1.01
           },
           {
             "name": "皇台酒业",
+            "net_yi": 0.8
+          },
+          {
+            "name": "果麦文化",
+            "net_yi": 0.68
+          },
+          {
+            "name": "粤传媒",
+            "net_yi": 0.59
+          },
+          {
+            "name": "元隆雅图",
+            "net_yi": 0.43
+          }
+        ]
+      },
+      {
+        "name": "量化基金",
+        "stocks": [
+          {
+            "name": "安集科技",
+            "net_yi": 1.39
+          },
+          {
+            "name": "风语筑",
+            "net_yi": 0.92
+          },
+          {
+            "name": "天洋新材",
+            "net_yi": 0.79
+          },
+          {
+            "name": "一鸣食品",
+            "net_yi": 0.58
+          },
+          {
+            "name": "东方材料",
             "net_yi": 0.57
           }
         ]
       },
       {
-        "name": "量化打板",
+        "name": "深股通专用",
         "stocks": [
           {
-            "name": "金安国纪",
-            "net_yi": 1.16
+            "name": "捷成股份",
+            "net_yi": 1.47
           },
           {
-            "name": "万邦医药",
-            "net_yi": 0.72
+            "name": "粤传媒",
+            "net_yi": 0.84
           },
           {
-            "name": "阳普医疗",
-            "net_yi": 0.7
+            "name": "银之杰",
+            "net_yi": 0.82
           },
           {
-            "name": "宁波东力",
-            "net_yi": 0.68
+            "name": "襄阳轴承",
+            "net_yi": 0.78
           },
           {
-            "name": "欧圣电气",
-            "net_yi": 0.42
+            "name": "元隆雅图",
+            "net_yi": 0.51
           }
         ]
       }
