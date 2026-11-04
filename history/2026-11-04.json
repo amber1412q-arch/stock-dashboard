@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T15:31:23+08:00",
+  "updated_at": "2026-11-04T16:01:02+08:00",
   "data_date": "2026-11-04",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 100.92,
-      "pre_close": 101.01,
-      "change_pct": -0.09,
+      "price": 100.33,
+      "pre_close": 100.36,
+      "change_pct": -0.03,
       "high": 104.96,
       "low": 100.04
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4045.36,
-      "pre_close": 4043.5,
-      "change_pct": 0.05,
+      "price": 4055.48,
+      "pre_close": 4054.8,
+      "change_pct": 0.02,
       "high": 4062.2,
       "low": 3928.2
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 52.12,
-      "pre_close": 52.08,
-      "change_pct": 0.08,
+      "price": 52.04,
+      "pre_close": 51.99,
+      "change_pct": 0.09,
       "high": 52.37,
       "low": 48.98
     }
@@ -161,8 +161,8 @@
   ],
   "omo": {
     "matured": 0,
-    "new_issue": 5575.0,
-    "net": 5575.0,
+    "new_issue": 2575.0,
+    "net": 2575.0,
     "trade_date": "2026-11-04"
   },
   "margin": {
@@ -299,20 +299,20 @@
       "ret_10d": 62.07
     },
     {
+      "code": "600261",
+      "name": "阳光照明",
+      "price": 4.46,
+      "today_chg": -9.89899,
+      "turnover": 669120650,
+      "ret_10d": 51.84
+    },
+    {
       "code": "688585",
       "name": "上纬新材",
       "price": 171.39,
       "today_chg": 9.928805,
       "turnover": 2416864200,
       "ret_10d": 51.81
-    },
-    {
-      "code": "688386",
-      "name": "泛亚微透",
-      "price": 54.89,
-      "today_chg": 12.203598,
-      "turnover": 626468650,
-      "ret_10d": 43.69
     },
     {
       "code": "002275",
@@ -323,14 +323,6 @@
       "ret_10d": 43.16
     },
     {
-      "code": "301413",
-      "name": "安培龙",
-      "price": 75.76,
-      "today_chg": 9.701709,
-      "turnover": 1005526200,
-      "ret_10d": 42.03
-    },
-    {
       "code": "300508",
       "name": "维宏股份",
       "price": 46.36,
@@ -339,20 +331,28 @@
       "ret_10d": 39.68
     },
     {
-      "code": "301261",
-      "name": "恒工精密",
-      "price": 68.87,
-      "today_chg": 8.525055,
-      "turnover": 709870850,
-      "ret_10d": 38.04
-    },
-    {
       "code": "002086",
       "name": "东方海洋",
       "price": 3.28,
       "today_chg": -4.093567,
       "turnover": 2661483300,
       "ret_10d": 37.24
+    },
+    {
+      "code": "605488",
+      "name": "福莱新材",
+      "price": 44.79,
+      "today_chg": 9.995088,
+      "turnover": 1831699800,
+      "ret_10d": 36.1
+    },
+    {
+      "code": "300461",
+      "name": "田中精机",
+      "price": 44.55,
+      "today_chg": 1.689112,
+      "turnover": 704199010,
+      "ret_10d": 35.04
     }
   ],
   "chip_concentration": [
@@ -490,9 +490,217 @@
     }
   ],
   "hotmoney": {
-    "date": "",
-    "total_net_yi": 0,
-    "entries": [],
-    "seats": []
+    "date": "2026-11-04",
+    "total_net_yi": 11.08,
+    "entries": [
+      {
+        "name": "银之杰",
+        "code": "",
+        "net_buy": 4.64,
+        "ratio_pct": 19.9,
+        "seats": [
+          "机构专用",
+          "深股通专用"
+        ]
+      },
+      {
+        "name": "掌阅科技",
+        "code": "",
+        "net_buy": 2.56,
+        "ratio_pct": 14.9,
+        "seats": [
+          "量化基金",
+          "沪股通专用"
+        ]
+      },
+      {
+        "name": "引力传媒",
+        "code": "",
+        "net_buy": 1.35,
+        "ratio_pct": 29.6,
+        "seats": [
+          "量化基金",
+          "沪股通专用"
+        ]
+      },
+      {
+        "name": "东方海洋",
+        "code": "",
+        "net_buy": 1.34,
+        "ratio_pct": 41.3,
+        "seats": [
+          "章盟主",
+          "深股通专用"
+        ]
+      },
+      {
+        "name": "海洋王",
+        "code": "",
+        "net_buy": 1.19,
+        "ratio_pct": 43.2,
+        "seats": []
+      }
+    ],
+    "seats": [
+      {
+        "name": "赵老哥",
+        "stocks": [
+          {
+            "name": "汇丽B",
+            "net_yi": 0.0
+          }
+        ]
+      },
+      {
+        "name": "温州帮",
+        "stocks": [
+          {
+            "name": "托伦斯",
+            "net_yi": 0.34
+          },
+          {
+            "name": "锡华科技",
+            "net_yi": 0.17
+          },
+          {
+            "name": "大连友谊",
+            "net_yi": 0.11
+          },
+          {
+            "name": "万向德农",
+            "net_yi": 0.1
+          },
+          {
+            "name": "红太阳",
+            "net_yi": 0.06
+          }
+        ]
+      },
+      {
+        "name": "章盟主",
+        "stocks": [
+          {
+            "name": "托伦斯",
+            "net_yi": 0.72
+          },
+          {
+            "name": "东方海洋",
+            "net_yi": 0.61
+          },
+          {
+            "name": "扬子新材",
+            "net_yi": 0.0
+          },
+          {
+            "name": "奥精医疗",
+            "net_yi": -0.07
+          },
+          {
+            "name": "万邦医药",
+            "net_yi": -0.09
+          }
+        ]
+      },
+      {
+        "name": "量化基金",
+        "stocks": [
+          {
+            "name": "掌阅科技",
+            "net_yi": 1.08
+          },
+          {
+            "name": "引力传媒",
+            "net_yi": 0.89
+          },
+          {
+            "name": "金海通",
+            "net_yi": 0.78
+          },
+          {
+            "name": "索辰科技",
+            "net_yi": 0.55
+          },
+          {
+            "name": "文投控股",
+            "net_yi": 0.5
+          }
+        ]
+      },
+      {
+        "name": "机构专用",
+        "stocks": [
+          {
+            "name": "移远通信",
+            "net_yi": 7.67
+          },
+          {
+            "name": "拓荆科技",
+            "net_yi": 5.81
+          },
+          {
+            "name": "银之杰",
+            "net_yi": 2.97
+          },
+          {
+            "name": "华峰测控",
+            "net_yi": 2.4
+          },
+          {
+            "name": "正帆科技",
+            "net_yi": 2.02
+          }
+        ]
+      },
+      {
+        "name": "沪股通专用",
+        "stocks": [
+          {
+            "name": "索辰科技",
+            "net_yi": 1.37
+          },
+          {
+            "name": "引力传媒",
+            "net_yi": 0.59
+          },
+          {
+            "name": "金海通",
+            "net_yi": 0.39
+          },
+          {
+            "name": "金健米业",
+            "net_yi": 0.15
+          },
+          {
+            "name": "掌阅科技",
+            "net_yi": 0.09
+          }
+        ]
+      },
+      {
+        "name": "深股通专用",
+        "stocks": [
+          {
+            "name": "银之杰",
+            "net_yi": 1.73
+          },
+          {
+            "name": "晓程科技",
+            "net_yi": 0.58
+          },
+          {
+            "name": "东方海洋",
+            "net_yi": 0.45
+          },
+          {
+            "name": "江丰电子",
+            "net_yi": 0.35
+          },
+          {
+            "name": "联合化学",
+            "net_yi": 0.01
+          }
+        ]
+      }
+    ]
   }
 }
