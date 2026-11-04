@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-04T07:13:55+08:00",
+  "updated_at": "2026-11-04T15:31:23+08:00",
   "data_date": "2026-11-04",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 20518.88,
+    "total_turnover": 20519.2,
     "prev_turnover": null,
-    "ma5_turnover": 20518.88,
+    "ma5_turnover": 20519.2,
     "ma5_ready": false,
     "advancing": 4667,
     "declining": 779,
@@ -15,40 +15,40 @@
   "turnover_history": [
     [
       "2026-11-04",
-      20518.88
+      20519.2
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 104.44,
-      "pre_close": 104.39,
-      "change_pct": 0.04,
+      "price": 100.92,
+      "pre_close": 101.01,
+      "change_pct": -0.09,
       "high": 104.96,
-      "low": 102.56
+      "low": 100.04
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 693.8,
-      "pre_close": 686.1,
-      "change_pct": 1.12,
-      "high": 719.7,
-      "low": 677.3
+      "price": 670.0,
+      "pre_close": 668.0,
+      "change_pct": 0.3,
+      "high": 693.8,
+      "low": 660.0
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4028.23,
-      "pre_close": 4026.9,
-      "change_pct": 0.03,
-      "high": 4039.3,
+      "price": 4045.36,
+      "pre_close": 4043.5,
+      "change_pct": 0.05,
+      "high": 4062.2,
       "low": 3928.2
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 51.66,
-      "pre_close": 51.63,
-      "change_pct": 0.05,
-      "high": 51.87,
+      "price": 52.12,
+      "pre_close": 52.08,
+      "change_pct": 0.08,
+      "high": 52.37,
       "low": 48.98
     }
   },
@@ -58,7 +58,7 @@
       "name": "沪深300ETF",
       "price": 4.175,
       "change_pct": 2.03,
-      "mkt_cap_yi": 1861.52,
+      "mkt_cap_yi": 1935.66,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -67,7 +67,7 @@
       "name": "中证500ETF",
       "price": 6.661,
       "change_pct": 4.4,
-      "mkt_cap_yi": 586.31,
+      "mkt_cap_yi": 663.66,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -85,7 +85,7 @@
       "name": "科创50ETF",
       "price": 1.34,
       "change_pct": 10.29,
-      "mkt_cap_yi": 1403.94,
+      "mkt_cap_yi": 1436.14,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -94,7 +94,7 @@
       "name": "中证红利ETF",
       "price": 1.578,
       "change_pct": -0.13,
-      "mkt_cap_yi": 115.76,
+      "mkt_cap_yi": 113.68,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -103,7 +103,7 @@
       "name": "券商ETF",
       "price": 0.489,
       "change_pct": 0.62,
-      "mkt_cap_yi": 349.35,
+      "mkt_cap_yi": 350.2,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -119,57 +119,57 @@
   ],
   "northbound": [
     {
-      "code": "600519",
-      "name": "贵州茅台",
-      "price": 1446.44,
-      "change_pct": -2.27,
-      "market_cap": 18081.7,
-      "net_buy": 25.22
+      "code": "300308",
+      "name": "中际旭创",
+      "price": 533.38,
+      "change_pct": 11.07,
+      "market_cap": 5920.2,
+      "net_buy": 37.42
     },
     {
-      "code": "300750",
-      "name": "宁德时代",
-      "price": 252.88,
-      "change_pct": 1.43,
-      "market_cap": 10774.2,
-      "net_buy": 12.1
+      "code": "688825",
+      "name": "长鑫科技",
+      "price": 44.09,
+      "change_pct": 13.63,
+      "market_cap": 1985.4,
+      "net_buy": 25.64
     },
     {
-      "code": "601318",
-      "name": "中国平安",
-      "price": 54.01,
-      "change_pct": -1.06,
-      "market_cap": 5757.5,
-      "net_buy": 10.25
+      "code": "603259",
+      "name": "药明康德",
+      "price": 148.81,
+      "change_pct": 10.0,
+      "market_cap": 3680.5,
+      "net_buy": 22.69
     },
     {
-      "code": "688981",
-      "name": "中芯国际",
-      "price": 111.3,
-      "change_pct": 9.0,
-      "market_cap": 2226.7,
-      "net_buy": 7.64
+      "code": "300502",
+      "name": "新易盛",
+      "price": 196.5,
+      "change_pct": 13.35,
+      "market_cap": 2465.5,
+      "net_buy": 20.63
     },
     {
-      "code": "002463",
-      "name": "沪电股份",
-      "price": 85.95,
+      "code": "600584",
+      "name": "长电科技",
+      "price": 51.74,
       "change_pct": 9.99,
-      "market_cap": 1656.3,
-      "net_buy": 5.99
+      "market_cap": 925.8,
+      "net_buy": 16.08
     }
   ],
   "omo": {
     "matured": 0,
-    "new_issue": 2575.0,
-    "net": 2575.0,
+    "new_issue": 5575.0,
+    "net": 5575.0,
     "trade_date": "2026-11-04"
   },
   "margin": {
-    "balance": 13.95,
-    "balance_change": 12.91,
-    "long_balance": 12.85,
-    "short_balance": null,
+    "balance": 22804.3749,
+    "balance_change": -1266.93,
+    "long_balance": 22520.8373,
+    "short_balance": 283.5377,
     "trade_date": "2026-11-03"
   },
   "sector_flow": {
