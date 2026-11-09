@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-11-09T17:54:20+08:00",
+  "updated_at": "2026-11-09T18:07:49+08:00",
   "data_date": "2026-11-06",
   "is_trading_day": true,
   "market_overview": {
-    "total_turnover": 14452.08,
+    "total_turnover": 14945.54,
     "prev_turnover": null,
-    "ma5_turnover": 14452.08,
+    "ma5_turnover": 14945.54,
     "ma5_ready": false,
-    "advancing": 2178,
-    "declining": 3025,
-    "limit_up": 70,
-    "limit_down": 5
+    "advancing": 2242,
+    "declining": 3148,
+    "limit_up": 74,
+    "limit_down": 6
   },
   "turnover_history": [
     [
       "2026-11-06",
-      14452.08
+      14945.54
     ]
   ],
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 93.44,
-      "pre_close": 93.5,
-      "change_pct": -0.07,
+      "price": 93.66,
+      "pre_close": 93.74,
+      "change_pct": -0.09,
       "high": 98.43,
       "low": 92.8
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4114.68,
-      "pre_close": 4111.4,
+      "price": 4113.87,
+      "pre_close": 4110.4,
       "change_pct": 0.08,
       "high": 4143.3,
       "low": 4062.5
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 52.69,
-      "pre_close": 52.6,
-      "change_pct": 0.17,
+      "price": 52.7,
+      "pre_close": 52.63,
+      "change_pct": 0.14,
       "high": 53.47,
       "low": 51.41
     }
