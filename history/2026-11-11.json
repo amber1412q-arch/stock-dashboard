@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T15:37:02+08:00",
+  "updated_at": "2026-11-11T15:50:43+08:00",
   "data_date": "2026-11-11",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 94.64,
-      "pre_close": 94.62,
-      "change_pct": 0.02,
+      "price": 94.08,
+      "pre_close": 94.01,
+      "change_pct": 0.07,
       "high": 94.73,
       "low": 91.44
     },
@@ -37,17 +37,17 @@
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 4011.75,
-      "pre_close": 4011.5,
-      "change_pct": 0.01,
+      "price": 4011.19,
+      "pre_close": 4011.3,
+      "change_pct": -0.0,
       "high": 4074.7,
-      "low": 4011.3
+      "low": 4008.4
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 52.14,
-      "pre_close": 52.21,
-      "change_pct": -0.14,
+      "price": 52.38,
+      "pre_close": 52.3,
+      "change_pct": 0.16,
       "high": 53.18,
       "low": 51.42
     }
@@ -173,69 +173,69 @@
     "trade_date": "2026-11-10"
   },
   "sector_flow": {
-    "source": "sw",
+    "source": "fund_flow",
     "inflow_top5": [
       {
-        "code": "801770",
-        "name": "通信",
-        "change_pct": 7.99,
-        "index_val": 4971.12
+        "name": "小金属",
+        "change_pct": 3.5,
+        "net_flow": -17.4,
+        "leader": "云南锗业"
       },
       {
-        "code": "801080",
-        "name": "电子",
-        "change_pct": 3.58,
-        "index_val": 6730.07
+        "name": "自动化设备",
+        "change_pct": 5.2,
+        "net_flow": -22.79,
+        "leader": "杰普特"
       },
       {
-        "code": "801890",
-        "name": "机械设备",
-        "change_pct": 2.0,
-        "index_val": 1907.74
+        "name": "汽车零部件",
+        "change_pct": 4.7,
+        "net_flow": -25.17,
+        "leader": "德尔股份"
       },
       {
-        "code": "801710",
-        "name": "建筑材料",
-        "change_pct": 1.75,
-        "index_val": 5062.27
+        "name": "通信设备",
+        "change_pct": 1.4,
+        "net_flow": -128.03,
+        "leader": "宇特光电"
       },
       {
-        "code": "801230",
-        "name": "综合",
-        "change_pct": 1.23,
-        "index_val": 3549.6
+        "name": "半导体",
+        "change_pct": 4.0,
+        "net_flow": -149.13,
+        "leader": "利扬芯片"
       }
     ],
     "outflow_top5": [
       {
-        "code": "801120",
-        "name": "食品饮料",
-        "change_pct": -2.21,
-        "index_val": 14443.25
+        "name": "同花顺中特估100",
+        "change_pct": -0.6,
+        "net_flow": -23.0,
+        "leader": "中国巨石"
       },
       {
-        "code": "801010",
-        "name": "农林牧渔",
-        "change_pct": -0.85,
-        "index_val": 2545.57
+        "name": "证金持股",
+        "change_pct": -0.5,
+        "net_flow": -22.0,
+        "leader": "中海油服"
       },
       {
-        "code": "801790",
-        "name": "非银金融",
-        "change_pct": -0.81,
-        "index_val": 1639.46
+        "name": "证券",
+        "change_pct": -1.6,
+        "net_flow": -13.13,
+        "leader": "哈投股份"
       },
       {
-        "code": "801170",
-        "name": "交通运输",
-        "change_pct": -0.54,
-        "index_val": 2071.03
+        "name": "汽车整车",
+        "change_pct": -1.4,
+        "net_flow": -12.84,
+        "leader": "曙光股份"
       },
       {
-        "code": "801780",
-        "name": "银行",
-        "change_pct": -0.54,
-        "index_val": 4352.55
+        "name": "中船系",
+        "change_pct": -3.4,
+        "net_flow": 0,
+        "leader": "中船特气"
       }
     ]
   },
