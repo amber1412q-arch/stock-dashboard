@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T15:42:31+08:00",
+  "updated_at": "2026-11-13T15:55:09+08:00",
   "data_date": "2026-11-13",
   "is_trading_day": true,
   "market_overview": {
@@ -21,9 +21,9 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 96.54,
-      "pre_close": 96.46,
-      "change_pct": 0.08,
+      "price": 95.95,
+      "pre_close": 96.02,
+      "change_pct": -0.07,
       "high": 97.13,
       "low": 95.06
     },
@@ -32,24 +32,24 @@
       "price": 625.7,
       "pre_close": 623.0,
       "change_pct": 0.43,
-      "high": 626.6,
-      "low": 587.8
+      "high": 0,
+      "low": 0
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 3880.69,
-      "pre_close": 3881.2,
+      "price": 3883.55,
+      "pre_close": 3884.1,
       "change_pct": -0.01,
       "high": 3927.2,
-      "low": 3876.1
+      "low": 3876.0
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 49.12,
-      "pre_close": 49.12,
-      "change_pct": 0.01,
+      "price": 49.09,
+      "pre_close": 49.09,
+      "change_pct": 0.0,
       "high": 50.73,
-      "low": 49.06
+      "low": 48.97
     }
   },
   "etfs": [
@@ -160,10 +160,10 @@
     }
   ],
   "omo": {
-    "matured": null,
-    "new_issue": null,
-    "net": null,
-    "trade_date": null
+    "matured": 0,
+    "new_issue": 3640.0,
+    "net": 3640.0,
+    "trade_date": "2026-11-13"
   },
   "margin": {
     "balance": 22846.9284,
@@ -410,6 +410,17 @@
       "turnover": 4.59,
       "concentration_90": 27.3,
       "holder_date": "2026-09-30"
+    },
+    {
+      "code": "000021",
+      "name": "深科技",
+      "price": 26.61,
+      "change_pct": -2.812272,
+      "market_cap": 421.7,
+      "turnover_rate": 2.98,
+      "turnover": 12.79,
+      "concentration_90": 5.17,
+      "holder_date": "2026-11-10"
     },
     {
       "code": "000559",
