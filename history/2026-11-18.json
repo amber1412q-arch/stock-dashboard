@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T08:11:03+08:00",
+  "updated_at": "2026-11-18T16:56:02+08:00",
   "data_date": "2026-11-18",
   "is_trading_day": true,
   "market_overview": {
@@ -21,35 +21,35 @@
   "commodities": {
     "brent": {
       "name": "布伦特原油",
-      "price": 91.58,
-      "pre_close": 91.58,
-      "change_pct": -0.0,
-      "high": 93.37,
-      "low": 91.43
+      "price": 91.41,
+      "pre_close": 91.44,
+      "change_pct": -0.03,
+      "high": 93.54,
+      "low": 91.0
     },
     "sc": {
       "name": "上海原油SC",
-      "price": 598.4,
-      "pre_close": 590.0,
-      "change_pct": 1.42,
-      "high": 613.8,
-      "low": 575.2
+      "price": 591.4,
+      "pre_close": 586.3,
+      "change_pct": 0.87,
+      "high": 598.4,
+      "low": 574.4
     },
     "gold_comex": {
       "name": "纽约金(COMEX)",
-      "price": 3774.15,
-      "pre_close": 3774.9,
+      "price": 3744.15,
+      "pre_close": 3745.0,
       "change_pct": -0.02,
       "high": 3859.3,
-      "low": 3766.5
+      "low": 3737.6
     },
     "silver_comex": {
       "name": "纽约银(COMEX)",
-      "price": 45.88,
-      "pre_close": 45.9,
+      "price": 44.91,
+      "pre_close": 44.92,
       "change_pct": -0.04,
       "high": 47.52,
-      "low": 45.69
+      "low": 44.66
     }
   },
   "etfs": [
@@ -58,7 +58,7 @@
       "name": "沪深300ETF",
       "price": 4.058,
       "change_pct": 0.4,
-      "mkt_cap_yi": 1961.76,
+      "mkt_cap_yi": 2016.18,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -67,7 +67,7 @@
       "name": "中证500ETF",
       "price": 6.309,
       "change_pct": -0.13,
-      "mkt_cap_yi": 596.72,
+      "mkt_cap_yi": 594.57,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -85,7 +85,7 @@
       "name": "科创50ETF",
       "price": 1.322,
       "change_pct": 2.16,
-      "mkt_cap_yi": 1368.94,
+      "mkt_cap_yi": 1364.14,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -94,7 +94,7 @@
       "name": "中证红利ETF",
       "price": 1.576,
       "change_pct": 0.25,
-      "mkt_cap_yi": 113.03,
+      "mkt_cap_yi": 113.96,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -103,7 +103,7 @@
       "name": "券商ETF",
       "price": 0.47,
       "change_pct": -0.42,
-      "mkt_cap_yi": 338.33,
+      "mkt_cap_yi": 337.93,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     },
@@ -112,7 +112,7 @@
       "name": "恒生科技ETF",
       "price": 0.467,
       "change_pct": -1.06,
-      "mkt_cap_yi": 362.4,
+      "mkt_cap_yi": 374.07,
       "mkt_cap_change_1d": null,
       "mkt_cap_change_5d": null
     }
@@ -143,27 +143,27 @@
       "net_buy": 6.65
     },
     {
-      "code": "300750",
-      "name": "宁德时代",
-      "price": 241.01,
-      "change_pct": 1.05,
-      "market_cap": 10268.5,
-      "net_buy": 5.51
+      "code": "002916",
+      "name": "深南电路",
+      "price": 201.19,
+      "change_pct": 10.0,
+      "market_cap": 1337.6,
+      "net_buy": 5.07
     },
     {
-      "code": "000100",
-      "name": "TCL科技",
-      "price": 4.77,
-      "change_pct": 0.42,
-      "market_cap": 959.5,
-      "net_buy": 5.08
+      "code": "688256",
+      "name": "寒武纪",
+      "price": 949.0,
+      "change_pct": 4.89,
+      "market_cap": 5967.8,
+      "net_buy": 4.3
     }
   ],
   "omo": {
     "matured": 0,
     "new_issue": 7140.0,
     "net": 7140.0,
-    "trade_date": "2026-11-17"
+    "trade_date": "2026-11-18"
   },
   "margin": {
     "balance": 22285.99,
